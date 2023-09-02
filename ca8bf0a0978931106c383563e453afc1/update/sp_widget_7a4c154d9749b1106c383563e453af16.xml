@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller=function() {  /* widget controller */  var c = this;};]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.dropdown {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 200px; 
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+  
+.edit-button {
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 0;
+    cursor: pointer;
+		border-radius: 5px;
+}
+
+.edit-button:hover {
+    background-color: #0056b3;
+}</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id>gm_baum</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {  }]]></link>
+        <name>GM_Baum</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {  /* populate the 'data' object */  /* e.g., data.table = $sp.getValue('table'); */})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>Raphael</sys_created_by>
+        <sys_created_on>2023-09-01 10:36:29</sys_created_on>
+        <sys_id>7a4c154d9749b1106c383563e453af16</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>GM_Baum</sys_name>
+        <sys_package display_value="ServiceNow Übung" source="x_1112263_snuebung">ca8bf0a0978931106c383563e453afc1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="ServiceNow Übung">ca8bf0a0978931106c383563e453afc1</sys_scope>
+        <sys_update_name>sp_widget_7a4c154d9749b1106c383563e453af16</sys_update_name>
+        <sys_updated_by>Raphael</sys_updated_by>
+        <sys_updated_on>2023-09-01 10:41:33</sys_updated_on>
+        <template><![CDATA[<div>
+ <label for="auswahl">Wähle das Pflegeobjekt:</label><br>
+    <select id="auswahl" class="dropdown">
+        <option value="option1">Baum</option>
+        <option value="option2">Blume</option>
+        <option value="option3">Hoever Statue</option>
+        <option value="option4">Busch</option>
+    </select> <br><br>
+    <button class="edit-button">Pflegeobjekt hinzufügen</button>
+</div>]]></template>
+    </sp_widget>
+</record_update>

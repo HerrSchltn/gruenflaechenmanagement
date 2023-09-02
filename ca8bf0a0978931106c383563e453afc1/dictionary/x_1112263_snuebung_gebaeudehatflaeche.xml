@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="ceb20cf8974571106c383563e453afba" label="GebaeudeHatFlaeche" max_length="40" name="x_1112263_snuebung_gebaeudehatflaeche" type="collection">
+        <element label="FlaecheID" max_length="32" name="flaecheid" reference="x_1112263_snuebung_flaeche" type="reference"/>
+        <element label="GebaeudeID" max_length="32" name="gebaeudeid" reference="x_1112263_snuebung_gebaeude" type="reference"/>
+        <index name="index">
+            <element name="flaecheid"/>
+        </index>
+        <index name="index2">
+            <element name="gebaeudeid"/>
+        </index>
+    </element>
+</database>

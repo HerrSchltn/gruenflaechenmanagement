@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller=function() {
+  /* widget controller */
+  var c = this;
+};
+
+api.controller=function($scope) {
+ // Funktion, die aufgerufen wird, wenn der Mauszeiger über ein Gebäude schwebt
+  $scope.onMouseOverBuilding = function (buildingId) {
+    var building = document.getElementById(buildingId);
+    if (building) {
+      building.style.fill = "green";
+    }
+  };
+
+  // Funktion, die aufgerufen wird, wenn der Mauszeiger das Gebäude verlässt
+  $scope.onMouseOutBuilding = function (buildingId) {
+    var building = document.getElementById(buildingId);
+    if (building) {
+      // Hier kannst du die Farbe auf die ursprüngliche Farbe zurücksetzen, z.B., "gray"
+      building.style.fill = "black";
+    }
+  };
+}
+
+//ng-click="onClick('hello')"]]></client_script>
+        <controller_as>c</controller_as>
+        <css/>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id/>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {
+  
+}]]></link>
+        <name>svg</name>
+        <option_schema/>
+        <public>true</public>
+        <roles/>
+        <script><![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-08-30 19:22:00</sys_created_on>
+        <sys_id>97414528978931106c383563e453af21</sys_id>
+        <sys_mod_count>68</sys_mod_count>
+        <sys_name>svg</sys_name>
+        <sys_package display_value="ServiceNow Übung" source="x_1112263_snuebung">ca8bf0a0978931106c383563e453afc1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="ServiceNow Übung">ca8bf0a0978931106c383563e453afc1</sys_scope>
+        <sys_update_name>sp_widget_97414528978931106c383563e453af21</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-09-02 11:27:56</sys_updated_on>
+        <template><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg width="249mm" height="297mm" version="1.1" viewBox="0 0 249 297" xmlns="http://www.w3.org/2000/svg">
+ <g stroke-width=".20116">
+  <rect x=".70404" y="76.008" width="29.805" height="11.516" fill="#666"/>
+  <rect x="18.965" y="75.795" width="10.285" height="53.103"/>
+  <rect x="16.236" y="92.003" width="3.7781" height="22.393"/>
+ </g>
+ <rect x="29.134" y="119.86" width="30.436" height="8.8522" fill="#666" stroke-width=".19024"/>
+ <text transform="scale(.99207 1.008)" x="21.791246" y="101.63528" fill="#ffffff" font-size="2.414px" stroke-width=".20116" xml:space="preserve"><tspan x="21.791246" y="101.63528" fill="#ffffff" stroke-width=".20116">C</tspan></text>
+ <g stroke-width=".20116">
+  <rect x="19.805" y="57.571" width="47.661" height="10.639"/>
+  <rect x="67.411" y="65.761" width="3.5671" height="1.105"/>
+  <text transform="scale(.99207 1.008)" x="44.494324" y="61.967957" fill="#ffffff" font-size="2.414px" xml:space="preserve"><tspan x="44.494324" y="61.967957" fill="#ffffff" stroke-width=".20116">W</tspan></text>
+  <rect x="70.772" y="63.577" width="19.069" height="18.151"/>
+  <text transform="scale(.99207 1.008)" x="78.960815" y="71.799736" fill="#ffffff" font-size="2.414px" xml:space="preserve"><tspan x="78.960815" y="71.799736" stroke-width=".20116">F</tspan></text>
+  <rect x="83.2" y="81.749" width="1.9438" height="4.4337"/>
+ </g>
+ <g stroke-width=".20116">
+  <rect x="76.443" y="86.106" width="12.925" height="24.789"/>
+  <text transform="scale(.99207 1.008)" x="81.921524" y="98.243896" fill="#ffffff" font-size="2.414px" xml:space="preserve"><tspan x="81.921524" y="98.243896" fill="#ffffff" stroke-width=".20116">G</tspan></text>
+ </g>
+ <rect transform="matrix(.84282 -.53819 .52604 .85046 0 0)" x="2.068" y="151.6" width="23.385" height="23.046" stroke-width=".20118"/>
+ <rect transform="matrix(.83827 -.54526 .53307 .84607 0 0)" x="-2.8086" y="148.63" width="15.028" height="15.529" ry="0" stroke-width=".2032"/>
+ <text transform="matrix(.75428 0 0 .76639 -4.6276 13.914)" x="132.90611" y="151.29233" fill="#ffffff" font-size="3.175px" stroke-width=".26458" style="inline-size:2.94775;white-space:pre" xml:space="preserve"><tspan x="132.90611" y="151.29233">H</tspan></text>
+ <g>
+  <rect x="166.05" y="112.37" width="32.698" height="14.422" stroke-width=".18809"/>
+  <g stroke-width=".23598">
+   <rect x="159.38" y="127.9" width="15.348" height="29.51"/>
+   <rect x="150.93" y="114.37" width="22.244" height="15.31"/>
+   <rect x="139.14" y="125.68" width="14.681" height="15.088"/>
+   <rect transform="matrix(.74536 -.66666 .66852 .74369 0 0)" x="31.928" y="180.24" width="22.441" height="33.097"/>
+   <rect x="156.04" y="87.296" width="10.899" height="19.081"/>
+  </g>
+  <rect x="139.81" y="97.503" width="17.128" height="18.194" stroke-width=".21589"/>
+  <rect x="119.56" y="108.37" width="21.799" height="7.322" stroke-width=".21506"/>
+ </g>
+ <text transform="scale(1.0013 .99874)" x="159.7292" y="114.96785" fill="#ffffff" font-size="2.8318px" stroke-width=".23598" xml:space="preserve"><tspan x="159.7292" y="114.96785" fill="#ffffff" stroke-width=".23598">E</tspan></text>
+ <text transform="scale(.26458)" fill="#ffffff" style="shape-inside:url(#rect25);white-space:pre" xml:space="preserve"/>
+ <rect x="206.62" y="117.69" width="34.387" height="15.118" stroke-width=".22272"/>
+ <text x="222.92035" y="126.57844" fill="#ffffff" font-size="3.175px" stroke-width=".26458" xml:space="preserve"><tspan x="222.92035" y="126.57844" fill="#ffffff" stroke-width=".26458">D</tspan></text>
+ <g fill="#ccc">
+  <rect x="25.13" y="70.046" width="1.8194" height="4.2073" stroke-width=".26458"/>
+  <rect x="26.836" y="71.524" width="20.127" height="1.7057" stroke-width=".26458"/>
+  <rect transform="rotate(-14.529)" x="25.231" y="81.048" width="2.2742" height="26.95" stroke-width=".26041"/>
+  <rect x="51.446" y="95.793" width="16.87" height="2.3384" stroke-width=".26458"/>
+  <rect transform="matrix(.99699 -.077523 .06072 .99815 0 0)" x="59.79" y="100.83" width="2.5907" height="16.421" stroke-width=".28135"/>
+  <rect transform="rotate(14.93)" x="93.24" y="90.44" width="2.5552" height="37.324" stroke-width=".26458"/>
+  <rect transform="matrix(.83107 -.55617 .53016 .8479 0 0)" x="-15.246" y="141.36" width="3.3121" height="37.711" stroke-width=".26744"/>
+  <g stroke-width=".26458">
+   <rect transform="rotate(53.198)" x="167.48" y="18.771" width="2.6858" height="7.6332"/>
+   <path d="m84.489 158.5 8.3844-4.8372 8.8681-4.031 9.8356-2.7411 12.738-1.7736h11.609l7.2558 2.5798 2.2573 1.1287-1.6124 2.4186-8.3844-2.5798h-9.6743l-11.77 1.4512-10.158 2.2573-9.8208 4.5147-4.951 3.0014-5.3175 2.814-1.8446-2.9255z"/>
+   <rect transform="rotate(-51.294)" x="-32.948" y="190.69" width="9.1584" height="3.5225"/>
+   <rect x="143.54" y="143.54" width="4.2503" height="90.029"/>
+  </g>
+  <rect x="146.44" y="190.54" width="55.64" height="3.2355" stroke-width=".22102"/>
+  <rect x="201.07" y="105.29" width="3.1379" height="88.529" stroke-width=".22436"/>
+  <rect x="203.91" y="143.88" width="20.857" height="3.9462" stroke-width=".26458"/>
+  <rect x="223.35" y="133.28" width="4.4428" height="14.579" stroke-width=".26311"/>
+  <rect transform="matrix(.99966 .02608 -.028708 .99959 0 0)" x="87.944" y="79.467" width="100.11" height="2.1887" stroke-width=".25643"/>
+  <g stroke-width=".26458">
+   <rect x="146.52" y="85.215" width="2.3671" height="11.125"/>
+   <path d="m185.55 86.513 2.1701 1.7234 1.7783 1.4895 2.0784 1.3596 2.9765 1.2796 2.9755 1.1049 2.2072 1.8556 1.3416 1.3247-6e-3 8.7467 3.1491 0.11254-0.13217-10.668-2.4181-1.9345-2.848-1.3971-2.3643-1.021-3.5716-1.5197-2.7205-1.6194-1.8956-2.0597-2.5592-1.0345z"/>
+   <path d="m119.44 110.99h-9.2843v-26.598l-1.9504 0.13872 0.0571 28.147 11.178-0.0143z"/>
+   <rect x="198.65" y="118.85" width="2.4378" height="1.1443"/>
+  </g>
+ </g>
+ <g stroke-width=".26458">
+  <rect x="204.64" y="149.91" width="38.722" height="37.781" fill="#00cf00"/>
+  <text x="222.83963" y="168.31421" fill="#000000" font-size="3.175px" xml:space="preserve"><tspan x="222.83963" y="168.31421" fill="#000000" stroke-width=".26458">1</tspan></text>
+ </g>
+ <g stroke-width=".26458">
+  <path d="m175.06 129.77 3.065-2.6721h22.272l0.15313 3.4571z" fill="#00cf00"/>
+  <rect x="175.06" y="129.75" width="25.466" height="60.324" fill="#00cf00"/>
+  <text x="187.7321" y="156.43047" fill="#000000" font-size="3.175px" xml:space="preserve"><tspan x="187.7321" y="156.43047" stroke-width=".26458">2</tspan></text>
+ </g>
+ <g>
+  <path d="m143.5 231.79-0.0634-80.591-7.9964-2.3614-9.8296-0.093-11.17 1.4958-10.276 2.1829-9.7178 4.3659-10.053 5.6756 0.2234 23.903-36.025 0.10476-0.20166 45.257z" fill="#00cf00" stroke-width=".26364"/>
+  <ellipse cx="111.26" cy="187.45" rx="18.858" ry="23.384" fill="#008080" stroke-width=".26458"/>
+  <text x="79.711761" y="207.57733" fill="#000000" font-size="3.175px" stroke-width=".26458" xml:space="preserve"><tspan x="79.711761" y="207.57733" stroke-width=".26458">3</tspan></text>
+ </g>
+ <g stroke-width=".26458">
+  <path d="m29.187 119.75h30.258l0.08234 8.8509h2.5112l4.5695-16.796-0.78217-13.709-14.326 0.08233-6.5455-24.988-17.995 0.04117 0.04662 2.5112h2.1818v0.20583h1.1938l0.16467 11.486-1.3997 0.04117z" fill="#00cf00"/>
+  <text x="39.958118" y="101.45211" fill="#000000" font-size="3.175px" xml:space="preserve"><tspan x="39.958118" y="101.45211" fill="#000000" stroke-width=".26458">4</tspan></text>
+ </g>
+ <g stroke-width=".26458">
+  <path d="m76.318 110.81 0.10226-24.814 6.6467 0.06817v-4.363l-12.373 0.03409 0.03409-13.362-43.8-0.13634 0.03409 3.2411 19.974 0.03114 6.2718 24.201 15.066 0.03409 0.92032 14.964z" fill="#00cf00"/>
+  <text x="60.697029" y="81.314758" fill="#000000" font-size="3.175px" xml:space="preserve"><tspan x="60.697029" y="81.314758" fill="#000000" stroke-width=".26458">5</tspan></text>
+ </g>
+ <g stroke-width=".26458">
+  <path d="m110.17 111.01 9.3698-0.0641v-2.6143l20.257 0.0321v-10.877l6.6625-0.02242 0.0224-11.92-36.27-0.93982z" fill="#00cf00"/>
+  <text x="124.28633" y="97.301956" fill="#000000" font-size="3.175px" xml:space="preserve"><tspan x="124.28633" y="97.301956" fill="#000000" stroke-width=".26458">6</tspan></text>
+ </g>
+ <g stroke-width=".26458">
+  <path d="m148.86 97.433 7.1122 0.07007 0.035-10.265 10.896 0.03503 0.0701 17.167 7.0771 7.8479 24.665 0.0701 0.0701 6.4115h2.2423v-22.142l-3.6437-3.1882-5.7108-2.2423-2.1372-1.4364-4.0641-3.2583-36.647-0.91092z" fill="#00cf00"/>
+  <text x="181.33974" y="98.322624" fill="#000000" font-size="3.175px" xml:space="preserve"><tspan x="181.33974" y="98.322624" fill="#000000" stroke-width=".26458">7</tspan></text>
+ </g>
+ <g stroke-width=".26458">
+  <path d="m89.888 81.62 50.668 1.378 0.106-19.398-50.986-0.106z" fill="#00cf00"/>
+  <text x="115.52814" y="71.884186" fill="#000000" font-size="3.175px" xml:space="preserve"><tspan x="115.52814" y="71.884186" fill="#000000" stroke-width=".26458">8</tspan></text>
+ </g>
+ <g>
+  <path d="m140.91 82.981 44.574 1.2478v-19.163l-44.486-1.1587z" fill="#00cf00" stroke-width=".26408"/>
+  <text x="161.86829" y="73.760437" fill="#000000" font-size="3.175px" stroke-width=".26458" xml:space="preserve"><tspan x="161.86829" y="73.760437" stroke-width=".26458">9</tspan></text>
+ </g>
+ <g stroke-width=".26458">
+  <path d="m185.91 84.246 2.4172 0.96099 1.8922 2.0696 2.4244 1.4191 7.687 3.4296 2.4244 1.36 1.4191 1.2417 0.11827 5.2035 36.947 0.283-12.831-24.113-42.475-10.951z" fill="#00cf00"/>
+  <text x="205.39072" y="83.602478" fill="#000000" font-size="3.175px" xml:space="preserve"><tspan x="205.39072" y="83.602478" fill="#000000" stroke-width=".26458">10</tspan></text>
+ </g>
+</svg>
+]]></template>
+    </sp_widget>
+</record_update>

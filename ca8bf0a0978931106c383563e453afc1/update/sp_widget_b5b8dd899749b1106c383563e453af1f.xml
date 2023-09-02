@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller=function() {
+  /* widget controller */
+  var c = this;
+};]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.dropdown {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 200px; 
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id/>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {
+  
+}]]></link>
+        <name>GM_RoomChoice</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>Raphael</sys_created_by>
+        <sys_created_on>2023-09-01 10:21:03</sys_created_on>
+        <sys_id>b5b8dd899749b1106c383563e453af1f</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>GM_RoomChoice</sys_name>
+        <sys_package display_value="ServiceNow Übung" source="x_1112263_snuebung">ca8bf0a0978931106c383563e453afc1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="ServiceNow Übung">ca8bf0a0978931106c383563e453afc1</sys_scope>
+        <sys_update_name>sp_widget_b5b8dd899749b1106c383563e453af1f</sys_update_name>
+        <sys_updated_by>Raphael</sys_updated_by>
+        <sys_updated_on>2023-09-01 10:30:37</sys_updated_on>
+        <template><![CDATA[<div>
+ <label for="auswahl">Wähle einen Raum:</label><br>
+    <select id="auswahl" class="dropdown">
+        <option value="option1">Raum 1</option>
+        <option value="option2">Raum 2</option>
+        <option value="option3">Raum 3</option>
+        <option value="option4">Raum 4</option>
+    </select>
+</div>]]></template>
+    </sp_widget>
+</record_update>

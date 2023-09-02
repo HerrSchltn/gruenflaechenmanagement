@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="1590ccf4974571106c383563e453afbc" label="ArbeitHatMitarbeiter" max_length="40" name="x_1112263_snuebung_arbeithatmitarbeiter" type="collection">
+        <element label="ArbeitID" max_length="32" name="arbeitid" reference="x_1112263_snuebung_arbeit" type="reference"/>
+        <element label="MitarbeiterID" max_length="40" name="mitarbeiterid" reference="x_1112263_snuebung_mitarbeiter" type="reference"/>
+        <index name="index">
+            <element name="arbeitid"/>
+        </index>
+    </element>
+</database>

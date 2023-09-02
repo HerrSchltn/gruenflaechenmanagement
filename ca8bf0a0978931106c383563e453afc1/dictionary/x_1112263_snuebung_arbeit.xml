@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="e4cf37e4974571106c383563e453af9e" label="Arbeit" max_length="40" name="x_1112263_snuebung_arbeit" type="collection">
+        <element default="javascript:gs.getUserID();" dynamic_default_value="2fd8e97bef3221002841f7f775c0fbc1" label="Ersteller" max_length="255" name="ersteller" read_only="true" reference="sys_user" type="reference" use_dynamic_default="true"/>
+        <element label="FlächeID" max_length="32" name="flacheid" reference="x_1112263_snuebung_flaeche" type="reference"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element choice="3" default="1" label="Priorität" max_length="40" name="prioritat" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Hoch" value="3"/>
+                <element inactive_on_update="false" label="Mittel" value="2"/>
+                <element inactive_on_update="false" label="Niedrig" value="1"/>
+            </choice>
+        </element>
+        <element choice="3" default="Unkraut" label="Typ" mandatory="true" max_length="255" name="typ" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Baumpflege" value="Baumpflege"/>
+                <element inactive_on_update="false" label="Bewässerung" value="Bewässerung"/>
+                <element inactive_on_update="false" label="Heckenpflege" value="Heckenpflege"/>
+                <element inactive_on_update="false" label="Rasenpflege" value="Rasenpflege"/>
+                <element inactive_on_update="false" label="Sonderfall" value="Sonderfall"/>
+                <element inactive_on_update="false" label="Unkraut" value="Unkraut"/>
+            </choice>
+        </element>
+        <element label="Zeitraum bis" max_length="40" name="zeitraum_bis" type="glide_date_time"/>
+        <element label="Zeitraum von" max_length="40" name="zeitraum_von" type="glide_date_time"/>
+        <index name="index">
+            <element name="flacheid"/>
+        </index>
+    </element>
+</database>

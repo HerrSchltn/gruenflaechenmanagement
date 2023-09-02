@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller=function() {
+  /* widget controller */
+  var c = this;
+};]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.outlines {
+  display: flex;
+  justify-content: center; /* Horizontal zentriert */
+  align-items: center; /* Vertikal zentriert */
+  min-height: 100vh; /* Mindesthöhe des Bildschirms verwenden */
+}
+
+.container {
+    background-color: green;
+    flex-direction: column;
+    height: auto; /* Stelle die Höhe automatisch ein */
+    max-width: 100%;
+    padding: 20px;
+    color: white;
+    margin-bottom: 20px; /* Füge Abstand nach unten hinzu */
+}
+
+
+.container h2 {
+  margin: 0;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.container ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.container li {
+  margin-bottom: 10px;
+}
+
+.container label {
+  font-weight: bold;
+}
+
+/* Füge dem Button ein eigenes Styling hinzu */
+#arbeitButton {
+    background-color: white; /* Hintergrundfarbe des Buttons */
+    color: green; /* Textfarbe des Buttons */
+    padding: 5px 10px; /* Innenabstand des Buttons */
+    border: none; /* Kein Rahmen um den Button */
+    cursor: pointer; /* Zeige den Zeiger auf den Button */
+    border-radius: 4px; /* Runde Ecken für den Button */
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s; /* Füge eine Übergangsanimation hinzu */
+  	margin-left: 80px;
+}
+
+/* Ändere das Aussehen des Buttons beim Klicken (nicht beim Hover) */
+#arbeitButton:hover {
+    background-color: green; /* Hintergrundfarbe beim Klicken */
+    color: white; /* Textfarbe des Buttons beim Klicken */
+    border: 1px solid white; /* Rahmen um den Button beim Klicken */
+}
+
+.ArbeitFlex {
+    display: flex; /* Flexbox aktivieren */
+    flex-direction: row; /* Elemente nebeneinander anordnen */
+    align-items: center; /* Vertikal zentriert */
+}
+
+.ButtonFlex {
+    display: flex;
+    flex-direction: row; /* Buttons horizontal anordnen */
+    justify-content: space-between; /* Buttons gleichmäßig verteilen */
+    align-items: center; /* Vertikal zentrieren */
+}
+
+#button1,
+#button2 {
+    background-color: white;
+    color: green;
+    padding: 5px 28px; /* Höhe und Breite der Buttons anpassen */
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+  	margin-top: 50px;
+}
+
+#button1:hover,
+#button2:hover {
+    background-color: green;
+    color: white;
+  	border: 1px solid white; /* Rahmen um den Button beim Klicken */
+}</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id>gm_landingpagemenu</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {
+  
+}]]></link>
+        <name>GM_LandingPageMenu</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>Cenk</sys_created_by>
+        <sys_created_on>2023-09-01 08:38:01</sys_created_on>
+        <sys_id>0e6001059709b1106c383563e453afff</sys_id>
+        <sys_mod_count>50</sys_mod_count>
+        <sys_name>GM_LandingPageMenu</sys_name>
+        <sys_package display_value="ServiceNow Übung" source="x_1112263_snuebung">ca8bf0a0978931106c383563e453afc1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="ServiceNow Übung">ca8bf0a0978931106c383563e453afc1</sys_scope>
+        <sys_update_name>sp_widget_0e6001059709b1106c383563e453afff</sys_update_name>
+        <sys_updated_by>Cenk</sys_updated_by>
+        <sys_updated_on>2023-09-01 10:17:29</sys_updated_on>
+        <template><![CDATA[<div class="outlines">
+  <div class="container">
+    <h2>Grünflächenmanagement</h2>
+    <ul>
+      <li>
+        <label>Ausgewählter Bereich:</label>
+        <br>
+        <span id="ausgewaehlterBereich"></span>
+      </li>
+      <li>
+        <label>Zeitraum:</label>
+        <br>
+        <label>Von:</label>
+        <span id="vonData"></span>
+        <br>
+        <label>Bis:</label>
+        <span id="bisData"></span>
+      </li>
+      <li>
+        <div class="ArbeitFlex">
+          <label>Arbeiten:</label>
+          <br>
+          <span id="arbeitenData"></span>
+          <button id="arbeitButton">Bearbeiten</button>
+        </div>
+      </li>
+      <li>
+        <label>Mitarbeiter:</label>
+        <br>
+        <span id="mitarbeiterData"></span>
+      </li>
+    </ul>
+    <div class="ButtonFlex">
+      <button id="button1">Button 1</button>
+      <button id="button2">Button 2</button>
+    </div>
+  </div>
+</div>
+]]></template>
+    </sp_widget>
+</record_update>

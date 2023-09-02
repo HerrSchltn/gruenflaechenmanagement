@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="prioritat" table="x_1112263_snuebung_arbeit" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>prioritat</element>
+            <name>x_1112263_snuebung_arbeit</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>Lionel</sys_created_by>
+            <sys_created_on>2023-08-31 10:16:40</sys_created_on>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>prioritat</sys_name>
+            <sys_package display_value="ServiceNow Übung" source="x_1112263_snuebung">ca8bf0a0978931106c383563e453afc1</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="ServiceNow Übung">ca8bf0a0978931106c383563e453afc1</sys_scope>
+            <sys_update_name>sys_choice_x_1112263_snuebung_arbeit_prioritat</sys_update_name>
+            <sys_updated_by>Lionel</sys_updated_by>
+            <sys_updated_on>2023-08-31 10:16:40</sys_updated_on>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>prioritat</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Niedrig</label>
+            <language>en</language>
+            <name>x_1112263_snuebung_arbeit</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>Lionel</sys_created_by>
+            <sys_created_on>2023-08-31 10:16:40</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>b22e4838978571106c383563e453afb8</sys_id>
+            <sys_mod_count>4</sys_mod_count>
+            <sys_updated_by>Lionel</sys_updated_by>
+            <sys_updated_on>2023-08-31 10:19:04</sys_updated_on>
+            <value>1</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>prioritat</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Mittel</label>
+            <language>en</language>
+            <name>x_1112263_snuebung_arbeit</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>Lionel</sys_created_by>
+            <sys_created_on>2023-08-31 10:16:58</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>2f2e4838978571106c383563e453afbb</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>Lionel</sys_updated_by>
+            <sys_updated_on>2023-08-31 10:19:07</sys_updated_on>
+            <value>2</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>prioritat</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Hoch</label>
+            <language>en</language>
+            <name>x_1112263_snuebung_arbeit</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>Lionel</sys_created_by>
+            <sys_created_on>2023-08-31 10:17:06</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>5f3e0478978571106c383563e453af46</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>Lionel</sys_updated_by>
+            <sys_updated_on>2023-08-31 10:19:09</sys_updated_on>
+            <value>3</value>
+        </sys_choice>
+    </sys_choice>
+</record_update>
