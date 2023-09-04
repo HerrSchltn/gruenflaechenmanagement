@@ -44,56 +44,69 @@
   font-weight: bold;
 }
 
-/* Füge dem Button ein eigenes Styling hinzu */
+#raum,
+#AddPflegeobjekt,
+#AddArbeit,
+#EditPflegeobjekt,
 #arbeitButton {
-    background-color: white; /* Hintergrundfarbe des Buttons */
-    color: green; /* Textfarbe des Buttons */
+   	background-color: white; /* Hintergrundfarbe des Buttons */
     padding: 5px 10px; /* Innenabstand des Buttons */
     border: none; /* Kein Rahmen um den Button */
     cursor: pointer; /* Zeige den Zeiger auf den Button */
     border-radius: 4px; /* Runde Ecken für den Button */
     transition: background-color 0.3s, color 0.3s, border-color 0.3s; /* Füge eine Übergangsanimation hinzu */
-  	margin-left: 80px;
 }
 
-/* Ändere das Aussehen des Buttons beim Klicken (nicht beim Hover) */
-#arbeitButton:hover {
-    background-color: green; /* Hintergrundfarbe beim Klicken */
-    color: white; /* Textfarbe des Buttons beim Klicken */
-    border: 1px solid white; /* Rahmen um den Button beim Klicken */
-}
-
-.ArbeitFlex {
-    display: flex; /* Flexbox aktivieren */
-    flex-direction: row; /* Elemente nebeneinander anordnen */
-    align-items: center; /* Vertikal zentriert */
-}
-
-.ButtonFlex {
-    display: flex;
-    flex-direction: row; /* Buttons horizontal anordnen */
-    justify-content: space-between; /* Buttons gleichmäßig verteilen */
-    align-items: center; /* Vertikal zentrieren */
-}
-
-#button1,
-#button2 {
-    background-color: white;
-    color: green;
-    padding: 5px 28px; /* Höhe und Breite der Buttons anpassen */
-    border: none;
-    cursor: pointer;
-    border-radius: 4px;
-    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
-  	margin-top: 50px;
-}
-
-#button1:hover,
-#button2:hover {
+#raum:hover,
+#AddPflegeobjekt:hover,
+#AddArbeit:hover,
+#EditPflegeobjekt:hover,
+#arbeitButton:hover,
+a:hover {
     background-color: green;
-    color: white;
+  	color:white;
   	border: 1px solid white; /* Rahmen um den Button beim Klicken */
-}</css>
+}
+
+/* styles.css */
+.ButtonGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto auto;
+  grid-gap: 10px;
+  margin-top: 30px;
+}
+
+#raum {
+  grid-column: 1 / span 2;
+  grid-row: 1;
+}
+
+/* Die restlichen Buttons starten ab der zweiten Zeile */
+#AddPflegeobjekt {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+#AddArbeit {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+#EditPflegeobjekt {
+  grid-column: 1;
+  grid-row: 3;
+}
+
+#arbeitButton {
+  grid-column: 2;
+  grid-row: 3;
+}
+
+a {
+  color: green;
+}
+</css>
         <data_table>sp_instance</data_table>
         <demo_data/>
         <description/>
@@ -119,14 +132,14 @@
         <sys_created_by>Cenk</sys_created_by>
         <sys_created_on>2023-09-01 08:38:01</sys_created_on>
         <sys_id>0e6001059709b1106c383563e453afff</sys_id>
-        <sys_mod_count>50</sys_mod_count>
+        <sys_mod_count>69</sys_mod_count>
         <sys_name>GM_LandingPageMenu</sys_name>
         <sys_package display_value="ServiceNow Übung" source="x_1112263_snuebung">ca8bf0a0978931106c383563e453afc1</sys_package>
         <sys_policy/>
         <sys_scope display_value="ServiceNow Übung">ca8bf0a0978931106c383563e453afc1</sys_scope>
         <sys_update_name>sp_widget_0e6001059709b1106c383563e453afff</sys_update_name>
         <sys_updated_by>Cenk</sys_updated_by>
-        <sys_updated_on>2023-09-01 10:17:29</sys_updated_on>
+        <sys_updated_on>2023-09-03 18:52:24</sys_updated_on>
         <template><![CDATA[<div class="outlines">
   <div class="container">
     <h2>Grünflächenmanagement</h2>
@@ -150,7 +163,6 @@
           <label>Arbeiten:</label>
           <br>
           <span id="arbeitenData"></span>
-          <button id="arbeitButton">Bearbeiten</button>
         </div>
       </li>
       <li>
@@ -159,9 +171,12 @@
         <span id="mitarbeiterData"></span>
       </li>
     </ul>
-    <div class="ButtonFlex">
-      <button id="button1">Button 1</button>
-      <button id="button2">Button 2</button>
+    <div class="ButtonGrid">
+      <button id="raum"><a href="/gruenflaechenmanagement/?id=4">Raum Buchen</a></button>
+      <button id="AddPflegeobjekt"><a href="/gruenflaechenmanagement/?id=5">Pflegeobjekt Hinzufügen</a></button>
+      <button id="AddArbeit"><a href="/gruenflaechenmanagement/?id=3">Neue Arbeit Hinzufügen</a></button>
+      <button id="EditPflegeobjekt"><a href="/gruenflaechenmanagement/?id=6">Pflegeobjekt Anpassen</a></button>
+      <button id="arbeitButton"><a href="/gruenflaechenmanagement/?id=2">Arbeit Anpassen</a></button>
     </div>
   </div>
 </div>

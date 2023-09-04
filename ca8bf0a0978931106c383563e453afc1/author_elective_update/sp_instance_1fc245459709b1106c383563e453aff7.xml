@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance">
+    <sp_instance action="DELETE">
+        <active>true</active>
+        <class_name/>
+        <color>default</color>
+        <css/>
+        <glyph/>
+        <id/>
+        <order>1</order>
+        <roles/>
+        <short_description/>
+        <size>md</size>
+        <sp_column display_value="1">35c20d459709b1106c383563e453afef</sp_column>
+        <sp_widget display_value="svg">97414528978931106c383563e453af21</sp_widget>
+        <sys_class_name>sp_instance</sys_class_name>
+        <sys_created_by>Cenk</sys_created_by>
+        <sys_created_on>2023-09-01 08:45:06</sys_created_on>
+        <sys_id>1fc245459709b1106c383563e453aff7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="ServiceNow Übung" source="x_1112263_snuebung">ca8bf0a0978931106c383563e453afc1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="ServiceNow Übung">ca8bf0a0978931106c383563e453afc1</sys_scope>
+        <sys_update_name>sp_instance_1fc245459709b1106c383563e453aff7</sys_update_name>
+        <sys_updated_by>Cenk</sys_updated_by>
+        <sys_updated_on>2023-09-01 08:45:06</sys_updated_on>
+        <title/>
+        <url/>
+        <widget_parameters/>
+    </sp_instance>
+    <sys_translated_text action="DELETE" query="documentkey=1fc245459709b1106c383563e453aff7"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="ServiceNow Übung">ca8bf0a0978931106c383563e453afc1</application>
+        <file_path/>
+        <instance_id>6dde0dc4db91e5989df22f17d496192c</instance_id>
+        <instance_name>dev154491</instance_name>
+        <name>sp_instance_1fc245459709b1106c383563e453aff7</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance"><sp_instance action="INSERT_OR_UPDATE"><active>true</active><class_name/><color>default</color><css/><glyph/><id/><order>1</order><roles/><short_description/><size>md</size><sp_column display_value="1">35c20d459709b1106c383563e453afef</sp_column><sp_widget display_value="svg">97414528978931106c383563e453af21</sp_widget><sys_class_name>sp_instance</sys_class_name><sys_created_by>Cenk</sys_created_by><sys_created_on>2023-09-01 08:45:06</sys_created_on><sys_id>1fc245459709b1106c383563e453aff7</sys_id><sys_mod_count>0</sys_mod_count><sys_name/><sys_package display_value="ServiceNow Übung" source="x_1112263_snuebung">ca8bf0a0978931106c383563e453afc1</sys_package><sys_policy/><sys_scope display_value="ServiceNow Übung">ca8bf0a0978931106c383563e453afc1</sys_scope><sys_update_name>sp_instance_1fc245459709b1106c383563e453aff7</sys_update_name><sys_updated_by>Cenk</sys_updated_by><sys_updated_on>2023-09-01 08:45:06</sys_updated_on><title/><url/><widget_parameters/></sp_instance><sys_translated_text action="delete_multiple" query="documentkey=1fc245459709b1106c383563e453aff7"/></record_update>]]></payload>
+        <payload_hash>-1768660389</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>ca8bf0a0978931106c383563e453afc3</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>Cenk</sys_created_by>
+        <sys_created_on>2023-09-01 08:45:06</sys_created_on>
+        <sys_id>9bc245459709b1106c383563e453aff9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18a4feadc640000001</sys_recorded_at>
+        <sys_updated_by>Cenk</sys_updated_by>
+        <sys_updated_on>2023-09-01 08:45:06</sys_updated_on>
+        <type>Instance</type>
+        <update_guid>d3c245454d09b1109e8f9e366b1992f9</update_guid>
+        <update_guid_history>d3c245454d09b1109e8f9e366b1992f9:-1768660389</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">7e25f8029781b5106c383563e453af62</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>Cenk</sys_created_by>
+        <sys_created_on>2023-09-04 10:19:28</sys_created_on>
+        <sys_db_object display_value="" name="sp_instance">sp_instance</sys_db_object>
+        <sys_id>d86498214b764ce8b56191066ad7c321</sys_id>
+        <sys_metadata>1fc245459709b1106c383563e453aff7</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="ServiceNow Übung" source="x_1112263_snuebung">ca8bf0a0978931106c383563e453afc1</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="ServiceNow Übung">ca8bf0a0978931106c383563e453afc1</sys_scope>
+        <sys_scope_delete display_value="">11e92dddcda04499868bc53fdc08f399</sys_scope_delete>
+        <sys_update_name>sp_instance_1fc245459709b1106c383563e453aff7</sys_update_name>
+        <sys_update_version display_value="sp_instance_1fc245459709b1106c383563e453aff7">9bc245459709b1106c383563e453aff9</sys_update_version>
+        <sys_updated_by>Cenk</sys_updated_by>
+        <sys_updated_on>2023-09-04 10:19:28</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

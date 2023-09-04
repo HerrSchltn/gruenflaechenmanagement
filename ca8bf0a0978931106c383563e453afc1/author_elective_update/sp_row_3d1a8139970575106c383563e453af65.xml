@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_row">
+    <sp_row action="DELETE">
+        <class_name/>
+        <order>3</order>
+        <sp_column/>
+        <sp_container display_value="Room - Container 1">3ce715c99749b1106c383563e453afbb</sp_container>
+        <sys_class_name>sp_row</sys_class_name>
+        <sys_created_by>Raphael</sys_created_by>
+        <sys_created_on>2023-09-03 17:12:24</sys_created_on>
+        <sys_id>3d1a8139970575106c383563e453af65</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>3</sys_name>
+        <sys_package display_value="ServiceNow Übung" source="x_1112263_snuebung">ca8bf0a0978931106c383563e453afc1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="ServiceNow Übung">ca8bf0a0978931106c383563e453afc1</sys_scope>
+        <sys_update_name>sp_row_3d1a8139970575106c383563e453af65</sys_update_name>
+        <sys_updated_by>Raphael</sys_updated_by>
+        <sys_updated_on>2023-09-03 17:12:24</sys_updated_on>
+    </sp_row>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="ServiceNow Übung">ca8bf0a0978931106c383563e453afc1</application>
+        <file_path/>
+        <instance_id>6dde0dc4db91e5989df22f17d496192c</instance_id>
+        <instance_name>dev154491</instance_name>
+        <name>sp_row_3d1a8139970575106c383563e453af65</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_row"><sp_row action="INSERT_OR_UPDATE"><class_name/><order>3</order><sp_column/><sp_container display_value="Room - Container 1">3ce715c99749b1106c383563e453afbb</sp_container><sys_class_name>sp_row</sys_class_name><sys_created_by>Raphael</sys_created_by><sys_created_on>2023-09-03 17:12:24</sys_created_on><sys_id>3d1a8139970575106c383563e453af65</sys_id><sys_mod_count>0</sys_mod_count><sys_name>3</sys_name><sys_package display_value="ServiceNow Übung" source="x_1112263_snuebung">ca8bf0a0978931106c383563e453afc1</sys_package><sys_policy/><sys_scope display_value="ServiceNow Übung">ca8bf0a0978931106c383563e453afc1</sys_scope><sys_update_name>sp_row_3d1a8139970575106c383563e453af65</sys_update_name><sys_updated_by>Raphael</sys_updated_by><sys_updated_on>2023-09-03 17:12:24</sys_updated_on></sp_row></record_update>]]></payload>
+        <payload_hash>415003445</payload_hash>
+        <record_name>3</record_name>
+        <reverted_from/>
+        <source>5915c935970575106c383563e453af04</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>Raphael</sys_created_by>
+        <sys_created_on>2023-09-03 17:12:24</sys_created_on>
+        <sys_id>b11a4579970575106c383563e453af5b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18a5c08055b0000001</sys_recorded_at>
+        <sys_updated_by>Raphael</sys_updated_by>
+        <sys_updated_on>2023-09-03 17:12:24</sys_updated_on>
+        <type>Row</type>
+        <update_guid>f91a4579140575106a61f1d86e14785a</update_guid>
+        <update_guid_history>f91a4579140575106a61f1d86e14785a:415003445</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="3">4d2a8579970575106c383563e453af46</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>Raphael</sys_created_by>
+        <sys_created_on>2023-09-03 17:12:36</sys_created_on>
+        <sys_db_object display_value="" name="sp_row">sp_row</sys_db_object>
+        <sys_id>5cac894151c142e8b73e30d842ac2c90</sys_id>
+        <sys_metadata>3d1a8139970575106c383563e453af65</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>3</sys_name>
+        <sys_package display_value="ServiceNow Übung" source="x_1112263_snuebung">ca8bf0a0978931106c383563e453afc1</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="ServiceNow Übung">ca8bf0a0978931106c383563e453afc1</sys_scope>
+        <sys_scope_delete display_value="">11e92dddcda04499868bc53fdc08f399</sys_scope_delete>
+        <sys_update_name>sp_row_3d1a8139970575106c383563e453af65</sys_update_name>
+        <sys_update_version display_value="sp_row_3d1a8139970575106c383563e453af65">b11a4579970575106c383563e453af5b</sys_update_version>
+        <sys_updated_by>Raphael</sys_updated_by>
+        <sys_updated_on>2023-09-03 17:12:36</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

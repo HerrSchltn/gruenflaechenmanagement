@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element db_object_id="4f614478974571106c383563e453af6b" label="Mitarbeiter" max_length="40" name="x_1112263_snuebung_mitarbeiter" type="collection">
-        <element label="Beruf" max_length="40" name="beruf" type="string"/>
         <element label="Beschaeftigt" max_length="40" name="beschaeftigt" type="boolean"/>
+        <element display="true" label="Name" max_length="255" name="name" type="string_full_utf8"/>
     </element>
 </database>

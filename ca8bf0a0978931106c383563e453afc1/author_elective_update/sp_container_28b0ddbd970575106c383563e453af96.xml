@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_container">
+    <sp_container action="DELETE">
+        <background_color/>
+        <background_image/>
+        <background_style>default</background_style>
+        <bootstrap_alt>false</bootstrap_alt>
+        <class_name/>
+        <container_class_name/>
+        <name>EditLandscapingObject - Container 2</name>
+        <order>2</order>
+        <sp_page display_value="6">df8011fd970575106c383563e453afb3</sp_page>
+        <subheader>false</subheader>
+        <sys_class_name>sp_container</sys_class_name>
+        <sys_created_by>Raphael</sys_created_by>
+        <sys_created_on>2023-09-03 17:41:15</sys_created_on>
+        <sys_id>28b0ddbd970575106c383563e453af96</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name>EditLandscapingObject - Container 2</sys_name>
+        <sys_package display_value="ServiceNow Übung" source="x_1112263_snuebung">ca8bf0a0978931106c383563e453afc1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="ServiceNow Übung">ca8bf0a0978931106c383563e453afc1</sys_scope>
+        <sys_update_name>sp_container_28b0ddbd970575106c383563e453af96</sys_update_name>
+        <sys_updated_by>Raphael</sys_updated_by>
+        <sys_updated_on>2023-09-03 17:41:36</sys_updated_on>
+        <title/>
+        <width>container</width>
+    </sp_container>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="ServiceNow Übung">ca8bf0a0978931106c383563e453afc1</application>
+        <file_path/>
+        <instance_id>6dde0dc4db91e5989df22f17d496192c</instance_id>
+        <instance_name>dev154491</instance_name>
+        <name>sp_container_28b0ddbd970575106c383563e453af96</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_container"><sp_container action="INSERT_OR_UPDATE"><background_color/><background_image/><background_style>default</background_style><bootstrap_alt>false</bootstrap_alt><class_name/><container_class_name/><name>EditLandscapingObject - Container 2</name><order>2</order><sp_page display_value="6">df8011fd970575106c383563e453afb3</sp_page><subheader>false</subheader><sys_class_name>sp_container</sys_class_name><sys_created_by>Raphael</sys_created_by><sys_created_on>2023-09-03 17:41:15</sys_created_on><sys_id>28b0ddbd970575106c383563e453af96</sys_id><sys_mod_count>7</sys_mod_count><sys_name>EditLandscapingObject - Container 2</sys_name><sys_package display_value="ServiceNow Übung" source="x_1112263_snuebung">ca8bf0a0978931106c383563e453afc1</sys_package><sys_policy/><sys_scope display_value="ServiceNow Übung">ca8bf0a0978931106c383563e453afc1</sys_scope><sys_update_name>sp_container_28b0ddbd970575106c383563e453af96</sys_update_name><sys_updated_by>Raphael</sys_updated_by><sys_updated_on>2023-09-03 17:41:36</sys_updated_on><title/><width>container</width></sp_container></record_update>]]></payload>
+        <payload_hash>-1445997485</payload_hash>
+        <record_name>EditLandscapingObject - Container 2</record_name>
+        <reverted_from/>
+        <source>5915c935970575106c383563e453af04</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>Raphael</sys_created_by>
+        <sys_created_on>2023-09-03 17:41:36</sys_created_on>
+        <sys_id>71c05dfd970575106c383563e453afe9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18a5c22c3910000001</sys_recorded_at>
+        <sys_updated_by>Raphael</sys_updated_by>
+        <sys_updated_on>2023-09-03 17:41:36</sys_updated_on>
+        <type>Container</type>
+        <update_guid>79c05dfd47057510154f20355f1362e8</update_guid>
+        <update_guid_history>79c05dfd47057510154f20355f1362e8:-1445997485,35c05dfdc2057510c37744c7cca88fe6:446856340,f8c05dfd500575108c8b01e5df969b9b:-1445997485,30c05dfd5b057510a0b1e0bab9630b99:446856340,9bb095fd38057510487f0a670ab50a51:-1445997485,dbb095fdf0057510233b41c55c45034b:446856340,d9b01dfd6c057510eef94f755867139a:-1445997485,28b0ddbd86057510d3dbcfaef9ed5c97:446856340</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="EditLandscapingObject - Container 2">a2c095fd970575106c383563e453af42</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>Raphael</sys_created_by>
+        <sys_created_on>2023-09-03 17:41:39</sys_created_on>
+        <sys_db_object display_value="" name="sp_container">sp_container</sys_db_object>
+        <sys_id>7e4241dff7fa47f6890614b087725f24</sys_id>
+        <sys_metadata>28b0ddbd970575106c383563e453af96</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>EditLandscapingObject - Container 2</sys_name>
+        <sys_package display_value="ServiceNow Übung" source="x_1112263_snuebung">ca8bf0a0978931106c383563e453afc1</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="ServiceNow Übung">ca8bf0a0978931106c383563e453afc1</sys_scope>
+        <sys_scope_delete display_value="">11e92dddcda04499868bc53fdc08f399</sys_scope_delete>
+        <sys_update_name>sp_container_28b0ddbd970575106c383563e453af96</sys_update_name>
+        <sys_update_version display_value="sp_container_28b0ddbd970575106c383563e453af96">71c05dfd970575106c383563e453afe9</sys_update_version>
+        <sys_updated_by>Raphael</sys_updated_by>
+        <sys_updated_on>2023-09-03 17:41:39</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

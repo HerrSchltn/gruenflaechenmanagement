@@ -22,14 +22,14 @@
         <sys_created_by>Cenk</sys_created_by>
         <sys_created_on>2023-08-31 09:25:54</sys_created_on>
         <sys_id>a2704038974571106c383563e453af54</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name>HochschulTermine</sys_name>
         <sys_package display_value="ServiceNow Übung" source="x_1112263_snuebung">ca8bf0a0978931106c383563e453afc1</sys_package>
         <sys_policy/>
         <sys_scope display_value="ServiceNow Übung">ca8bf0a0978931106c383563e453afc1</sys_scope>
         <sys_update_name>sys_db_object_a2704038974571106c383563e453af54</sys_update_name>
-        <sys_updated_by>Chris</sys_updated_by>
-        <sys_updated_on>2023-08-31 11:34:41</sys_updated_on>
+        <sys_updated_by>Lina</sys_updated_by>
+        <sys_updated_on>2023-09-04 11:10:00</sys_updated_on>
         <update_access>false</update_access>
         <user_role display_value="x_1112263_snuebung.hochschul_termine_user" name="x_1112263_snuebung.hochschul_termine_user">cf82c8f8974571106c383563e453afd9</user_role>
         <ws_access>true</ws_access>

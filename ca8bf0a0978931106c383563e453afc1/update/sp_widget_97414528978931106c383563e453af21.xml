@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
     <sp_widget action="INSERT_OR_UPDATE">
         <category>custom</category>
-        <client_script><![CDATA[api.controller=function() {
-  /* widget controller */
-  var c = this;
-};
+        <client_script><![CDATA[
 
 api.controller=function($scope) {
+	
+	
+	var c = this;
  // Funktion, die aufgerufen wird, wenn der Mauszeiger über ein Gebäude schwebt
   $scope.onMouseOverBuilding = function (buildingId) {
     var building = document.getElementById(buildingId);
     if (building) {
-      building.style.fill = "green";
+			building.style.fill = "red";
+			building.style.fontSize ="4px";
     }
   };
 
@@ -20,9 +21,20 @@ api.controller=function($scope) {
     var building = document.getElementById(buildingId);
     if (building) {
       // Hier kannst du die Farbe auf die ursprüngliche Farbe zurücksetzen, z.B., "gray"
-      building.style.fill = "black";
+      building.style.fill = "white";
+			building.style.fontSize ="2.414px";
     }
   };
+	
+	$scope.clickedOnPlace = function(id) {
+				console.log("testi");
+        var buildingId = id;
+        
+
+        // Senden Sie die Gebäudedaten an das Tabellen-Widget
+        var myevent = new CustomEvent('buildingDataUpdated', { detail: buildingId });
+        document.dispatchEvent(myevent);
+    };
 }
 
 //ng-click="onClick('hello')"]]></client_script>
@@ -53,40 +65,44 @@ api.controller=function($scope) {
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-08-30 19:22:00</sys_created_on>
         <sys_id>97414528978931106c383563e453af21</sys_id>
-        <sys_mod_count>68</sys_mod_count>
+        <sys_mod_count>134</sys_mod_count>
         <sys_name>svg</sys_name>
         <sys_package display_value="ServiceNow Übung" source="x_1112263_snuebung">ca8bf0a0978931106c383563e453afc1</sys_package>
         <sys_policy/>
         <sys_scope display_value="ServiceNow Übung">ca8bf0a0978931106c383563e453afc1</sys_scope>
         <sys_update_name>sp_widget_97414528978931106c383563e453af21</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-09-02 11:27:56</sys_updated_on>
+        <sys_updated_on>2023-09-04 11:45:17</sys_updated_on>
         <template><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
-<!-- Created with Inkscape (http://www.inkscape.org/) -->
-<svg width="249mm" height="297mm" version="1.1" viewBox="0 0 249 297" xmlns="http://www.w3.org/2000/svg">
- <g stroke-width=".20116">
+
+<svg width="100%" height="100%" version="1.1" viewBox="0 0 249 297" xmlns="http://www.w3.org/2000/svg">
+ <g ng-mouseOver="onMouseOverBuilding('C')" ng-mouseOut="onMouseOutBuilding('C')" stroke-width=".20116">
   <rect x=".70404" y="76.008" width="29.805" height="11.516" fill="#666"/>
-  <rect x="18.965" y="75.795" width="10.285" height="53.103"/>
+  <rect  x="18.965" y="75.795" width="10.285" height="53.103"/>
   <rect x="16.236" y="92.003" width="3.7781" height="22.393"/>
+   <rect  x="29.134" y="119.86" width="30.436" height="8.8522" fill="#666" stroke-width=".19024"/>
+ <text transform="scale(.99207 1.008)" x="21.791246" y="101.63528" fill="#ffffff"  stroke-width=".20116" xml:space="preserve"><tspan id="C" font-size="2.414px" x="21.791246" y="101.63528" fill="#ffffff" stroke-width=".20116">C</tspan></text>
  </g>
- <rect x="29.134" y="119.86" width="30.436" height="8.8522" fill="#666" stroke-width=".19024"/>
- <text transform="scale(.99207 1.008)" x="21.791246" y="101.63528" fill="#ffffff" font-size="2.414px" stroke-width=".20116" xml:space="preserve"><tspan x="21.791246" y="101.63528" fill="#ffffff" stroke-width=".20116">C</tspan></text>
- <g stroke-width=".20116">
-  <rect x="19.805" y="57.571" width="47.661" height="10.639"/>
+ 
+ <g stroke-width=".20116" ng-mouseOver="onMouseOverBuilding('W')"  ng-mouseOut="onMouseOutBuilding('W')">
+  <rect  ng-click="clickedOnPlace('W')" x="19.805" y="57.571" width="47.661" height="10.639"/>
   <rect x="67.411" y="65.761" width="3.5671" height="1.105"/>
-  <text transform="scale(.99207 1.008)" x="44.494324" y="61.967957" fill="#ffffff" font-size="2.414px" xml:space="preserve"><tspan x="44.494324" y="61.967957" fill="#ffffff" stroke-width=".20116">W</tspan></text>
+   <text transform="scale(.99207 1.008)" x="44.494324" y="61.967957" xml:space="preserve"><tspan id="W" font-size="2.414px" x="44.494324" y="61.967957" fill="#ffffff" stroke-width=".20116">W</tspan></text>
+ </g>
+  <g ng-mouseOver="onMouseOverBuilding('F')" ng-mouseOut="onMouseOutBuilding('F')">
+    
   <rect x="70.772" y="63.577" width="19.069" height="18.151"/>
-  <text transform="scale(.99207 1.008)" x="78.960815" y="71.799736" fill="#ffffff" font-size="2.414px" xml:space="preserve"><tspan x="78.960815" y="71.799736" stroke-width=".20116">F</tspan></text>
+  <text transform="scale(.99207 1.008)" x="78.960815" y="71.799736" fill="#ffffff" font-size="2.414px" xml:space="preserve"><tspan id="F" x="78.960815" y="71.799736" stroke-width=".20116">F</tspan></text>
   <rect x="83.2" y="81.749" width="1.9438" height="4.4337"/>
- </g>
- <g stroke-width=".20116">
+  </g>
+ <g ng-mouseOver="onMouseOverBuilding('G')" ng-mouseOut="onMouseOutBuilding('G')" stroke-width=".20116">
   <rect x="76.443" y="86.106" width="12.925" height="24.789"/>
-  <text transform="scale(.99207 1.008)" x="81.921524" y="98.243896" fill="#ffffff" font-size="2.414px" xml:space="preserve"><tspan x="81.921524" y="98.243896" fill="#ffffff" stroke-width=".20116">G</tspan></text>
- </g>
+  <text transform="scale(.99207 1.008)" x="81.921524" y="98.243896" fill="#ffffff" font-size="2.414px" xml:space="preserve"><tspan id="G" x="81.921524" y="98.243896" fill="#ffffff" stroke-width=".20116">G</tspan></text>
+ </g><g ng-mouseOver="onMouseOverBuilding('H')" ng-mouseOut="onMouseOutBuilding('H')">
  <rect transform="matrix(.84282 -.53819 .52604 .85046 0 0)" x="2.068" y="151.6" width="23.385" height="23.046" stroke-width=".20118"/>
  <rect transform="matrix(.83827 -.54526 .53307 .84607 0 0)" x="-2.8086" y="148.63" width="15.028" height="15.529" ry="0" stroke-width=".2032"/>
- <text transform="matrix(.75428 0 0 .76639 -4.6276 13.914)" x="132.90611" y="151.29233" fill="#ffffff" font-size="3.175px" stroke-width=".26458" style="inline-size:2.94775;white-space:pre" xml:space="preserve"><tspan x="132.90611" y="151.29233">H</tspan></text>
- <g>
+  <text transform="matrix(.75428 0 0 .76639 -4.6276 13.914)" x="132.90611" y="151.29233" fill="#ffffff" font-size="3.175px" stroke-width=".26458" style="inline-size:2.94775;white-space:pre" xml:space="preserve"><tspan id="H" x="132.90611" y="151.29233">H</tspan></text></g>
+ <g  ng-mouseOver="onMouseOverBuilding('E')" ng-mouseOut="onMouseOutBuilding('E')">
   <rect x="166.05" y="112.37" width="32.698" height="14.422" stroke-width=".18809"/>
   <g stroke-width=".23598">
    <rect x="159.38" y="127.9" width="15.348" height="29.51"/>
@@ -98,10 +114,12 @@ api.controller=function($scope) {
   <rect x="139.81" y="97.503" width="17.128" height="18.194" stroke-width=".21589"/>
   <rect x="119.56" y="108.37" width="21.799" height="7.322" stroke-width=".21506"/>
  </g>
- <text transform="scale(1.0013 .99874)" x="159.7292" y="114.96785" fill="#ffffff" font-size="2.8318px" stroke-width=".23598" xml:space="preserve"><tspan x="159.7292" y="114.96785" fill="#ffffff" stroke-width=".23598">E</tspan></text>
+ <text transform="scale(1.0013 .99874)" x="159.7292" y="114.96785" fill="#ffffff" font-size="2.8318px" stroke-width=".23598" xml:space="preserve"><tspan id="E" x="159.7292" y="114.96785" fill="#ffffff" stroke-width=".23598">E</tspan></text>
  <text transform="scale(.26458)" fill="#ffffff" style="shape-inside:url(#rect25);white-space:pre" xml:space="preserve"/>
+  <g  ng-mouseOver="onMouseOverBuilding('D')" ng-mouseOut="onMouseOutBuilding('D')">
  <rect x="206.62" y="117.69" width="34.387" height="15.118" stroke-width=".22272"/>
- <text x="222.92035" y="126.57844" fill="#ffffff" font-size="3.175px" stroke-width=".26458" xml:space="preserve"><tspan x="222.92035" y="126.57844" fill="#ffffff" stroke-width=".26458">D</tspan></text>
+ <text x="222.92035" y="126.57844" fill="#ffffff" font-size="3.175px" stroke-width=".26458" xml:space="preserve"><tspan id="D" x="222.92035" y="126.57844" fill="#ffffff" stroke-width=".26458">D</tspan></text>
+  </g> 
  <g fill="#ccc">
   <rect x="25.13" y="70.046" width="1.8194" height="4.2073" stroke-width=".26458"/>
   <rect x="26.836" y="71.524" width="20.127" height="1.7057" stroke-width=".26458"/>
