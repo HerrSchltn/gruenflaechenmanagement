@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_row">
+    <sp_row action="INSERT_OR_UPDATE">
+        <class_name/>
+        <order>4</order>
+        <sp_column/>
+        <sp_container display_value="ManageBuildings - Container 1">9d3be61a978131106c383563e453afd9</sp_container>
+        <sys_class_name>sp_row</sys_class_name>
+        <sys_created_by>Raphael</sys_created_by>
+        <sys_created_on>2023-09-05 13:34:09</sys_created_on>
+        <sys_id>1c5b6e1a978131106c383563e453af91</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>4</sys_name>
+        <sys_package display_value="ServiceNow Übung" source="x_1112263_snuebung">ca8bf0a0978931106c383563e453afc1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="ServiceNow Übung">ca8bf0a0978931106c383563e453afc1</sys_scope>
+        <sys_update_name>sp_row_1c5b6e1a978131106c383563e453af91</sys_update_name>
+        <sys_updated_by>Raphael</sys_updated_by>
+        <sys_updated_on>2023-09-05 13:34:09</sys_updated_on>
+    </sp_row>
+</record_update>

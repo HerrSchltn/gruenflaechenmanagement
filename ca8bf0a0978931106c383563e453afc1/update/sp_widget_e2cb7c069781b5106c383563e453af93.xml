@@ -1,36 +1,65 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
     <sp_widget action="INSERT_OR_UPDATE">
         <category>custom</category>
-        <client_script><![CDATA[api.controller=function() {
-  /* widget controller */
-  var c = this;
-	
-	
+        <client_script><![CDATA[api.controller = function () {
+    /* widget controller */
+    var c = this;
+
     // Event-Listener, um auf Gebäudedaten zu reagieren
-    document.addEventListener('buildingDataUpdated', function (event) {
-        var buildingData = event.detail;
-        
-        // Rufen Sie hier die Funktion auf, um die Tabelle basierend auf den Gebäudedaten zu erstellen
-        createTable(buildingData);
+    document.addEventListener('greenClicked', function (event) {
+        var obj = {
+            table: 'x_1112263_snuebung_display_arbeit_information',
+            action: "getJobs",
+        }
+        c.answers = [];
+	
+        c.server.get(obj).then(function (response) {
+						console.log(event.detail);
+            c.answers = response.data.answerList;
+            createTable(c.answers);
+        });
     });
+		document.addEventListener('buildingClicked', function (event) {
+        var obj = {
+            table: 'x_1112263_snuebung_hochschul_termine',
+            action: "getEvents",
+        }
+        c.answers = [];
+	
+        c.server.get(obj).then(function (response) {
+						console.log(event.detail);
+            c.answers = response.data.answerList;
+            createTable(c.answers);
+        });
+    });
+		
+    function createTable(jobData) {
+        if (jobData && jobData.length > 0) {
+            var table = '<table>';
+            table += '<tr><th>Zeitraum von</th><th>Zeitraum bis</th><th>Priorität</th><th>Mitarbeiter</th><th>Fläche</th><th>Typ</th></tr>';
 
-    function createTable(buildingData) {
-        // Hier können Sie die Tabelle dynamisch erstellen, basierend auf den übergebenen Gebäudedaten
-        // Verwenden Sie buildingData, um die Tabelle mit den relevanten Informationen zu füllen.
-        
-        // Beispiel: Erstellen Sie eine einfache Tabelle mit dem Gebäude-Id als Inhalt
-        var table = '<table>';
-        table += '<tr><th>Gebäude-ID</th></tr>';
-        table += '<tr><td>' + buildingData.buildingId + '</td></tr>';
-        // Fügen Sie weitere Informationen hinzu...
+            for (var i = 0; i < jobData.length; i++) {
+                table += '<tr>';
+                table += '<td>' + jobData[i]['Zeitraum von'] + '</td>';
+                table += '<td>' + jobData[i]['Zeitraum bis'] + '</td>';
+                table += '<td>' + jobData[i]['Priorität'] + '</td>';
+                table += '<td>' + jobData[i]['Mitarbeiter'] + '</td>';
+                table += '<td>' + jobData[i]['Fläche'] + '</td>';
+                table += '<td>' + jobData[i]['Typ'] + '</td>';
+                table += '</tr>';
+            }
 
-        table += '</table>';
+            table += '</table>';
 
-        // Fügen Sie die erstellte Tabelle in das HTML-Div des Tabellen-Widgets ein
-        document.getElementById('tableContainer').innerHTML = table;
+            // Fügen Sie die erstellte Tabelle in das HTML-Div des Tabellen-Widgets ein
+            document.getElementById('tableContainer').innerHTML = table;
+        } else {
+            // Wenn buildingData nicht definiert ist oder keine Daten enthält, zeigen Sie eine Meldung oder einen Platzhalter an
+            document.getElementById('tableContainer').innerHTML = 'Keine Gebäude-Daten verfügbar';
+        }
     }
-
-};]]></client_script>
+};
+]]></client_script>
         <controller_as>c</controller_as>
         <css/>
         <data_table>sp_instance</data_table>
@@ -46,20 +75,68 @@
         <option_schema/>
         <public>true</public>
         <roles/>
-        <script><![CDATA[(function() {  /* populate the 'data' object */  /* e.g., data.table = $sp.getValue('table'); */})();]]></script>
+        <script><![CDATA[// Server-Side Script
+(function () {
+	var answerArr = [];
+	var answers;
+    if (input && input.action == "getJobs") {
+        
+         answers = new GlideRecord(input.table); // Verwende den korrekten Tabellennamen
+        answers.addActiveQuery();
+        answers.query();
+
+        while (answers.next()) {
+					
+            // Hier nehmen wir an, dass "Zeitraum von", "Zeitraum bis", "Priorität", "Mitarbeiter", "Fläche" und "Typ" Felder in der Tabelle vorhanden sind.
+            var jobData = {
+                'Zeitraum von': answers.getDisplayValue('arbeit_zeitraum_von'),
+                'Zeitraum bis': answers.getDisplayValue('arbeit_zeitraum_bis'),
+                'Priorität': answers.getDisplayValue('arbeit_prioritat'),
+                'Mitarbeiter': answers.getDisplayValue('mitarbeiter_sys_id'),
+                'Fläche': answers.getDisplayValue('arbeit_flacheid'),
+                'Typ': answers.getDisplayValue('arbeit_typ')
+            };
+            answerArr.push(jobData);
+        }
+        
+    } else if(input && input.action =="getEvents"){
+        answers = new GlideRecord(input.table); // Verwende den korrekten Tabellennamen
+        answers.addActiveQuery();
+        answers.query();
+
+        while (answers.next()) {
+					
+            // Hier nehmen wir an, dass "Zeitraum von", "Zeitraum bis", "Priorität", "Mitarbeiter", "Fläche" und "Typ" Felder in der Tabelle vorhanden sind.
+            var eventData = {
+                'Zeitraum von': answers.getDisplayValue('zeitraum_von'),
+                'Zeitraum bis': answers.getDisplayValue('zeitraum_bis'),
+                'Priorität': answers.getDisplayValue('prioritat'),
+                'Mitarbeiter': answers.getDisplayValue('mitarbeiterid'),
+                'Fläche': answers.getDisplayValue('gebaeudeid'),
+                'Typ': answers.getDisplayValue('typ')
+            };
+            answerArr.push(eventData);
+        }
+       
+		} 
+	data.answerList = answerArr;
+})();
+
+
+]]></script>
         <servicenow>false</servicenow>
         <sys_class_name>sp_widget</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-09-04 10:48:23</sys_created_on>
         <sys_id>e2cb7c069781b5106c383563e453af93</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>86</sys_mod_count>
         <sys_name>GM_displayTable</sys_name>
         <sys_package display_value="ServiceNow Übung" source="x_1112263_snuebung">ca8bf0a0978931106c383563e453afc1</sys_package>
         <sys_policy/>
         <sys_scope display_value="ServiceNow Übung">ca8bf0a0978931106c383563e453afc1</sys_scope>
         <sys_update_name>sp_widget_e2cb7c069781b5106c383563e453af93</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-09-04 11:31:11</sys_updated_on>
+        <sys_updated_on>2023-09-06 07:26:29</sys_updated_on>
         <template><![CDATA[<div id="tableContainer">
 
 </div>]]></template>

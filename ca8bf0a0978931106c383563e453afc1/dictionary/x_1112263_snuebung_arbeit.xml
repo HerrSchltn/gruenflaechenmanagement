@@ -10,7 +10,7 @@
                 <element inactive_on_update="false" label="Niedrig" value="1"/>
             </choice>
         </element>
-        <element choice="3" default="Unkraut" label="Typ" mandatory="true" max_length="255" name="typ" type="choice">
+        <element choice="3" default="Unkraut" display="true" label="Typ" mandatory="true" max_length="255" name="typ" type="choice">
             <choice>
                 <element inactive_on_update="false" label="Baumpflege" value="Baumpflege"/>
                 <element inactive_on_update="false" label="Bewässerung" value="Bewässerung"/>

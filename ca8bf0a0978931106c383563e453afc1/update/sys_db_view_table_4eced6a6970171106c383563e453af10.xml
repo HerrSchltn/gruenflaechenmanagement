@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_db_view_table">
+    <sys_db_view_table action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <left_join>false</left_join>
+        <order>100</order>
+        <sys_class_name>sys_db_view_table</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-09-06 07:19:15</sys_created_on>
+        <sys_id>4eced6a6970171106c383563e453af10</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1112263_snuebung_hochschul_termine</sys_name>
+        <sys_package display_value="ServiceNow Übung" source="x_1112263_snuebung">ca8bf0a0978931106c383563e453afc1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="ServiceNow Übung">ca8bf0a0978931106c383563e453afc1</sys_scope>
+        <sys_update_name>sys_db_view_table_4eced6a6970171106c383563e453af10</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-09-06 07:19:15</sys_updated_on>
+        <table>x_1112263_snuebung_hochschul_termine</table>
+        <variable_prefix>event</variable_prefix>
+        <view display_value="x_1112263_snuebung_display_event_information">0b8ed2a6970171106c383563e453af40</view>
+        <where_clause/>
+    </sys_db_view_table>
+</record_update>

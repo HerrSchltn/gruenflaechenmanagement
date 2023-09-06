@@ -33,7 +33,7 @@
         <function_definition/>
         <function_field>false</function_field>
         <internal_type display_value="Integer">integer</internal_type>
-        <mandatory>false</mandatory>
+        <mandatory>true</mandatory>
         <max_length>40</max_length>
         <name>x_1112263_snuebung_flaeche</name>
         <next_element/>
@@ -58,7 +58,7 @@
         <sys_scope display_value="ServiceNow Übung">ca8bf0a0978931106c383563e453afc1</sys_scope>
         <sys_update_name>sys_dictionary_x_1112263_snuebung_flaeche_position</sys_update_name>
         <sys_updated_by>Lina</sys_updated_by>
-        <sys_updated_on>2023-09-04 11:43:06</sys_updated_on>
+        <sys_updated_on>2023-09-04 15:17:03</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

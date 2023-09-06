@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_1112263_snuebung.BuildingDataUtil</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <name>BuildingDataUtil</name>
+        <script><![CDATA[var BuildingDataUtil = Class.create();
+BuildingDataUtil.prototype = {
+    initialize: function () {},
+
+    getBuildingData: function (buildingId) {
+        var gr = new GlideRecord('Gebaeude[x_1112263_snuebung_gebaeude]');
+    gr.query();
+    
+    var buildingData = [];
+    while (gr.next()) {
+        buildingData.push({
+            name: gr.getValue('Position') // Annahme: 'name' ist das Feld, das du abrufen möchtest
+            // Weitere Informationen hinzufügen...
+        });
+    }
+
+    return buildingData;
+    },
+
+    type: 'BuildingDataUtil'
+};
+]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-09-04 14:52:45</sys_created_on>
+        <sys_id>10d131029785b5106c383563e453afe5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>BuildingDataUtil</sys_name>
+        <sys_package display_value="ServiceNow Übung" source="x_1112263_snuebung">ca8bf0a0978931106c383563e453afc1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="ServiceNow Übung">ca8bf0a0978931106c383563e453afc1</sys_scope>
+        <sys_update_name>sys_script_include_10d131029785b5106c383563e453afe5</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-09-04 14:52:45</sys_updated_on>
+    </sys_script_include>
+</record_update>

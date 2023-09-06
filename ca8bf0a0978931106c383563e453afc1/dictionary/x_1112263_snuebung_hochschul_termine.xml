@@ -3,10 +3,24 @@
         <element label="GebaeudeId" mandatory="true" max_length="32" name="gebaeudeid" reference="x_1112263_snuebung_gebaeude" type="reference"/>
         <element label="MitarbeiterID" mandatory="true" max_length="32" name="mitarbeiterid" reference="x_1112263_snuebung_mitarbeiter" type="reference"/>
         <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
-        <element label="Priorität" max_length="40" name="prioritat" type="integer"/>
-        <element label="Typ" max_length="255" name="typ" type="string_full_utf8"/>
-        <element label="Zeitraum bis" mandatory="true" max_length="40" name="zeitraum_bis" type="calendar_date_time"/>
-        <element label="Zeitraum von" mandatory="true" max_length="40" name="zeitraum_von" type="calendar_date_time"/>
+        <element choice="1" display="true" label="Priorität" mandatory="true" max_length="40" name="prioritat" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Hoch" value="3"/>
+                <element inactive_on_update="false" label="Mittel" value="2"/>
+                <element inactive_on_update="false" label="Niedrig" value="1"/>
+            </choice>
+        </element>
+        <element choice="1" label="Typ" mandatory="true" max_length="255" name="typ" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Klausur" value="klausur"/>
+                <element inactive_on_update="false" label="Praktikum" value="praktikum"/>
+                <element inactive_on_update="false" label="Sonder Termin" value="sonder termin"/>
+                <element inactive_on_update="false" label="Uebung" value="uebung"/>
+                <element inactive_on_update="false" label="Vorlesung" value="vorlesung"/>
+            </choice>
+        </element>
+        <element label="Zeitraum bis" mandatory="true" max_length="40" name="zeitraum_bis" type="glide_date_time"/>
+        <element label="Zeitraum von" mandatory="true" max_length="40" name="zeitraum_von" type="glide_date_time"/>
         <index name="index">
             <element name="gebaeudeid"/>
         </index>

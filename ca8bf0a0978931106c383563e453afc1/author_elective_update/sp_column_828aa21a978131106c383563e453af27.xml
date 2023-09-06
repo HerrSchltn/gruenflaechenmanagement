@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_column">
+    <sp_column action="DELETE">
+        <class_name/>
+        <order>1</order>
+        <size>12</size>
+        <size_lg/>
+        <size_sm/>
+        <size_xs/>
+        <sp_row display_value="2">8a8aa21a978131106c383563e453af24</sp_row>
+        <sys_class_name>sp_column</sys_class_name>
+        <sys_created_by>Raphael</sys_created_by>
+        <sys_created_on>2023-09-05 13:30:43</sys_created_on>
+        <sys_id>828aa21a978131106c383563e453af27</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>1</sys_name>
+        <sys_package display_value="ServiceNow Übung" source="x_1112263_snuebung">ca8bf0a0978931106c383563e453afc1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="ServiceNow Übung">ca8bf0a0978931106c383563e453afc1</sys_scope>
+        <sys_update_name>sp_column_828aa21a978131106c383563e453af27</sys_update_name>
+        <sys_updated_by>Raphael</sys_updated_by>
+        <sys_updated_on>2023-09-05 13:30:43</sys_updated_on>
+    </sp_column>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="ServiceNow Übung">ca8bf0a0978931106c383563e453afc1</application>
+        <file_path/>
+        <instance_id>6dde0dc4db91e5989df22f17d496192c</instance_id>
+        <instance_name>dev154491</instance_name>
+        <name>sp_column_828aa21a978131106c383563e453af27</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_column"><sp_column action="INSERT_OR_UPDATE"><class_name/><order>1</order><size>12</size><size_lg/><size_sm/><size_xs/><sp_row display_value="2">8a8aa21a978131106c383563e453af24</sp_row><sys_class_name>sp_column</sys_class_name><sys_created_by>Raphael</sys_created_by><sys_created_on>2023-09-05 13:30:43</sys_created_on><sys_id>828aa21a978131106c383563e453af27</sys_id><sys_mod_count>0</sys_mod_count><sys_name>1</sys_name><sys_package display_value="ServiceNow Übung" source="x_1112263_snuebung">ca8bf0a0978931106c383563e453afc1</sys_package><sys_policy/><sys_scope display_value="ServiceNow Übung">ca8bf0a0978931106c383563e453afc1</sys_scope><sys_update_name>sp_column_828aa21a978131106c383563e453af27</sys_update_name><sys_updated_by>Raphael</sys_updated_by><sys_updated_on>2023-09-05 13:30:43</sys_updated_on></sp_column></record_update>]]></payload>
+        <payload_hash>-239762897</payload_hash>
+        <record_name>1</record_name>
+        <reverted_from/>
+        <source>08e9014a97c1b5106c383563e453af9c</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>Raphael</sys_created_by>
+        <sys_created_on>2023-09-05 13:30:43</sys_created_on>
+        <sys_id>c28aa21a978131106c383563e453af29</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18a6589ca470000001</sys_recorded_at>
+        <sys_updated_by>Raphael</sys_updated_by>
+        <sys_updated_on>2023-09-05 13:30:43</sys_updated_on>
+        <type>Column</type>
+        <update_guid>0e8aa21aa8813110696d87d5605c2828</update_guid>
+        <update_guid_history>0e8aa21aa8813110696d87d5605c2828:-239762897</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="1">06aa261a978131106c383563e453af48</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>Raphael</sys_created_by>
+        <sys_created_on>2023-09-05 13:31:16</sys_created_on>
+        <sys_db_object display_value="" name="sp_column">sp_column</sys_db_object>
+        <sys_id>15535376364346a981d784738b3c0e99</sys_id>
+        <sys_metadata>828aa21a978131106c383563e453af27</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>1</sys_name>
+        <sys_package display_value="ServiceNow Übung" source="x_1112263_snuebung">ca8bf0a0978931106c383563e453afc1</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="ServiceNow Übung">ca8bf0a0978931106c383563e453afc1</sys_scope>
+        <sys_scope_delete display_value="">11e92dddcda04499868bc53fdc08f399</sys_scope_delete>
+        <sys_update_name>sp_column_828aa21a978131106c383563e453af27</sys_update_name>
+        <sys_update_version display_value="sp_column_828aa21a978131106c383563e453af27">c28aa21a978131106c383563e453af29</sys_update_version>
+        <sys_updated_by>Raphael</sys_updated_by>
+        <sys_updated_on>2023-09-05 13:31:16</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
