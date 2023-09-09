@@ -1,0 +1,2300 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <internal_name>hochschuktermine</internal_name>
+        <label_cache>[{"name":"d4050c49-5e4e-49e2-a5c8-b8ba04c1bc32.Record.prioritat","label":"7 - Look Up Record➛Arbeit Record➛Priorität","reference":"","reference_display":"Priorität","type":"choice","base_type":"choice","parent_table_name":"x_1112263_snuebung_arbeit","column_name":"prioritat","choices":[{"used":false,"rawLabel":"Hoch","selected":false,"label":"Hoch","missing":false,"image":"","reference":false,"value":"3","parameters":{"name":"x_1112263_snuebung_arbeit"}},{"used":false,"rawLabel":"Mittel","selected":false,"label":"Mittel","missing":false,"image":"","reference":false,"value":"2","parameters":{"name":"x_1112263_snuebung_arbeit"}},{"used":false,"rawLabel":"Niedrig","selected":false,"label":"Niedrig","missing":false,"image":"","reference":false,"value":"1","parameters":{"name":"x_1112263_snuebung_arbeit"}}]},{"name":"cbf20a48-b6e7-4777-a933-4da51df4e496.Record.prioritat","label":"1 - Look Up Record➛HochschulTermine Record➛Priorität","reference":"","reference_display":"Priorität","type":"choice","base_type":"choice","parent_table_name":"x_1112263_snuebung_hochschul_termine","column_name":"prioritat","choices":[{"label":"-- None --","used":false,"rawLabel":"-- None --","selected":false,"missing":false,"image":"","reference":false,"value":""},{"used":false,"rawLabel":"Hoch","selected":false,"label":"Hoch","missing":false,"image":"","reference":false,"value":"3","parameters":{"name":"x_1112263_snuebung_hochschul_termine"}},{"used":false,"rawLabel":"Mittel","selected":false,"label":"Mittel","missing":false,"image":"","reference":false,"value":"2","parameters":{"name":"x_1112263_snuebung_hochschul_termine"}},{"used":false,"rawLabel":"Niedrig","selected":false,"label":"Niedrig","missing":false,"image":"","reference":false,"value":"1","parameters":{"name":"x_1112263_snuebung_hochschul_termine"}}]},{"name":"b0b80c74-fb5e-4666-b61f-ae4f92c7ce99.status","label":"9 - Look Up Record➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Error","value":"1","order":0.0},{"label":"Success","value":"0","order":1.0}],"attributes":{"uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"choice","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"Created or Updated_1.current.prioritat","label":"Trigger - Record Created or Updated➛HochschulTermine Record➛Priorität","reference":"","reference_display":"Priorität","type":"choice","base_type":"choice","parent_table_name":"x_1112263_snuebung_hochschul_termine","column_name":"prioritat","choices":[{"label":"-- None --","used":false,"rawLabel":"-- None --","selected":false,"missing":false,"image":"","reference":false,"value":""},{"used":false,"rawLabel":"Hoch","selected":false,"label":"Hoch","missing":false,"image":"","reference":false,"value":"3","parameters":{"name":"x_1112263_snuebung_hochschul_termine"}},{"used":false,"rawLabel":"Mittel","selected":false,"label":"Mittel","missing":false,"image":"","reference":false,"value":"2","parameters":{"name":"x_1112263_snuebung_hochschul_termine"}},{"used":false,"rawLabel":"Niedrig","selected":false,"label":"Niedrig","missing":false,"image":"","reference":false,"value":"1","parameters":{"name":"x_1112263_snuebung_hochschul_termine"}}]},{"name":"d4050c49-5e4e-49e2-a5c8-b8ba04c1bc32.Table","label":"7 - Look Up Record➛Arbeit Table","reference":"x_1112263_snuebung_arbeit","reference_display":"Arbeit","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"d4050c49-5e4e-49e2-a5c8-b8ba04c1bc32.status","label":"7 - Look Up Record➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Error","value":"1","order":0.0},{"label":"Success","value":"0","order":1.0}],"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"1a7a8a26-6143-47d2-b42f-7c7d710ea6eb.item.flacheid","label":"6 - For Each➛Arbeit Record➛FlächeID","reference":"x_1112263_snuebung_flaeche","reference_display":"Flaeche","type":"reference","base_type":"reference","parent_table_name":"x_1112263_snuebung_arbeit","column_name":"flacheid"},{"name":"150d9f4a-8cde-4fcc-a1cd-07b80074857f.Records","label":"5 - Look Up Records➛Arbeit Records","reference":"x_1112263_snuebung_arbeit","reference_display":"Arbeit","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"607df8da-caf3-440c-a888-0ea869103614.item.flaecheid","label":"4 - For Each➛GebaeudeHatFlaeche Record➛FlaecheID","reference":"x_1112263_snuebung_flaeche","reference_display":"Flaeche","type":"reference","base_type":"reference","parent_table_name":"x_1112263_snuebung_gebaeudehatflaeche","column_name":"flaecheid"},{"name":"531e2b87-5a34-4895-a979-b2334b633512.Records","label":"3 - Look Up Records➛GebaeudeHatFlaeche Records","reference":"x_1112263_snuebung_gebaeudehatflaeche","reference_display":"GebaeudeHatFlaeche","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"cbf20a48-b6e7-4777-a933-4da51df4e496.status","label":"1 - Look Up Record➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Error","value":"1","order":0.0},{"label":"Success","value":"0","order":1.0}],"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"Created or Updated_1.current.gebaeudeid","label":"Trigger - Record Created or Updated➛HochschulTermine Record➛GebaeudeId","reference":"x_1112263_snuebung_gebaeude","reference_display":"Gebaeude","type":"reference","base_type":"reference","parent_table_name":"x_1112263_snuebung_hochschul_termine","column_name":"gebaeudeid"},{"name":"Created or Updated_1.current.sys_id","label":"Trigger - Record Created or Updated➛HochschulTermine Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"x_1112263_snuebung_hochschul_termine","column_name":"sys_id"},{"name":"Created or Updated_1.current.zeitraum_von","label":"Trigger - Record Created or Updated➛HochschulTermine Record➛Zeitraum von","reference":"","reference_display":"Zeitraum von","type":"glide_date_time","base_type":"glide_date_time","parent_table_name":"x_1112263_snuebung_hochschul_termine","column_name":"zeitraum_von"},{"name":"Created or Updated_1.current.zeitraum_bis","label":"Trigger - Record Created or Updated➛HochschulTermine Record➛Zeitraum bis","reference":"","reference_display":"Zeitraum bis","type":"glide_date_time","base_type":"glide_date_time","parent_table_name":"x_1112263_snuebung_hochschul_termine","column_name":"zeitraum_bis"}]</label_cache>
+        <master_snapshot>59d40ac3974db1106c383563e453af76</master_snapshot>
+        <name>Hochschultermine</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id>b5d44ac3974db1106c383563e453afd2</remote_trigger_id>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>Raphael</sys_created_by>
+        <sys_created_on>2023-09-07 18:22:03</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>c560ce0f970db1106c383563e453afac</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>Hochschultermine</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="ServiceNow Übung" source="x_1112263_snuebung">ca8bf0a0978931106c383563e453afc1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="ServiceNow Übung">ca8bf0a0978931106c383563e453afc1</sys_scope>
+        <sys_update_name>sys_hub_flow_c560ce0f970db1106c383563e453afac</sys_update_name>
+        <sys_updated_by>Raphael</sys_updated_by>
+        <sys_updated_on>2023-09-07 18:41:30</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=c560ce0f970db1106c383563e453afac"/>
+    <sys_variable_value action="delete_multiple" query="document_key=c560ce0f970db1106c383563e453afac"/>
+    <sys_flow_record_trigger action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition table="x_1112263_snuebung_hochschul_termine">^EQ<item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </condition>
+        <name/>
+        <on_delete>false</on_delete>
+        <on_insert>true</on_insert>
+        <on_update>true</on_update>
+        <run_flow_in>background</run_flow_in>
+        <run_on_extended>false</run_on_extended>
+        <run_when_setting>both</run_when_setting>
+        <run_when_user_list/>
+        <run_when_user_setting>any</run_when_user_setting>
+        <sys_class_name>sys_flow_record_trigger</sys_class_name>
+        <sys_created_by>Raphael</sys_created_by>
+        <sys_created_on>2023-09-07 18:41:29</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>b5d44ac3974db1106c383563e453afd2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope display_value="ServiceNow Übung">ca8bf0a0978931106c383563e453afc1</sys_scope>
+        <sys_updated_by>Raphael</sys_updated_by>
+        <sys_updated_on>2023-09-07 18:41:29</sys_updated_on>
+        <table>x_1112263_snuebung_hochschul_termine</table>
+    </sys_flow_record_trigger>
+    <sys_trigger_runner_mapping action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <data>{"run_flow_in":"background","run_when_user_list":[],"run_when_setting":"both","run_when_user_setting":"any","run_on_extended":"false"}</data>
+        <identifier>c560ce0f970db1106c383563e453afac</identifier>
+        <runner>FDTriggerRunner</runner>
+        <sys_created_by>Raphael</sys_created_by>
+        <sys_created_on>2023-09-07 18:41:29</sys_created_on>
+        <sys_id>31d44ac3974db1106c383563e453afd3</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>Raphael</sys_updated_by>
+        <sys_updated_on>2023-09-07 18:41:29</sys_updated_on>
+        <trigger display_value="">b5d44ac3974db1106c383563e453afd2</trigger>
+    </sys_trigger_runner_mapping>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=c560ce0f970db1106c383563e453afac^sys_idNOT IN31d44ac3974db1106c383563e453afd3"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=c560ce0f970db1106c383563e453afac^sys_idNOT IN6a0206cf970db1106c383563e453af46"/>
+    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Hochschultermine">c560ce0f970db1106c383563e453afac</flow>
+        <name>Created or Updated</name>
+        <remote_sys_id/>
+        <sys_created_by>Raphael</sys_created_by>
+        <sys_created_on>2023-09-07 18:29:15</sys_created_on>
+        <sys_id>6a0206cf970db1106c383563e453af46</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>Raphael</sys_updated_by>
+        <sys_updated_on>2023-09-07 18:41:29</sys_updated_on>
+        <trigger_definition display_value="Created or Updated">a45d9180c32222002841b63b12d3aea7</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>record_create_or_update</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=6a0206cf970db1106c383563e453af46"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>6a0206cf970db1106c383563e453af46</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Raphael</sys_created_by>
+        <sys_created_on>2023-09-07 18:29:15</sys_created_on>
+        <sys_id>e60206cf970db1106c383563e453af47</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Raphael</sys_updated_by>
+        <sys_updated_on>2023-09-07 18:29:15</sys_updated_on>
+        <value>^EQ</value>
+        <variable display_value="Condition">707dd180c32222002841b63b12d3aecb</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>6a0206cf970db1106c383563e453af46</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Raphael</sys_created_by>
+        <sys_created_on>2023-09-07 18:29:15</sys_created_on>
+        <sys_id>ee0206cf970db1106c383563e453af47</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Raphael</sys_updated_by>
+        <sys_updated_on>2023-09-07 18:29:15</sys_updated_on>
+        <value>x_1112263_snuebung_hochschul_termine</value>
+        <variable display_value="Table">cf1e1980c32222002841b63b12d3aea0</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_trigger_output_a45d9180c32222002841b63b12d3aea7^id=6a0206cf970db1106c383563e453af46"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=c560ce0f970db1106c383563e453afac"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=c560ce0f970db1106c383563e453afac^sys_idNOT INc160ce0f970db1106c383563e453afad"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>c560ce0f970db1106c383563e453afac</id>
+        <name>Hochschuktermine</name>
+        <sys_created_by>Raphael</sys_created_by>
+        <sys_created_on>2023-09-07 18:22:03</sys_created_on>
+        <sys_id>c160ce0f970db1106c383563e453afad</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>Raphael</sys_updated_by>
+        <sys_updated_on>2023-09-07 18:22:03</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=c160ce0f970db1106c383563e453afad"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=c560ce0f970db1106c383563e453afac^sys_idNOT IN2a0206cf970db1106c383563e453af41,ee0206cf970db1106c383563e453af39,ee0206cf970db1106c383563e453af3d"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Hochschultermine">c560ce0f970db1106c383563e453afac</model>
+        <model_id>c560ce0f970db1106c383563e453afac</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_c560ce0f970db1106c383563e453afac</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>Raphael</sys_created_by>
+        <sys_created_on>2023-09-07 18:29:15</sys_created_on>
+        <sys_id>2a0206cf970db1106c383563e453af41</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="ServiceNow Übung">ca8bf0a0978931106c383563e453afc1</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Raphael</sys_updated_by>
+        <sys_updated_on>2023-09-07 18:41:29</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Hochschultermine">c560ce0f970db1106c383563e453afac</model>
+        <model_id>c560ce0f970db1106c383563e453afac</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_c560ce0f970db1106c383563e453afac</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>Raphael</sys_created_by>
+        <sys_created_on>2023-09-07 18:29:14</sys_created_on>
+        <sys_id>ee0206cf970db1106c383563e453af39</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="ServiceNow Übung">ca8bf0a0978931106c383563e453afc1</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Raphael</sys_updated_by>
+        <sys_updated_on>2023-09-07 18:41:29</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=FDChangeDetails,child_name=FDChangeDetails,child_type=object,child_type_label=Object,co_type_name=FDCollection,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=array.object,uiTypeLabel=Array.Object</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>changed_fields</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Changed Fields</label>
+        <mandatory>false</mandatory>
+        <max_length>4000</max_length>
+        <model display_value="Hochschultermine">c560ce0f970db1106c383563e453afac</model>
+        <model_id>c560ce0f970db1106c383563e453afac</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_c560ce0f970db1106c383563e453afac</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>Raphael</sys_created_by>
+        <sys_created_on>2023-09-07 18:29:15</sys_created_on>
+        <sys_id>ee0206cf970db1106c383563e453af3d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="ServiceNow Übung">ca8bf0a0978931106c383563e453afc1</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Raphael</sys_updated_by>
+        <sys_updated_on>2023-09-07 18:29:15</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_output action="delete_multiple" query="model=c560ce0f970db1106c383563e453afac"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=c560ce0f970db1106c383563e453afac"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=c560ce0f970db1106c383563e453afac^sys_idNOT IN08b34e43974db1106c383563e453afa6,08b34e43974db1106c383563e453afbe,90b34e43974db1106c383563e453afca,cfc446c3974db1106c383563e453afd3,ee0206cf970db1106c383563e453af4f"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
+        <action_type_parent/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Hochschultermine">c560ce0f970db1106c383563e453afac</flow>
+        <order>3</order>
+        <parent_ui_id>9e36af74-0c98-4d4f-a9be-77244ea7d069</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>Raphael</sys_created_by>
+        <sys_created_on>2023-09-07 18:36:27</sys_created_on>
+        <sys_id>08b34e43974db1106c383563e453afa6</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_scope display_value="ServiceNow Übung">ca8bf0a0978931106c383563e453afc1</sys_scope>
+        <sys_updated_by>Raphael</sys_updated_by>
+        <sys_updated_on>2023-09-07 18:41:29</sys_updated_on>
+        <ui_id>531e2b87-5a34-4895-a979-b2334b633512</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=08b34e43974db1106c383563e453afa6"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>08b34e43974db1106c383563e453afa6</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Raphael</sys_created_by>
+        <sys_created_on>2023-09-07 18:36:27</sys_created_on>
+        <sys_id>88b34e43974db1106c383563e453afa8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Raphael</sys_updated_by>
+        <sys_updated_on>2023-09-07 18:36:27</sys_updated_on>
+        <value>x_1112263_snuebung_gebaeudehatflaeche</value>
+        <variable display_value="Table">8f400a1587003300663ca1bb36cb0b4b</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=08b34e43974db1106c383563e453afa6"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>conditions</field>
+        <id>08b34e43974db1106c383563e453afa6</id>
+        <sys_created_by>Raphael</sys_created_by>
+        <sys_created_on>2023-09-07 18:36:27</sys_created_on>
+        <sys_id>44b34e43974db1106c383563e453afa8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Raphael</sys_updated_by>
+        <sys_updated_on>2023-09-07 18:36:27</sys_updated_on>
+        <table>var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b</table>
+        <value>gebaeudeid={{Created or Updated_1.current.gebaeudeid}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table</field>
+        <id>08b34e43974db1106c383563e453afa6</id>
+        <sys_created_by>Raphael</sys_created_by>
+        <sys_created_on>2023-09-07 18:36:27</sys_created_on>
+        <sys_id>08b34e43974db1106c383563e453afa8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Raphael</sys_updated_by>
+        <sys_updated_on>2023-09-07 18:36:27</sys_updated_on>
+        <table>var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=08b34e43974db1106c383563e453afa6"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=08b34e43974db1106c383563e453afa6"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
+        <action_type_parent/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Hochschultermine">c560ce0f970db1106c383563e453afac</flow>
+        <order>5</order>
+        <parent_ui_id>607df8da-caf3-440c-a888-0ea869103614</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>Raphael</sys_created_by>
+        <sys_created_on>2023-09-07 18:36:27</sys_created_on>
+        <sys_id>08b34e43974db1106c383563e453afbe</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_scope display_value="ServiceNow Übung">ca8bf0a0978931106c383563e453afc1</sys_scope>
+        <sys_updated_by>Raphael</sys_updated_by>
+        <sys_updated_on>2023-09-07 18:41:29</sys_updated_on>
+        <ui_id>150d9f4a-8cde-4fcc-a1cd-07b80074857f</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=08b34e43974db1106c383563e453afbe"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>08b34e43974db1106c383563e453afbe</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Raphael</sys_created_by>
+        <sys_created_on>2023-09-07 18:36:27</sys_created_on>
+        <sys_id>90b34e43974db1106c383563e453afc0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Raphael</sys_updated_by>
+        <sys_updated_on>2023-09-07 18:36:27</sys_updated_on>
+        <value>x_1112263_snuebung_arbeit</value>
+        <variable display_value="Table">8f400a1587003300663ca1bb36cb0b4b</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=08b34e43974db1106c383563e453afbe"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>conditions</field>
+        <id>08b34e43974db1106c383563e453afbe</id>
+        <sys_created_by>Raphael</sys_created_by>
+        <sys_created_on>2023-09-07 18:36:27</sys_created_on>
+        <sys_id>5cb34e43974db1106c383563e453afbf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Raphael</sys_updated_by>
+        <sys_updated_on>2023-09-07 18:36:27</sys_updated_on>
+        <table>var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b</table>
+        <value>flacheid={{607df8da-caf3-440c-a888-0ea869103614.item.flaecheid}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table</field>
+        <id>08b34e43974db1106c383563e453afbe</id>
+        <sys_created_by>Raphael</sys_created_by>
+        <sys_created_on>2023-09-07 18:36:27</sys_created_on>
+        <sys_id>10b34e43974db1106c383563e453afc0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Raphael</sys_updated_by>
+        <sys_updated_on>2023-09-07 18:36:27</sys_updated_on>
+        <table>var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=08b34e43974db1106c383563e453afbe"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=08b34e43974db1106c383563e453afbe"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
+        <action_type_parent/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Hochschultermine">c560ce0f970db1106c383563e453afac</flow>
+        <order>7</order>
+        <parent_ui_id>1a7a8a26-6143-47d2-b42f-7c7d710ea6eb</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>Raphael</sys_created_by>
+        <sys_created_on>2023-09-07 18:36:27</sys_created_on>
+        <sys_id>90b34e43974db1106c383563e453afca</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_scope display_value="ServiceNow Übung">ca8bf0a0978931106c383563e453afc1</sys_scope>
+        <sys_updated_by>Raphael</sys_updated_by>
+        <sys_updated_on>2023-09-07 18:41:29</sys_updated_on>
+        <ui_id>d4050c49-5e4e-49e2-a5c8-b8ba04c1bc32</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=90b34e43974db1106c383563e453afca"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>90b34e43974db1106c383563e453afca</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Raphael</sys_created_by>
+        <sys_created_on>2023-09-07 18:36:27</sys_created_on>
+        <sys_id>14b34e43974db1106c383563e453afcc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Raphael</sys_updated_by>
+        <sys_updated_on>2023-09-07 18:36:27</sys_updated_on>
+        <value>x_1112263_snuebung_arbeit</value>
+        <variable display_value="Table">d909f99587003300663ca1bb36cb0ba4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>90b34e43974db1106c383563e453afca</document_key>
+        <order>5</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Raphael</sys_created_by>
+        <sys_created_on>2023-09-07 18:36:27</sys_created_on>
+        <sys_id>50b34e43974db1106c383563e453afcc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Raphael</sys_updated_by>
+        <sys_updated_on>2023-09-07 18:36:27</sys_updated_on>
+        <value>1</value>
+        <variable display_value="Don't fail on error">ceab42a673110010d70877186bf6a74f</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=90b34e43974db1106c383563e453afca"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>conditions</field>
+        <id>90b34e43974db1106c383563e453afca</id>
+        <sys_created_by>Raphael</sys_created_by>
+        <sys_created_on>2023-09-07 18:36:27</sys_created_on>
+        <sys_id>1cb34e43974db1106c383563e453afcb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Raphael</sys_updated_by>
+        <sys_updated_on>2023-09-07 18:36:27</sys_updated_on>
+        <table>var__m_sys_hub_action_input_9d09f99587003300663ca1bb36cb0ba3</table>
+        <value>flacheid={{1a7a8a26-6143-47d2-b42f-7c7d710ea6eb.item.flacheid}}^zeitraum_von&lt;={{Created or Updated_1.current.zeitraum_bis}}^zeitraum_von&gt;={{Created or Updated_1.current.zeitraum_von}}^NQflacheid={{1a7a8a26-6143-47d2-b42f-7c7d710ea6eb.item.flacheid}}^zeitraum_bis&lt;={{Created or Updated_1.current.zeitraum_von}}^zeitraum_bis&gt;={{Created or Updated_1.current.zeitraum_bis}}^NQflacheid={{1a7a8a26-6143-47d2-b42f-7c7d710ea6eb.item.flacheid}}^zeitraum_von&lt;={{Created or Updated_1.current.zeitraum_von}}^zeitraum_bis&gt;={{Created or Updated_1.current.zeitraum_bis}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table</field>
+        <id>90b34e43974db1106c383563e453afca</id>
+        <sys_created_by>Raphael</sys_created_by>
+        <sys_created_on>2023-09-07 18:36:27</sys_created_on>
+        <sys_id>dcb34e43974db1106c383563e453afcb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Raphael</sys_updated_by>
+        <sys_updated_on>2023-09-07 18:36:27</sys_updated_on>
+        <table>var__m_sys_hub_action_input_9d09f99587003300663ca1bb36cb0ba3</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>__snc_dont_fail_on_error</field>
+        <id>90b34e43974db1106c383563e453afca</id>
+        <sys_created_by>Raphael</sys_created_by>
+        <sys_created_on>2023-09-07 18:36:27</sys_created_on>
+        <sys_id>58b34e43974db1106c383563e453afcb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Raphael</sys_updated_by>
+        <sys_updated_on>2023-09-07 18:36:27</sys_updated_on>
+        <table>var__m_sys_hub_action_input_9d09f99587003300663ca1bb36cb0ba3</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=90b34e43974db1106c383563e453afca"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=90b34e43974db1106c383563e453afca"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
+        <action_type_parent/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Hochschultermine">c560ce0f970db1106c383563e453afac</flow>
+        <order>9</order>
+        <parent_ui_id>9c1cbacc-eeee-4190-ae6d-082ff359f7e7</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>Raphael</sys_created_by>
+        <sys_created_on>2023-09-07 18:41:17</sys_created_on>
+        <sys_id>cfc446c3974db1106c383563e453afd3</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="ServiceNow Übung">ca8bf0a0978931106c383563e453afc1</sys_scope>
+        <sys_updated_by>Raphael</sys_updated_by>
+        <sys_updated_on>2023-09-07 18:41:29</sys_updated_on>
+        <ui_id>b0b80c74-fb5e-4666-b61f-ae4f92c7ce99</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=cfc446c3974db1106c383563e453afd3"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>cfc446c3974db1106c383563e453afd3</document_key>
+        <order>5</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Raphael</sys_created_by>
+        <sys_created_on>2023-09-07 18:41:17</sys_created_on>
+        <sys_id>87c446c3974db1106c383563e453afd6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Raphael</sys_updated_by>
+        <sys_updated_on>2023-09-07 18:41:17</sys_updated_on>
+        <value>1</value>
+        <variable display_value="Don't fail on error">ceab42a673110010d70877186bf6a74f</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=cfc446c3974db1106c383563e453afd3"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>conditions</field>
+        <id>cfc446c3974db1106c383563e453afd3</id>
+        <sys_created_by>Raphael</sys_created_by>
+        <sys_created_on>2023-09-07 18:41:17</sys_created_on>
+        <sys_id>43c446c3974db1106c383563e453afd6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Raphael</sys_updated_by>
+        <sys_updated_on>2023-09-07 18:41:17</sys_updated_on>
+        <table>var__m_sys_hub_action_input_9d09f99587003300663ca1bb36cb0ba3</table>
+        <value>prioritat=2^prioritat={{Created or Updated_1.current.prioritat}}^NQprioritat=3^NQprioritat=1^prioritat={{Created or Updated_1.current.prioritat}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table</field>
+        <id>cfc446c3974db1106c383563e453afd3</id>
+        <sys_created_by>Raphael</sys_created_by>
+        <sys_created_on>2023-09-07 18:41:17</sys_created_on>
+        <sys_id>07c446c3974db1106c383563e453afd6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Raphael</sys_updated_by>
+        <sys_updated_on>2023-09-07 18:41:17</sys_updated_on>
+        <table>var__m_sys_hub_action_input_9d09f99587003300663ca1bb36cb0ba3</table>
+        <value>{{d4050c49-5e4e-49e2-a5c8-b8ba04c1bc32.Table}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>__snc_dont_fail_on_error</field>
+        <id>cfc446c3974db1106c383563e453afd3</id>
+        <sys_created_by>Raphael</sys_created_by>
+        <sys_created_on>2023-09-07 18:41:17</sys_created_on>
+        <sys_id>8fc446c3974db1106c383563e453afd5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Raphael</sys_updated_by>
+        <sys_updated_on>2023-09-07 18:41:17</sys_updated_on>
+        <table>var__m_sys_hub_action_input_9d09f99587003300663ca1bb36cb0ba3</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=cfc446c3974db1106c383563e453afd3"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=cfc446c3974db1106c383563e453afd3"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
+        <action_type_parent/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Hochschultermine">c560ce0f970db1106c383563e453afac</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>Raphael</sys_created_by>
+        <sys_created_on>2023-09-07 18:29:15</sys_created_on>
+        <sys_id>ee0206cf970db1106c383563e453af4f</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_scope display_value="ServiceNow Übung">ca8bf0a0978931106c383563e453afc1</sys_scope>
+        <sys_updated_by>Raphael</sys_updated_by>
+        <sys_updated_on>2023-09-07 18:41:29</sys_updated_on>
+        <ui_id>cbf20a48-b6e7-4777-a933-4da51df4e496</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=ee0206cf970db1106c383563e453af4f"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>ee0206cf970db1106c383563e453af4f</document_key>
+        <order>5</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Raphael</sys_created_by>
+        <sys_created_on>2023-09-07 18:29:15</sys_created_on>
+        <sys_id>220206cf970db1106c383563e453af53</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Raphael</sys_updated_by>
+        <sys_updated_on>2023-09-07 18:29:15</sys_updated_on>
+        <value>1</value>
+        <variable display_value="Don't fail on error">ceab42a673110010d70877186bf6a74f</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>ee0206cf970db1106c383563e453af4f</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Raphael</sys_created_by>
+        <sys_created_on>2023-09-07 18:29:15</sys_created_on>
+        <sys_id>e20206cf970db1106c383563e453af53</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Raphael</sys_updated_by>
+        <sys_updated_on>2023-09-07 18:29:15</sys_updated_on>
+        <value>x_1112263_snuebung_hochschul_termine</value>
+        <variable display_value="Table">d909f99587003300663ca1bb36cb0ba4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=ee0206cf970db1106c383563e453af4f"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>conditions</field>
+        <id>ee0206cf970db1106c383563e453af4f</id>
+        <sys_created_by>Raphael</sys_created_by>
+        <sys_created_on>2023-09-07 18:29:15</sys_created_on>
+        <sys_id>ea0206cf970db1106c383563e453af52</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Raphael</sys_updated_by>
+        <sys_updated_on>2023-09-07 18:29:15</sys_updated_on>
+        <table>var__m_sys_hub_action_input_9d09f99587003300663ca1bb36cb0ba3</table>
+        <value>zeitraum_von&gt;={{Created or Updated_1.current.zeitraum_von}}^zeitraum_von&lt;={{Created or Updated_1.current.zeitraum_bis}}^gebaeudeid={{Created or Updated_1.current.gebaeudeid}}^sys_id!={{Created or Updated_1.current.sys_id}}^NQzeitraum_bis&gt;={{Created or Updated_1.current.zeitraum_bis}}^zeitraum_bisON{{Created or Updated_1.current.zeitraum_von}}^gebaeudeid={{Created or Updated_1.current.gebaeudeid}}^sys_id!={{Created or Updated_1.current.sys_id}}^NQzeitraum_von&lt;={{Created or Updated_1.current.zeitraum_von}}^zeitraum_bis&gt;={{Created or Updated_1.current.zeitraum_bis}}^gebaeudeid={{Created or Updated_1.current.gebaeudeid}}^sys_id!={{Created or Updated_1.current.sys_id}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table</field>
+        <id>ee0206cf970db1106c383563e453af4f</id>
+        <sys_created_by>Raphael</sys_created_by>
+        <sys_created_on>2023-09-07 18:29:15</sys_created_on>
+        <sys_id>ae0206cf970db1106c383563e453af52</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Raphael</sys_updated_by>
+        <sys_updated_on>2023-09-07 18:29:15</sys_updated_on>
+        <table>var__m_sys_hub_action_input_9d09f99587003300663ca1bb36cb0ba3</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>__snc_dont_fail_on_error</field>
+        <id>ee0206cf970db1106c383563e453af4f</id>
+        <sys_created_by>Raphael</sys_created_by>
+        <sys_created_on>2023-09-07 18:29:15</sys_created_on>
+        <sys_id>260206cf970db1106c383563e453af52</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Raphael</sys_updated_by>
+        <sys_updated_on>2023-09-07 18:29:15</sys_updated_on>
+        <table>var__m_sys_hub_action_input_9d09f99587003300663ca1bb36cb0ba3</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=ee0206cf970db1106c383563e453af4f"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=ee0206cf970db1106c383563e453af4f"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=c560ce0f970db1106c383563e453afac"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=c560ce0f970db1106c383563e453afac^sys_idNOT IN04b34e43974db1106c383563e453af9c,5cb34e43974db1106c383563e453afc0,c3c446c3974db1106c383563e453afd7,c4b34e43974db1106c383563e453afa9,cfc446c3974db1106c383563e453afc8"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">48b34e43974db1106c383563e453af9b</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Hochschultermine">c560ce0f970db1106c383563e453afac</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>Raphael</sys_created_by>
+        <sys_created_on>2023-09-07 18:36:27</sys_created_on>
+        <sys_id>04b34e43974db1106c383563e453af9c</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_scope display_value="ServiceNow Übung">ca8bf0a0978931106c383563e453afc1</sys_scope>
+        <sys_updated_by>Raphael</sys_updated_by>
+        <sys_updated_on>2023-09-07 18:41:29</sys_updated_on>
+        <ui_id>9e36af74-0c98-4d4f-a9be-77244ea7d069</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=04b34e43974db1106c383563e453af9c"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>04b34e43974db1106c383563e453af9c</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Raphael</sys_created_by>
+        <sys_created_on>2023-09-07 18:36:27</sys_created_on>
+        <sys_id>c0b34e43974db1106c383563e453afa0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Raphael</sys_updated_by>
+        <sys_updated_on>2023-09-07 18:36:27</sys_updated_on>
+        <value>Zeitüberschneidung </value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=04b34e43974db1106c383563e453af9c"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>04b34e43974db1106c383563e453af9c</id>
+        <sys_created_by>Raphael</sys_created_by>
+        <sys_created_on>2023-09-07 18:36:27</sys_created_on>
+        <sys_id>40b34e43974db1106c383563e453afa0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Raphael</sys_updated_by>
+        <sys_updated_on>2023-09-07 18:36:27</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{cbf20a48-b6e7-4777-a933-4da51df4e496.status}}=1</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>04b34e43974db1106c383563e453af9c</id>
+        <sys_created_by>Raphael</sys_created_by>
+        <sys_created_on>2023-09-07 18:36:27</sys_created_on>
+        <sys_id>88b34e43974db1106c383563e453af9f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Raphael</sys_updated_by>
+        <sys_updated_on>2023-09-07 18:36:27</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=04b34e43974db1106c383563e453af9c"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=04b34e43974db1106c383563e453af9c"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">94b34e43974db1106c383563e453afc0</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Hochschultermine">c560ce0f970db1106c383563e453afac</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>6</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>607df8da-caf3-440c-a888-0ea869103614</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>Raphael</sys_created_by>
+        <sys_created_on>2023-09-07 18:36:27</sys_created_on>
+        <sys_id>5cb34e43974db1106c383563e453afc0</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_scope display_value="ServiceNow Übung">ca8bf0a0978931106c383563e453afc1</sys_scope>
+        <sys_updated_by>Raphael</sys_updated_by>
+        <sys_updated_on>2023-09-07 18:41:29</sys_updated_on>
+        <ui_id>1a7a8a26-6143-47d2-b42f-7c7d710ea6eb</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=5cb34e43974db1106c383563e453afc0"/>
+    <sys_element_mapping action="delete_multiple" query="id=5cb34e43974db1106c383563e453afc0"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>items</field>
+        <id>5cb34e43974db1106c383563e453afc0</id>
+        <sys_created_by>Raphael</sys_created_by>
+        <sys_created_on>2023-09-07 18:36:27</sys_created_on>
+        <sys_id>d0b34e43974db1106c383563e453afc3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Raphael</sys_updated_by>
+        <sys_updated_on>2023-09-07 18:36:27</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_098e1dc5c3e232002841b63b12d3ae33</table>
+        <value>{{150d9f4a-8cde-4fcc-a1cd-07b80074857f.Records}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=5cb34e43974db1106c383563e453afc0"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=5cb34e43974db1106c383563e453afc0"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">0fc446c3974db1106c383563e453afd6</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Hochschultermine">c560ce0f970db1106c383563e453afac</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>10</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>9c1cbacc-eeee-4190-ae6d-082ff359f7e7</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>Raphael</sys_created_by>
+        <sys_created_on>2023-09-07 18:41:17</sys_created_on>
+        <sys_id>c3c446c3974db1106c383563e453afd7</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="ServiceNow Übung">ca8bf0a0978931106c383563e453afc1</sys_scope>
+        <sys_updated_by>Raphael</sys_updated_by>
+        <sys_updated_on>2023-09-07 18:41:30</sys_updated_on>
+        <ui_id>38d1201c-3275-4fa6-a86d-3955647f1331</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=c3c446c3974db1106c383563e453afd7"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>c3c446c3974db1106c383563e453afd7</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Raphael</sys_created_by>
+        <sys_created_on>2023-09-07 18:41:17</sys_created_on>
+        <sys_id>47c446c3974db1106c383563e453afda</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Raphael</sys_updated_by>
+        <sys_updated_on>2023-09-07 18:41:17</sys_updated_on>
+        <value>Prio Konflikt </value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=c3c446c3974db1106c383563e453afd7"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>c3c446c3974db1106c383563e453afd7</id>
+        <sys_created_by>Raphael</sys_created_by>
+        <sys_created_on>2023-09-07 18:41:17</sys_created_on>
+        <sys_id>c3c446c3974db1106c383563e453afda</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Raphael</sys_updated_by>
+        <sys_updated_on>2023-09-07 18:41:17</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{b0b80c74-fb5e-4666-b61f-ae4f92c7ce99.status}}=0^OR{{Created or Updated_1.current.prioritat}}=1^NQ{{Created or Updated_1.current.prioritat}}=3^{{cbf20a48-b6e7-4777-a933-4da51df4e496.Record.prioritat}}={{d4050c49-5e4e-49e2-a5c8-b8ba04c1bc32.Record.prioritat}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>c3c446c3974db1106c383563e453afd7</id>
+        <sys_created_by>Raphael</sys_created_by>
+        <sys_created_on>2023-09-07 18:41:17</sys_created_on>
+        <sys_id>03c446c3974db1106c383563e453afda</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Raphael</sys_updated_by>
+        <sys_updated_on>2023-09-07 18:41:17</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=c3c446c3974db1106c383563e453afd7"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=c3c446c3974db1106c383563e453afd7"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">00b34e43974db1106c383563e453afa9</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Hochschultermine">c560ce0f970db1106c383563e453afac</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>4</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>9e36af74-0c98-4d4f-a9be-77244ea7d069</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>Raphael</sys_created_by>
+        <sys_created_on>2023-09-07 18:36:27</sys_created_on>
+        <sys_id>c4b34e43974db1106c383563e453afa9</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_scope display_value="ServiceNow Übung">ca8bf0a0978931106c383563e453afc1</sys_scope>
+        <sys_updated_by>Raphael</sys_updated_by>
+        <sys_updated_on>2023-09-07 18:41:29</sys_updated_on>
+        <ui_id>607df8da-caf3-440c-a888-0ea869103614</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=c4b34e43974db1106c383563e453afa9"/>
+    <sys_element_mapping action="delete_multiple" query="id=c4b34e43974db1106c383563e453afa9"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>items</field>
+        <id>c4b34e43974db1106c383563e453afa9</id>
+        <sys_created_by>Raphael</sys_created_by>
+        <sys_created_on>2023-09-07 18:36:27</sys_created_on>
+        <sys_id>40b34e43974db1106c383563e453afac</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Raphael</sys_updated_by>
+        <sys_updated_on>2023-09-07 18:36:27</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_098e1dc5c3e232002841b63b12d3ae33</table>
+        <value>{{531e2b87-5a34-4895-a979-b2334b633512.Records}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=c4b34e43974db1106c383563e453afa9"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=c4b34e43974db1106c383563e453afa9"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">07c446c3974db1106c383563e453afc8</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Hochschultermine">c560ce0f970db1106c383563e453afac</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>8</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>1a7a8a26-6143-47d2-b42f-7c7d710ea6eb</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>Raphael</sys_created_by>
+        <sys_created_on>2023-09-07 18:41:17</sys_created_on>
+        <sys_id>cfc446c3974db1106c383563e453afc8</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="ServiceNow Übung">ca8bf0a0978931106c383563e453afc1</sys_scope>
+        <sys_updated_by>Raphael</sys_updated_by>
+        <sys_updated_on>2023-09-07 18:41:29</sys_updated_on>
+        <ui_id>9c1cbacc-eeee-4190-ae6d-082ff359f7e7</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=cfc446c3974db1106c383563e453afc8"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>cfc446c3974db1106c383563e453afc8</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Raphael</sys_created_by>
+        <sys_created_on>2023-09-07 18:41:17</sys_created_on>
+        <sys_id>4bc446c3974db1106c383563e453afcc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Raphael</sys_updated_by>
+        <sys_updated_on>2023-09-07 18:41:17</sys_updated_on>
+        <value>Arbeit Überschneidung</value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=cfc446c3974db1106c383563e453afc8"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>cfc446c3974db1106c383563e453afc8</id>
+        <sys_created_by>Raphael</sys_created_by>
+        <sys_created_on>2023-09-07 18:41:17</sys_created_on>
+        <sys_id>c7c446c3974db1106c383563e453afcc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Raphael</sys_updated_by>
+        <sys_updated_on>2023-09-07 18:41:17</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{d4050c49-5e4e-49e2-a5c8-b8ba04c1bc32.status}}=0</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>cfc446c3974db1106c383563e453afc8</id>
+        <sys_created_by>Raphael</sys_created_by>
+        <sys_created_on>2023-09-07 18:41:17</sys_created_on>
+        <sys_id>03c446c3974db1106c383563e453afcc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Raphael</sys_updated_by>
+        <sys_updated_on>2023-09-07 18:41:17</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=cfc446c3974db1106c383563e453afc8"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=cfc446c3974db1106c383563e453afc8"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=c560ce0f970db1106c383563e453afac"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=c560ce0f970db1106c383563e453afac"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_c560ce0f970db1106c383563e453afac^sys_idNOT IN220206cf970db1106c383563e453af3d,6a0206cf970db1106c383563e453af40,6e0206cf970db1106c383563e453af43"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_c560ce0f970db1106c383563e453afac</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>Raphael</sys_created_by>
+        <sys_created_on>2023-09-07 18:29:15</sys_created_on>
+        <sys_id>220206cf970db1106c383563e453af3d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="ServiceNow Übung" source="x_1112263_snuebung">ca8bf0a0978931106c383563e453afc1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="ServiceNow Übung">ca8bf0a0978931106c383563e453afc1</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Raphael</sys_updated_by>
+        <sys_updated_on>2023-09-07 18:29:15</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>changed_fields</element>
+        <help/>
+        <hint/>
+        <label>Changed Fields</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_c560ce0f970db1106c383563e453afac</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>Raphael</sys_created_by>
+        <sys_created_on>2023-09-07 18:29:15</sys_created_on>
+        <sys_id>6a0206cf970db1106c383563e453af40</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="ServiceNow Übung" source="x_1112263_snuebung">ca8bf0a0978931106c383563e453afc1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="ServiceNow Übung">ca8bf0a0978931106c383563e453afc1</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Raphael</sys_updated_by>
+        <sys_updated_on>2023-09-07 18:29:15</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_c560ce0f970db1106c383563e453afac</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>Raphael</sys_created_by>
+        <sys_created_on>2023-09-07 18:29:15</sys_created_on>
+        <sys_id>6e0206cf970db1106c383563e453af43</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="ServiceNow Übung" source="x_1112263_snuebung">ca8bf0a0978931106c383563e453afc1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="ServiceNow Übung">ca8bf0a0978931106c383563e453afc1</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Raphael</sys_updated_by>
+        <sys_updated_on>2023-09-07 18:29:15</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_c560ce0f970db1106c383563e453afac"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_c560ce0f970db1106c383563e453afac"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_c560ce0f970db1106c383563e453afac"/>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=c560ce0f970db1106c383563e453afac^sys_idNOT IN75d44ac3974db1106c383563e453afd4"/>
+    <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
+        <binding_strategy>com.snc.process_flow.engine.binding.OncePerRecord</binding_strategy>
+        <plan/>
+        <plan_id>c560ce0f970db1106c383563e453afac</plan_id>
+        <snapshot>59d40ac3974db1106c383563e453af76</snapshot>
+        <sys_created_by>Raphael</sys_created_by>
+        <sys_created_on>2023-09-07 18:41:29</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>75d44ac3974db1106c383563e453afd4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>Raphael</sys_updated_by>
+        <sys_updated_on>2023-09-07 18:41:29</sys_updated_on>
+        <trigger display_value="">b5d44ac3974db1106c383563e453afd2</trigger>
+    </sys_flow_trigger_plan>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=c560ce0f970db1106c383563e453afac"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <internal_name>hochschultermine</internal_name>
+        <label_cache>[{"name":"d4050c49-5e4e-49e2-a5c8-b8ba04c1bc32.Record.prioritat","label":"7 - Look Up Record➛Arbeit Record➛Priorität","reference":"","reference_display":"Priorität","type":"choice","base_type":"choice","parent_table_name":"x_1112263_snuebung_arbeit","column_name":"prioritat","choices":[{"used":false,"rawLabel":"Hoch","selected":false,"label":"Hoch","missing":false,"image":"","reference":false,"value":"3","parameters":{"name":"x_1112263_snuebung_arbeit"}},{"used":false,"rawLabel":"Mittel","selected":false,"label":"Mittel","missing":false,"image":"","reference":false,"value":"2","parameters":{"name":"x_1112263_snuebung_arbeit"}},{"used":false,"rawLabel":"Niedrig","selected":false,"label":"Niedrig","missing":false,"image":"","reference":false,"value":"1","parameters":{"name":"x_1112263_snuebung_arbeit"}}]},{"name":"cbf20a48-b6e7-4777-a933-4da51df4e496.Record.prioritat","label":"1 - Look Up Record➛HochschulTermine Record➛Priorität","reference":"","reference_display":"Priorität","type":"choice","base_type":"choice","parent_table_name":"x_1112263_snuebung_hochschul_termine","column_name":"prioritat","choices":[{"label":"-- None --","used":false,"rawLabel":"-- None --","selected":false,"missing":false,"image":"","reference":false,"value":""},{"used":false,"rawLabel":"Hoch","selected":false,"label":"Hoch","missing":false,"image":"","reference":false,"value":"3","parameters":{"name":"x_1112263_snuebung_hochschul_termine"}},{"used":false,"rawLabel":"Mittel","selected":false,"label":"Mittel","missing":false,"image":"","reference":false,"value":"2","parameters":{"name":"x_1112263_snuebung_hochschul_termine"}},{"used":false,"rawLabel":"Niedrig","selected":false,"label":"Niedrig","missing":false,"image":"","reference":false,"value":"1","parameters":{"name":"x_1112263_snuebung_hochschul_termine"}}]},{"name":"b0b80c74-fb5e-4666-b61f-ae4f92c7ce99.status","label":"9 - Look Up Record➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Error","value":"1","order":0.0},{"label":"Success","value":"0","order":1.0}],"attributes":{"uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"choice","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"Created or Updated_1.current.prioritat","label":"Trigger - Record Created or Updated➛HochschulTermine Record➛Priorität","reference":"","reference_display":"Priorität","type":"choice","base_type":"choice","parent_table_name":"x_1112263_snuebung_hochschul_termine","column_name":"prioritat","choices":[{"label":"-- None --","used":false,"rawLabel":"-- None --","selected":false,"missing":false,"image":"","reference":false,"value":""},{"used":false,"rawLabel":"Hoch","selected":false,"label":"Hoch","missing":false,"image":"","reference":false,"value":"3","parameters":{"name":"x_1112263_snuebung_hochschul_termine"}},{"used":false,"rawLabel":"Mittel","selected":false,"label":"Mittel","missing":false,"image":"","reference":false,"value":"2","parameters":{"name":"x_1112263_snuebung_hochschul_termine"}},{"used":false,"rawLabel":"Niedrig","selected":false,"label":"Niedrig","missing":false,"image":"","reference":false,"value":"1","parameters":{"name":"x_1112263_snuebung_hochschul_termine"}}]},{"name":"d4050c49-5e4e-49e2-a5c8-b8ba04c1bc32.Table","label":"7 - Look Up Record➛Arbeit Table","reference":"x_1112263_snuebung_arbeit","reference_display":"Arbeit","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"d4050c49-5e4e-49e2-a5c8-b8ba04c1bc32.status","label":"7 - Look Up Record➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Error","value":"1","order":0.0},{"label":"Success","value":"0","order":1.0}],"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"1a7a8a26-6143-47d2-b42f-7c7d710ea6eb.item.flacheid","label":"6 - For Each➛Arbeit Record➛FlächeID","reference":"x_1112263_snuebung_flaeche","reference_display":"Flaeche","type":"reference","base_type":"reference","parent_table_name":"x_1112263_snuebung_arbeit","column_name":"flacheid"},{"name":"150d9f4a-8cde-4fcc-a1cd-07b80074857f.Records","label":"5 - Look Up Records➛Arbeit Records","reference":"x_1112263_snuebung_arbeit","reference_display":"Arbeit","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"607df8da-caf3-440c-a888-0ea869103614.item.flaecheid","label":"4 - For Each➛GebaeudeHatFlaeche Record➛FlaecheID","reference":"x_1112263_snuebung_flaeche","reference_display":"Flaeche","type":"reference","base_type":"reference","parent_table_name":"x_1112263_snuebung_gebaeudehatflaeche","column_name":"flaecheid"},{"name":"531e2b87-5a34-4895-a979-b2334b633512.Records","label":"3 - Look Up Records➛GebaeudeHatFlaeche Records","reference":"x_1112263_snuebung_gebaeudehatflaeche","reference_display":"GebaeudeHatFlaeche","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"cbf20a48-b6e7-4777-a933-4da51df4e496.status","label":"1 - Look Up Record➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Error","value":"1","order":0.0},{"label":"Success","value":"0","order":1.0}],"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"Created or Updated_1.current.gebaeudeid","label":"Trigger - Record Created or Updated➛HochschulTermine Record➛GebaeudeId","reference":"x_1112263_snuebung_gebaeude","reference_display":"Gebaeude","type":"reference","base_type":"reference","parent_table_name":"x_1112263_snuebung_hochschul_termine","column_name":"gebaeudeid"},{"name":"Created or Updated_1.current.sys_id","label":"Trigger - Record Created or Updated➛HochschulTermine Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"x_1112263_snuebung_hochschul_termine","column_name":"sys_id"},{"name":"Created or Updated_1.current.zeitraum_von","label":"Trigger - Record Created or Updated➛HochschulTermine Record➛Zeitraum von","reference":"","reference_display":"Zeitraum von","type":"glide_date_time","base_type":"glide_date_time","parent_table_name":"x_1112263_snuebung_hochschul_termine","column_name":"zeitraum_von"},{"name":"Created or Updated_1.current.zeitraum_bis","label":"Trigger - Record Created or Updated➛HochschulTermine Record➛Zeitraum bis","reference":"","reference_display":"Zeitraum bis","type":"glide_date_time","base_type":"glide_date_time","parent_table_name":"x_1112263_snuebung_hochschul_termine","column_name":"zeitraum_bis"}]</label_cache>
+        <master>true</master>
+        <name>Hochschultermine</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="Hochschultermine">c560ce0f970db1106c383563e453afac</parent_flow>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>Raphael</sys_created_by>
+        <sys_created_on>2023-09-07 18:41:27</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>59d40ac3974db1106c383563e453af76</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="ServiceNow Übung">ca8bf0a0978931106c383563e453afc1</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Raphael</sys_updated_by>
+        <sys_updated_on>2023-09-07 18:41:27</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=59d40ac3974db1106c383563e453af76"/>
+    <sys_variable_value action="delete_multiple" query="document_key=59d40ac3974db1106c383563e453af76"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=59d40ac3974db1106c383563e453af76^sys_idNOT INadd44ac3974db1106c383563e453af1a"/>
+    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Hochschultermine">59d40ac3974db1106c383563e453af76</flow>
+        <name>Created or Updated</name>
+        <remote_sys_id/>
+        <sys_created_by>Raphael</sys_created_by>
+        <sys_created_on>2023-09-07 18:41:28</sys_created_on>
+        <sys_id>add44ac3974db1106c383563e453af1a</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>Raphael</sys_updated_by>
+        <sys_updated_on>2023-09-07 18:41:29</sys_updated_on>
+        <trigger_definition display_value="Created or Updated">a45d9180c32222002841b63b12d3aea7</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>record_create_or_update</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=add44ac3974db1106c383563e453af1a"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>add44ac3974db1106c383563e453af1a</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Raphael</sys_created_by>
+        <sys_created_on>2023-09-07 18:41:28</sys_created_on>
+        <sys_id>29d44ac3974db1106c383563e453af1c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Raphael</sys_updated_by>
+        <sys_updated_on>2023-09-07 18:41:28</sys_updated_on>
+        <value>^EQ</value>
+        <variable display_value="Condition">707dd180c32222002841b63b12d3aecb</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>add44ac3974db1106c383563e453af1a</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Raphael</sys_created_by>
+        <sys_created_on>2023-09-07 18:41:28</sys_created_on>
+        <sys_id>e9d44ac3974db1106c383563e453af1c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Raphael</sys_updated_by>
+        <sys_updated_on>2023-09-07 18:41:28</sys_updated_on>
+        <value>x_1112263_snuebung_hochschul_termine</value>
+        <variable display_value="Table">cf1e1980c32222002841b63b12d3aea0</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_trigger_output_a45d9180c32222002841b63b12d3aea7^id=add44ac3974db1106c383563e453af1a"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=59d40ac3974db1106c383563e453af76"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=59d40ac3974db1106c383563e453af76^sys_idNOT IN59d40ac3974db1106c383563e453af77"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>59d40ac3974db1106c383563e453af76</id>
+        <name>Hochschultermine</name>
+        <sys_created_by>Raphael</sys_created_by>
+        <sys_created_on>2023-09-07 18:41:27</sys_created_on>
+        <sys_id>59d40ac3974db1106c383563e453af77</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>Raphael</sys_updated_by>
+        <sys_updated_on>2023-09-07 18:41:27</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=59d40ac3974db1106c383563e453af77"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=59d40ac3974db1106c383563e453af76^sys_idNOT IN55d40ac3974db1106c383563e453afa7,9dd40ac3974db1106c383563e453af78,d9d40ac3974db1106c383563e453af92"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Hochschultermine">59d40ac3974db1106c383563e453af76</model>
+        <model_id>59d40ac3974db1106c383563e453af76</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_59d40ac3974db1106c383563e453af76</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>Raphael</sys_created_by>
+        <sys_created_on>2023-09-07 18:41:27</sys_created_on>
+        <sys_id>55d40ac3974db1106c383563e453afa7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="ServiceNow Übung">ca8bf0a0978931106c383563e453afc1</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Raphael</sys_updated_by>
+        <sys_updated_on>2023-09-07 18:41:27</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id,uiTypeLabel=Document ID</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Hochschultermine">59d40ac3974db1106c383563e453af76</model>
+        <model_id>59d40ac3974db1106c383563e453af76</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_59d40ac3974db1106c383563e453af76</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>Raphael</sys_created_by>
+        <sys_created_on>2023-09-07 18:41:27</sys_created_on>
+        <sys_id>9dd40ac3974db1106c383563e453af78</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="ServiceNow Übung">ca8bf0a0978931106c383563e453afc1</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Raphael</sys_updated_by>
+        <sys_updated_on>2023-09-07 18:41:27</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=FDChangeDetails,child_name=FDChangeDetails,child_type=object,child_type_label=Object,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=array.object,uiTypeLabel=Array.Object</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>changed_fields</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Changed Fields</label>
+        <mandatory>false</mandatory>
+        <max_length>4000</max_length>
+        <model display_value="Hochschultermine">59d40ac3974db1106c383563e453af76</model>
+        <model_id>59d40ac3974db1106c383563e453af76</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_59d40ac3974db1106c383563e453af76</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>Raphael</sys_created_by>
+        <sys_created_on>2023-09-07 18:41:27</sys_created_on>
+        <sys_id>d9d40ac3974db1106c383563e453af92</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="ServiceNow Übung">ca8bf0a0978931106c383563e453afc1</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Raphael</sys_updated_by>
+        <sys_updated_on>2023-09-07 18:41:27</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_output action="delete_multiple" query="model=59d40ac3974db1106c383563e453af76"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=59d40ac3974db1106c383563e453af76"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=59d40ac3974db1106c383563e453af76^sys_idNOT INa9d40ac3974db1106c383563e453affe,e5d44ac3974db1106c383563e453af0f,e9d44ac3974db1106c383563e453af06,e9d44ac3974db1106c383563e453af18,edd40ac3974db1106c383563e453afe7"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
+        <action_type_parent display_value="Look Up Records">d1c56ec50b30030085c083eb37673a50</action_type_parent>
+        <comment/>
+        <display_text/>
+        <flow display_value="Hochschultermine">59d40ac3974db1106c383563e453af76</flow>
+        <order>3</order>
+        <parent_ui_id>9e36af74-0c98-4d4f-a9be-77244ea7d069</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>Raphael</sys_created_by>
+        <sys_created_on>2023-09-07 18:41:27</sys_created_on>
+        <sys_id>a9d40ac3974db1106c383563e453affe</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="ServiceNow Übung">ca8bf0a0978931106c383563e453afc1</sys_scope>
+        <sys_updated_by>Raphael</sys_updated_by>
+        <sys_updated_on>2023-09-07 18:41:28</sys_updated_on>
+        <ui_id>531e2b87-5a34-4895-a979-b2334b633512</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=a9d40ac3974db1106c383563e453affe"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>a9d40ac3974db1106c383563e453affe</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Raphael</sys_created_by>
+        <sys_created_on>2023-09-07 18:41:28</sys_created_on>
+        <sys_id>29d44ac3974db1106c383563e453af00</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Raphael</sys_updated_by>
+        <sys_updated_on>2023-09-07 18:41:28</sys_updated_on>
+        <value>x_1112263_snuebung_gebaeudehatflaeche</value>
+        <variable display_value="Table">8f400a1587003300663ca1bb36cb0b4b</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=a9d40ac3974db1106c383563e453affe"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>conditions</field>
+        <id>a9d40ac3974db1106c383563e453affe</id>
+        <sys_created_by>Raphael</sys_created_by>
+        <sys_created_on>2023-09-07 18:41:28</sys_created_on>
+        <sys_id>e1d44ac3974db1106c383563e453af00</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Raphael</sys_updated_by>
+        <sys_updated_on>2023-09-07 18:41:28</sys_updated_on>
+        <table>var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b</table>
+        <value>gebaeudeid={{Created or Updated_1.current.gebaeudeid}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table</field>
+        <id>a9d40ac3974db1106c383563e453affe</id>
+        <sys_created_by>Raphael</sys_created_by>
+        <sys_created_on>2023-09-07 18:41:28</sys_created_on>
+        <sys_id>a5d44ac3974db1106c383563e453af00</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Raphael</sys_updated_by>
+        <sys_updated_on>2023-09-07 18:41:28</sys_updated_on>
+        <table>var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=a9d40ac3974db1106c383563e453affe"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=a9d40ac3974db1106c383563e453affe"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
+        <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
+        <comment/>
+        <display_text/>
+        <flow display_value="Hochschultermine">59d40ac3974db1106c383563e453af76</flow>
+        <order>7</order>
+        <parent_ui_id>1a7a8a26-6143-47d2-b42f-7c7d710ea6eb</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>Raphael</sys_created_by>
+        <sys_created_on>2023-09-07 18:41:28</sys_created_on>
+        <sys_id>e5d44ac3974db1106c383563e453af0f</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="ServiceNow Übung">ca8bf0a0978931106c383563e453afc1</sys_scope>
+        <sys_updated_by>Raphael</sys_updated_by>
+        <sys_updated_on>2023-09-07 18:41:28</sys_updated_on>
+        <ui_id>d4050c49-5e4e-49e2-a5c8-b8ba04c1bc32</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=e5d44ac3974db1106c383563e453af0f"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>e5d44ac3974db1106c383563e453af0f</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Raphael</sys_created_by>
+        <sys_created_on>2023-09-07 18:41:28</sys_created_on>
+        <sys_id>69d44ac3974db1106c383563e453af11</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Raphael</sys_updated_by>
+        <sys_updated_on>2023-09-07 18:41:28</sys_updated_on>
+        <value>x_1112263_snuebung_arbeit</value>
+        <variable display_value="Table">d909f99587003300663ca1bb36cb0ba4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>e5d44ac3974db1106c383563e453af0f</document_key>
+        <order>5</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Raphael</sys_created_by>
+        <sys_created_on>2023-09-07 18:41:28</sys_created_on>
+        <sys_id>a5d44ac3974db1106c383563e453af11</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Raphael</sys_updated_by>
+        <sys_updated_on>2023-09-07 18:41:28</sys_updated_on>
+        <value>1</value>
+        <variable display_value="Don't fail on error">ceab42a673110010d70877186bf6a74f</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=e5d44ac3974db1106c383563e453af0f"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>conditions</field>
+        <id>e5d44ac3974db1106c383563e453af0f</id>
+        <sys_created_by>Raphael</sys_created_by>
+        <sys_created_on>2023-09-07 18:41:28</sys_created_on>
+        <sys_id>61d44ac3974db1106c383563e453af11</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Raphael</sys_updated_by>
+        <sys_updated_on>2023-09-07 18:41:28</sys_updated_on>
+        <table>var__m_sys_hub_action_input_9d09f99587003300663ca1bb36cb0ba3</table>
+        <value>flacheid={{1a7a8a26-6143-47d2-b42f-7c7d710ea6eb.item.flacheid}}^zeitraum_von&lt;={{Created or Updated_1.current.zeitraum_bis}}^zeitraum_von&gt;={{Created or Updated_1.current.zeitraum_von}}^NQflacheid={{1a7a8a26-6143-47d2-b42f-7c7d710ea6eb.item.flacheid}}^zeitraum_bis&lt;={{Created or Updated_1.current.zeitraum_von}}^zeitraum_bis&gt;={{Created or Updated_1.current.zeitraum_bis}}^NQflacheid={{1a7a8a26-6143-47d2-b42f-7c7d710ea6eb.item.flacheid}}^zeitraum_von&lt;={{Created or Updated_1.current.zeitraum_von}}^zeitraum_bis&gt;={{Created or Updated_1.current.zeitraum_bis}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table</field>
+        <id>e5d44ac3974db1106c383563e453af0f</id>
+        <sys_created_by>Raphael</sys_created_by>
+        <sys_created_on>2023-09-07 18:41:28</sys_created_on>
+        <sys_id>25d44ac3974db1106c383563e453af11</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Raphael</sys_updated_by>
+        <sys_updated_on>2023-09-07 18:41:28</sys_updated_on>
+        <table>var__m_sys_hub_action_input_9d09f99587003300663ca1bb36cb0ba3</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>__snc_dont_fail_on_error</field>
+        <id>e5d44ac3974db1106c383563e453af0f</id>
+        <sys_created_by>Raphael</sys_created_by>
+        <sys_created_on>2023-09-07 18:41:28</sys_created_on>
+        <sys_id>add44ac3974db1106c383563e453af10</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Raphael</sys_updated_by>
+        <sys_updated_on>2023-09-07 18:41:28</sys_updated_on>
+        <table>var__m_sys_hub_action_input_9d09f99587003300663ca1bb36cb0ba3</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=e5d44ac3974db1106c383563e453af0f"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=e5d44ac3974db1106c383563e453af0f"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
+        <action_type_parent display_value="Look Up Records">d1c56ec50b30030085c083eb37673a50</action_type_parent>
+        <comment/>
+        <display_text/>
+        <flow display_value="Hochschultermine">59d40ac3974db1106c383563e453af76</flow>
+        <order>5</order>
+        <parent_ui_id>607df8da-caf3-440c-a888-0ea869103614</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>Raphael</sys_created_by>
+        <sys_created_on>2023-09-07 18:41:28</sys_created_on>
+        <sys_id>e9d44ac3974db1106c383563e453af06</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="ServiceNow Übung">ca8bf0a0978931106c383563e453afc1</sys_scope>
+        <sys_updated_by>Raphael</sys_updated_by>
+        <sys_updated_on>2023-09-07 18:41:28</sys_updated_on>
+        <ui_id>150d9f4a-8cde-4fcc-a1cd-07b80074857f</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=e9d44ac3974db1106c383563e453af06"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>e9d44ac3974db1106c383563e453af06</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Raphael</sys_created_by>
+        <sys_created_on>2023-09-07 18:41:28</sys_created_on>
+        <sys_id>65d44ac3974db1106c383563e453af08</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Raphael</sys_updated_by>
+        <sys_updated_on>2023-09-07 18:41:28</sys_updated_on>
+        <value>x_1112263_snuebung_arbeit</value>
+        <variable display_value="Table">8f400a1587003300663ca1bb36cb0b4b</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=e9d44ac3974db1106c383563e453af06"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>conditions</field>
+        <id>e9d44ac3974db1106c383563e453af06</id>
+        <sys_created_by>Raphael</sys_created_by>
+        <sys_created_on>2023-09-07 18:41:28</sys_created_on>
+        <sys_id>21d44ac3974db1106c383563e453af08</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Raphael</sys_updated_by>
+        <sys_updated_on>2023-09-07 18:41:28</sys_updated_on>
+        <table>var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b</table>
+        <value>flacheid={{607df8da-caf3-440c-a888-0ea869103614.item.flaecheid}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table</field>
+        <id>e9d44ac3974db1106c383563e453af06</id>
+        <sys_created_by>Raphael</sys_created_by>
+        <sys_created_on>2023-09-07 18:41:28</sys_created_on>
+        <sys_id>e1d44ac3974db1106c383563e453af08</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Raphael</sys_updated_by>
+        <sys_updated_on>2023-09-07 18:41:28</sys_updated_on>
+        <table>var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=e9d44ac3974db1106c383563e453af06"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=e9d44ac3974db1106c383563e453af06"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
+        <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
+        <comment/>
+        <display_text/>
+        <flow display_value="Hochschultermine">59d40ac3974db1106c383563e453af76</flow>
+        <order>9</order>
+        <parent_ui_id>9c1cbacc-eeee-4190-ae6d-082ff359f7e7</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>Raphael</sys_created_by>
+        <sys_created_on>2023-09-07 18:41:28</sys_created_on>
+        <sys_id>e9d44ac3974db1106c383563e453af18</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="ServiceNow Übung">ca8bf0a0978931106c383563e453afc1</sys_scope>
+        <sys_updated_by>Raphael</sys_updated_by>
+        <sys_updated_on>2023-09-07 18:41:28</sys_updated_on>
+        <ui_id>b0b80c74-fb5e-4666-b61f-ae4f92c7ce99</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=e9d44ac3974db1106c383563e453af18"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>e9d44ac3974db1106c383563e453af18</document_key>
+        <order>5</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Raphael</sys_created_by>
+        <sys_created_on>2023-09-07 18:41:28</sys_created_on>
+        <sys_id>a9d44ac3974db1106c383563e453af1a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Raphael</sys_updated_by>
+        <sys_updated_on>2023-09-07 18:41:28</sys_updated_on>
+        <value>1</value>
+        <variable display_value="Don't fail on error">ceab42a673110010d70877186bf6a74f</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=e9d44ac3974db1106c383563e453af18"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>conditions</field>
+        <id>e9d44ac3974db1106c383563e453af18</id>
+        <sys_created_by>Raphael</sys_created_by>
+        <sys_created_on>2023-09-07 18:41:28</sys_created_on>
+        <sys_id>65d44ac3974db1106c383563e453af1a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Raphael</sys_updated_by>
+        <sys_updated_on>2023-09-07 18:41:28</sys_updated_on>
+        <table>var__m_sys_hub_action_input_9d09f99587003300663ca1bb36cb0ba3</table>
+        <value>prioritat=2^prioritat={{Created or Updated_1.current.prioritat}}^NQprioritat=3^NQprioritat=1^prioritat={{Created or Updated_1.current.prioritat}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table</field>
+        <id>e9d44ac3974db1106c383563e453af18</id>
+        <sys_created_by>Raphael</sys_created_by>
+        <sys_created_on>2023-09-07 18:41:28</sys_created_on>
+        <sys_id>29d44ac3974db1106c383563e453af1a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Raphael</sys_updated_by>
+        <sys_updated_on>2023-09-07 18:41:28</sys_updated_on>
+        <table>var__m_sys_hub_action_input_9d09f99587003300663ca1bb36cb0ba3</table>
+        <value>{{d4050c49-5e4e-49e2-a5c8-b8ba04c1bc32.Table}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>__snc_dont_fail_on_error</field>
+        <id>e9d44ac3974db1106c383563e453af18</id>
+        <sys_created_by>Raphael</sys_created_by>
+        <sys_created_on>2023-09-07 18:41:28</sys_created_on>
+        <sys_id>a1d44ac3974db1106c383563e453af1a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Raphael</sys_updated_by>
+        <sys_updated_on>2023-09-07 18:41:28</sys_updated_on>
+        <table>var__m_sys_hub_action_input_9d09f99587003300663ca1bb36cb0ba3</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=e9d44ac3974db1106c383563e453af18"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=e9d44ac3974db1106c383563e453af18"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
+        <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
+        <comment/>
+        <display_text/>
+        <flow display_value="Hochschultermine">59d40ac3974db1106c383563e453af76</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>Raphael</sys_created_by>
+        <sys_created_on>2023-09-07 18:41:27</sys_created_on>
+        <sys_id>edd40ac3974db1106c383563e453afe7</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="ServiceNow Übung">ca8bf0a0978931106c383563e453afc1</sys_scope>
+        <sys_updated_by>Raphael</sys_updated_by>
+        <sys_updated_on>2023-09-07 18:41:27</sys_updated_on>
+        <ui_id>cbf20a48-b6e7-4777-a933-4da51df4e496</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=edd40ac3974db1106c383563e453afe7"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>edd40ac3974db1106c383563e453afe7</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Raphael</sys_created_by>
+        <sys_created_on>2023-09-07 18:41:27</sys_created_on>
+        <sys_id>61d40ac3974db1106c383563e453afea</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Raphael</sys_updated_by>
+        <sys_updated_on>2023-09-07 18:41:27</sys_updated_on>
+        <value>x_1112263_snuebung_hochschul_termine</value>
+        <variable display_value="Table">d909f99587003300663ca1bb36cb0ba4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>edd40ac3974db1106c383563e453afe7</document_key>
+        <order>5</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Raphael</sys_created_by>
+        <sys_created_on>2023-09-07 18:41:27</sys_created_on>
+        <sys_id>add40ac3974db1106c383563e453afe9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Raphael</sys_updated_by>
+        <sys_updated_on>2023-09-07 18:41:27</sys_updated_on>
+        <value>1</value>
+        <variable display_value="Don't fail on error">ceab42a673110010d70877186bf6a74f</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=edd40ac3974db1106c383563e453afe7"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>conditions</field>
+        <id>edd40ac3974db1106c383563e453afe7</id>
+        <sys_created_by>Raphael</sys_created_by>
+        <sys_created_on>2023-09-07 18:41:27</sys_created_on>
+        <sys_id>69d40ac3974db1106c383563e453afe9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Raphael</sys_updated_by>
+        <sys_updated_on>2023-09-07 18:41:27</sys_updated_on>
+        <table>var__m_sys_hub_action_input_9d09f99587003300663ca1bb36cb0ba3</table>
+        <value>zeitraum_von&gt;={{Created or Updated_1.current.zeitraum_von}}^zeitraum_von&lt;={{Created or Updated_1.current.zeitraum_bis}}^gebaeudeid={{Created or Updated_1.current.gebaeudeid}}^sys_id!={{Created or Updated_1.current.sys_id}}^NQzeitraum_bis&gt;={{Created or Updated_1.current.zeitraum_bis}}^zeitraum_bisON{{Created or Updated_1.current.zeitraum_von}}^gebaeudeid={{Created or Updated_1.current.gebaeudeid}}^sys_id!={{Created or Updated_1.current.sys_id}}^NQzeitraum_von&lt;={{Created or Updated_1.current.zeitraum_von}}^zeitraum_bis&gt;={{Created or Updated_1.current.zeitraum_bis}}^gebaeudeid={{Created or Updated_1.current.gebaeudeid}}^sys_id!={{Created or Updated_1.current.sys_id}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table</field>
+        <id>edd40ac3974db1106c383563e453afe7</id>
+        <sys_created_by>Raphael</sys_created_by>
+        <sys_created_on>2023-09-07 18:41:27</sys_created_on>
+        <sys_id>2dd40ac3974db1106c383563e453afe9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Raphael</sys_updated_by>
+        <sys_updated_on>2023-09-07 18:41:27</sys_updated_on>
+        <table>var__m_sys_hub_action_input_9d09f99587003300663ca1bb36cb0ba3</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>__snc_dont_fail_on_error</field>
+        <id>edd40ac3974db1106c383563e453afe7</id>
+        <sys_created_by>Raphael</sys_created_by>
+        <sys_created_on>2023-09-07 18:41:27</sys_created_on>
+        <sys_id>a5d40ac3974db1106c383563e453afe9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Raphael</sys_updated_by>
+        <sys_updated_on>2023-09-07 18:41:27</sys_updated_on>
+        <table>var__m_sys_hub_action_input_9d09f99587003300663ca1bb36cb0ba3</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=edd40ac3974db1106c383563e453afe7"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=edd40ac3974db1106c383563e453afe7"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=59d40ac3974db1106c383563e453af76"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=59d40ac3974db1106c383563e453af76^sys_idNOT IN11d40ac3974db1106c383563e453afc4,19d40ac3974db1106c383563e453afbf,1dd40ac3974db1106c383563e453afc7,5dd40ac3974db1106c383563e453afca,d9d40ac3974db1106c383563e453afce"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">00b34e43974db1106c383563e453afa9</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Hochschultermine">59d40ac3974db1106c383563e453af76</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>4</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>9e36af74-0c98-4d4f-a9be-77244ea7d069</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>Raphael</sys_created_by>
+        <sys_created_on>2023-09-07 18:41:27</sys_created_on>
+        <sys_id>11d40ac3974db1106c383563e453afc4</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>Raphael</sys_updated_by>
+        <sys_updated_on>2023-09-07 18:41:27</sys_updated_on>
+        <ui_id>607df8da-caf3-440c-a888-0ea869103614</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=11d40ac3974db1106c383563e453afc4"/>
+    <sys_element_mapping action="delete_multiple" query="id=11d40ac3974db1106c383563e453afc4"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>items</field>
+        <id>11d40ac3974db1106c383563e453afc4</id>
+        <sys_created_by>Raphael</sys_created_by>
+        <sys_created_on>2023-09-07 18:41:27</sys_created_on>
+        <sys_id>ddd40ac3974db1106c383563e453afc6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Raphael</sys_updated_by>
+        <sys_updated_on>2023-09-07 18:41:27</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_098e1dc5c3e232002841b63b12d3ae33</table>
+        <value>{{531e2b87-5a34-4895-a979-b2334b633512.Records}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=11d40ac3974db1106c383563e453afc4"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=11d40ac3974db1106c383563e453afc4"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">48b34e43974db1106c383563e453af9b</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Hochschultermine">59d40ac3974db1106c383563e453af76</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>Raphael</sys_created_by>
+        <sys_created_on>2023-09-07 18:41:27</sys_created_on>
+        <sys_id>19d40ac3974db1106c383563e453afbf</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>Raphael</sys_updated_by>
+        <sys_updated_on>2023-09-07 18:41:27</sys_updated_on>
+        <ui_id>9e36af74-0c98-4d4f-a9be-77244ea7d069</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=19d40ac3974db1106c383563e453afbf"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>19d40ac3974db1106c383563e453afbf</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Raphael</sys_created_by>
+        <sys_created_on>2023-09-07 18:41:27</sys_created_on>
+        <sys_id>15d40ac3974db1106c383563e453afc3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Raphael</sys_updated_by>
+        <sys_updated_on>2023-09-07 18:41:27</sys_updated_on>
+        <value>Zeitüberschneidung </value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=19d40ac3974db1106c383563e453afbf"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>19d40ac3974db1106c383563e453afbf</id>
+        <sys_created_by>Raphael</sys_created_by>
+        <sys_created_on>2023-09-07 18:41:27</sys_created_on>
+        <sys_id>91d40ac3974db1106c383563e453afc3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Raphael</sys_updated_by>
+        <sys_updated_on>2023-09-07 18:41:27</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{cbf20a48-b6e7-4777-a933-4da51df4e496.status}}=1</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>19d40ac3974db1106c383563e453afbf</id>
+        <sys_created_by>Raphael</sys_created_by>
+        <sys_created_on>2023-09-07 18:41:27</sys_created_on>
+        <sys_id>ddd40ac3974db1106c383563e453afc2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Raphael</sys_updated_by>
+        <sys_updated_on>2023-09-07 18:41:27</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=19d40ac3974db1106c383563e453afbf"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=19d40ac3974db1106c383563e453afbf"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">94b34e43974db1106c383563e453afc0</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Hochschultermine">59d40ac3974db1106c383563e453af76</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>6</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>607df8da-caf3-440c-a888-0ea869103614</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>Raphael</sys_created_by>
+        <sys_created_on>2023-09-07 18:41:27</sys_created_on>
+        <sys_id>1dd40ac3974db1106c383563e453afc7</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>Raphael</sys_updated_by>
+        <sys_updated_on>2023-09-07 18:41:27</sys_updated_on>
+        <ui_id>1a7a8a26-6143-47d2-b42f-7c7d710ea6eb</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=1dd40ac3974db1106c383563e453afc7"/>
+    <sys_element_mapping action="delete_multiple" query="id=1dd40ac3974db1106c383563e453afc7"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>items</field>
+        <id>1dd40ac3974db1106c383563e453afc7</id>
+        <sys_created_by>Raphael</sys_created_by>
+        <sys_created_on>2023-09-07 18:41:27</sys_created_on>
+        <sys_id>91d40ac3974db1106c383563e453afca</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Raphael</sys_updated_by>
+        <sys_updated_on>2023-09-07 18:41:27</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_098e1dc5c3e232002841b63b12d3ae33</table>
+        <value>{{150d9f4a-8cde-4fcc-a1cd-07b80074857f.Records}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=1dd40ac3974db1106c383563e453afc7"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=1dd40ac3974db1106c383563e453afc7"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">07c446c3974db1106c383563e453afc8</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Hochschultermine">59d40ac3974db1106c383563e453af76</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>8</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>1a7a8a26-6143-47d2-b42f-7c7d710ea6eb</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>Raphael</sys_created_by>
+        <sys_created_on>2023-09-07 18:41:27</sys_created_on>
+        <sys_id>5dd40ac3974db1106c383563e453afca</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>Raphael</sys_updated_by>
+        <sys_updated_on>2023-09-07 18:41:27</sys_updated_on>
+        <ui_id>9c1cbacc-eeee-4190-ae6d-082ff359f7e7</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=5dd40ac3974db1106c383563e453afca"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>5dd40ac3974db1106c383563e453afca</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Raphael</sys_created_by>
+        <sys_created_on>2023-09-07 18:41:27</sys_created_on>
+        <sys_id>ddd40ac3974db1106c383563e453afcd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Raphael</sys_updated_by>
+        <sys_updated_on>2023-09-07 18:41:27</sys_updated_on>
+        <value>Arbeit Überschneidung</value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=5dd40ac3974db1106c383563e453afca"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>5dd40ac3974db1106c383563e453afca</id>
+        <sys_created_by>Raphael</sys_created_by>
+        <sys_created_on>2023-09-07 18:41:27</sys_created_on>
+        <sys_id>5dd40ac3974db1106c383563e453afcd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Raphael</sys_updated_by>
+        <sys_updated_on>2023-09-07 18:41:27</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{d4050c49-5e4e-49e2-a5c8-b8ba04c1bc32.status}}=0</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>5dd40ac3974db1106c383563e453afca</id>
+        <sys_created_by>Raphael</sys_created_by>
+        <sys_created_on>2023-09-07 18:41:27</sys_created_on>
+        <sys_id>99d40ac3974db1106c383563e453afcd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Raphael</sys_updated_by>
+        <sys_updated_on>2023-09-07 18:41:27</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=5dd40ac3974db1106c383563e453afca"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=5dd40ac3974db1106c383563e453afca"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">0fc446c3974db1106c383563e453afd6</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Hochschultermine">59d40ac3974db1106c383563e453af76</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>10</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>9c1cbacc-eeee-4190-ae6d-082ff359f7e7</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>Raphael</sys_created_by>
+        <sys_created_on>2023-09-07 18:41:27</sys_created_on>
+        <sys_id>d9d40ac3974db1106c383563e453afce</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>Raphael</sys_updated_by>
+        <sys_updated_on>2023-09-07 18:41:27</sys_updated_on>
+        <ui_id>38d1201c-3275-4fa6-a86d-3955647f1331</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=d9d40ac3974db1106c383563e453afce"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>d9d40ac3974db1106c383563e453afce</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Raphael</sys_created_by>
+        <sys_created_on>2023-09-07 18:41:27</sys_created_on>
+        <sys_id>5dd40ac3974db1106c383563e453afd1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Raphael</sys_updated_by>
+        <sys_updated_on>2023-09-07 18:41:27</sys_updated_on>
+        <value>Prio Konflikt </value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=d9d40ac3974db1106c383563e453afce"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>d9d40ac3974db1106c383563e453afce</id>
+        <sys_created_by>Raphael</sys_created_by>
+        <sys_created_on>2023-09-07 18:41:27</sys_created_on>
+        <sys_id>d9d40ac3974db1106c383563e453afd1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Raphael</sys_updated_by>
+        <sys_updated_on>2023-09-07 18:41:27</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{b0b80c74-fb5e-4666-b61f-ae4f92c7ce99.status}}=0^OR{{Created or Updated_1.current.prioritat}}=1^NQ{{Created or Updated_1.current.prioritat}}=3^{{cbf20a48-b6e7-4777-a933-4da51df4e496.Record.prioritat}}={{d4050c49-5e4e-49e2-a5c8-b8ba04c1bc32.Record.prioritat}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>d9d40ac3974db1106c383563e453afce</id>
+        <sys_created_by>Raphael</sys_created_by>
+        <sys_created_on>2023-09-07 18:41:27</sys_created_on>
+        <sys_id>19d40ac3974db1106c383563e453afd1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Raphael</sys_updated_by>
+        <sys_updated_on>2023-09-07 18:41:27</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=d9d40ac3974db1106c383563e453afce"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=d9d40ac3974db1106c383563e453afce"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=59d40ac3974db1106c383563e453af76"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=59d40ac3974db1106c383563e453af76"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_59d40ac3974db1106c383563e453af76^sys_idNOT IN55d40ac3974db1106c383563e453af97,5dd40ac3974db1106c383563e453afab,91d40ac3974db1106c383563e453af8f"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>changed_fields</element>
+        <help/>
+        <hint/>
+        <label>Changed Fields</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_59d40ac3974db1106c383563e453af76</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>Raphael</sys_created_by>
+        <sys_created_on>2023-09-07 18:41:27</sys_created_on>
+        <sys_id>55d40ac3974db1106c383563e453af97</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="ServiceNow Übung" source="x_1112263_snuebung">ca8bf0a0978931106c383563e453afc1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="ServiceNow Übung">ca8bf0a0978931106c383563e453afc1</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Raphael</sys_updated_by>
+        <sys_updated_on>2023-09-07 18:41:27</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_59d40ac3974db1106c383563e453af76</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>Raphael</sys_created_by>
+        <sys_created_on>2023-09-07 18:41:27</sys_created_on>
+        <sys_id>5dd40ac3974db1106c383563e453afab</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="ServiceNow Übung" source="x_1112263_snuebung">ca8bf0a0978931106c383563e453afc1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="ServiceNow Übung">ca8bf0a0978931106c383563e453afc1</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Raphael</sys_updated_by>
+        <sys_updated_on>2023-09-07 18:41:27</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_59d40ac3974db1106c383563e453af76</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>Raphael</sys_created_by>
+        <sys_created_on>2023-09-07 18:41:27</sys_created_on>
+        <sys_id>91d40ac3974db1106c383563e453af8f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="ServiceNow Übung" source="x_1112263_snuebung">ca8bf0a0978931106c383563e453afc1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="ServiceNow Übung">ca8bf0a0978931106c383563e453afc1</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>Raphael</sys_updated_by>
+        <sys_updated_on>2023-09-07 18:41:27</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_59d40ac3974db1106c383563e453af76"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_59d40ac3974db1106c383563e453af76"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_59d40ac3974db1106c383563e453af76"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>c560ce0f970db1106c383563e453afac</sys_id>
+        <latest_snapshot>59d40ac3974db1106c383563e453af76</latest_snapshot>
+        <compiler_build/>
+    </sys_hub_flow>
+</record_update>

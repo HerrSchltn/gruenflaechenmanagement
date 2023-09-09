@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="DELETE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-09-08 09:37:45</sys_created_on>
+        <sys_id>146245979709f1106c383563e453af8f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1112263_snuebung_arbeit.*.x_1112263_snuebung.arbeit_user</sys_name>
+        <sys_package display_value="ServiceNow Übung" source="x_1112263_snuebung">ca8bf0a0978931106c383563e453afc1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="ServiceNow Übung">ca8bf0a0978931106c383563e453afc1</sys_scope>
+        <sys_security_acl display_value="x_1112263_snuebung_arbeit.*">0e60ccf4974571106c383563e453af00</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_146245979709f1106c383563e453af8f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-09-08 09:37:45</sys_updated_on>
+        <sys_user_role display_value="x_1112263_snuebung.arbeit_user" name="x_1112263_snuebung.arbeit_user">b16080f4974571106c383563e453afa6</sys_user_role>
+        <transaction_id/>
+    </sys_security_acl_role>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="ServiceNow Übung">ca8bf0a0978931106c383563e453afc1</application>
+        <file_path/>
+        <instance_id>6dde0dc4db91e5989df22f17d496192c</instance_id>
+        <instance_name>dev154491</instance_name>
+        <name>sys_security_acl_role_146245979709f1106c383563e453af8f</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="INSERT_OR_UPDATE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-09-08 09:37:45</sys_created_on><sys_id>146245979709f1106c383563e453af8f</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_1112263_snuebung_arbeit.*.x_1112263_snuebung.arbeit_user</sys_name><sys_package display_value="ServiceNow Übung" source="x_1112263_snuebung">ca8bf0a0978931106c383563e453afc1</sys_package><sys_policy/><sys_scope display_value="ServiceNow Übung">ca8bf0a0978931106c383563e453afc1</sys_scope><sys_security_acl display_value="x_1112263_snuebung_arbeit.*">0e60ccf4974571106c383563e453af00</sys_security_acl><sys_update_name>sys_security_acl_role_146245979709f1106c383563e453af8f</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-09-08 09:37:45</sys_updated_on><sys_user_role display_value="x_1112263_snuebung.arbeit_user" name="x_1112263_snuebung.arbeit_user">b16080f4974571106c383563e453afa6</sys_user_role><transaction_id/></sys_security_acl_role></record_update>]]></payload>
+        <payload_hash>1274616744</payload_hash>
+        <record_name>x_1112263_snuebung_arbeit.*.x_1112263_snuebung.arbeit_user</record_name>
+        <reverted_from/>
+        <source>d950ae4e9709b5106c383563e453af11</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-09-08 09:37:45</sys_created_on>
+        <sys_id>32f19d979749f1106c383563e453af97</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18a742793220000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-09-08 09:37:45</sys_updated_on>
+        <type>Access Roles</type>
+        <update_guid>6af19d97ac49f110ff2beacd545a3796</update_guid>
+        <update_guid_history>6af19d97ac49f110ff2beacd545a3796:1274616744</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="x_1112263_snuebung_arbeit.*.x_1112263_snuebung.arbeit_user">92b259d79749f1106c383563e453af6f</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-09-08 09:41:00</sys_created_on>
+        <sys_db_object display_value="" name="sys_security_acl_role">sys_security_acl_role</sys_db_object>
+        <sys_id>33b6e691e2b840ac8f9cd614432d1de4</sys_id>
+        <sys_metadata>146245979709f1106c383563e453af8f</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1112263_snuebung_arbeit.*.x_1112263_snuebung.arbeit_user</sys_name>
+        <sys_package display_value="ServiceNow Übung" source="x_1112263_snuebung">ca8bf0a0978931106c383563e453afc1</sys_package>
+        <sys_parent display_value="">0e60ccf4974571106c383563e453af00</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="ServiceNow Übung">ca8bf0a0978931106c383563e453afc1</sys_scope>
+        <sys_scope_delete display_value="">11e92dddcda04499868bc53fdc08f399</sys_scope_delete>
+        <sys_update_name>sys_security_acl_role_146245979709f1106c383563e453af8f</sys_update_name>
+        <sys_update_version display_value="sys_security_acl_role_146245979709f1106c383563e453af8f">32f19d979749f1106c383563e453af97</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-09-08 09:41:00</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

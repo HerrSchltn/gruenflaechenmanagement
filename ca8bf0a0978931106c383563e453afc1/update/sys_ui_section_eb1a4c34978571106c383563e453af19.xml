@@ -1,100 +1,100 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
     <sys_ui_section caption="" section_id="eb1a4c34978571106c383563e453af19" sys_domain="global" table="x_1112263_snuebung_hochschul_termine" version="3" view="">
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>gebaeudeid</element>
+            <element>typ</element>
             <position>0</position>
-            <sys_created_by>Lina</sys_created_by>
-            <sys_created_on>2023-09-04 15:40:45</sys_created_on>
-            <sys_id>99be790e9785b5106c383563e453afa0</sys_id>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-09-07 18:46:52</sys_created_on>
+            <sys_id>bc160247974db1106c383563e453aff3</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_1112263_snuebung_hochschul_termine" sys_domain="global" view="Default view">eb1a4c34978571106c383563e453af19</sys_ui_section>
-            <sys_updated_by>Lina</sys_updated_by>
-            <sys_updated_on>2023-09-04 15:40:45</sys_updated_on>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-09-07 18:46:52</sys_updated_on>
             <sys_user/>
             <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>.split</element>
-            <position>1</position>
-            <sys_created_by>Lina</sys_created_by>
-            <sys_created_on>2023-09-04 15:40:45</sys_created_on>
-            <sys_id>91be790e9785b5106c383563e453afa1</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_1112263_snuebung_hochschul_termine" sys_domain="global" view="Default view">eb1a4c34978571106c383563e453af19</sys_ui_section>
-            <sys_updated_by>Lina</sys_updated_by>
-            <sys_updated_on>2023-09-04 15:40:45</sys_updated_on>
-            <sys_user/>
-            <type>.split</type>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>zeitraum_von</element>
-            <position>2</position>
-            <sys_created_by>Lina</sys_created_by>
-            <sys_created_on>2023-09-04 15:40:45</sys_created_on>
-            <sys_id>95be790e9785b5106c383563e453afa1</sys_id>
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-09-07 18:46:52</sys_created_on>
+            <sys_id>b0160247974db1106c383563e453aff4</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_1112263_snuebung_hochschul_termine" sys_domain="global" view="Default view">eb1a4c34978571106c383563e453af19</sys_ui_section>
-            <sys_updated_by>Lina</sys_updated_by>
-            <sys_updated_on>2023-09-04 15:40:45</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>zeitraum_bis</element>
-            <position>3</position>
-            <sys_created_by>Lina</sys_created_by>
-            <sys_created_on>2023-09-04 15:40:45</sys_created_on>
-            <sys_id>99be790e9785b5106c383563e453afa1</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_1112263_snuebung_hochschul_termine" sys_domain="global" view="Default view">eb1a4c34978571106c383563e453af19</sys_ui_section>
-            <sys_updated_by>Lina</sys_updated_by>
-            <sys_updated_on>2023-09-04 15:40:45</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>number</element>
-            <position>4</position>
-            <sys_created_by>Lina</sys_created_by>
-            <sys_created_on>2023-09-04 15:40:45</sys_created_on>
-            <sys_id>9dbe790e9785b5106c383563e453afa1</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_1112263_snuebung_hochschul_termine" sys_domain="global" view="Default view">eb1a4c34978571106c383563e453af19</sys_ui_section>
-            <sys_updated_by>Lina</sys_updated_by>
-            <sys_updated_on>2023-09-04 15:40:45</sys_updated_on>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-09-07 18:46:52</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>prioritat</element>
-            <position>5</position>
-            <sys_created_by>Lina</sys_created_by>
-            <sys_created_on>2023-09-04 15:40:45</sys_created_on>
-            <sys_id>91be790e9785b5106c383563e453afa2</sys_id>
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-09-07 18:46:52</sys_created_on>
+            <sys_id>b4160247974db1106c383563e453aff4</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_1112263_snuebung_hochschul_termine" sys_domain="global" view="Default view">eb1a4c34978571106c383563e453af19</sys_ui_section>
-            <sys_updated_by>Lina</sys_updated_by>
-            <sys_updated_on>2023-09-04 15:40:45</sys_updated_on>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-09-07 18:46:52</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>typ</element>
-            <position>6</position>
-            <sys_created_by>Lina</sys_created_by>
-            <sys_created_on>2023-09-04 15:40:45</sys_created_on>
-            <sys_id>95be790e9785b5106c383563e453afa2</sys_id>
+            <element>.split</element>
+            <position>3</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-09-07 18:46:52</sys_created_on>
+            <sys_id>b8160247974db1106c383563e453aff4</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_1112263_snuebung_hochschul_termine" sys_domain="global" view="Default view">eb1a4c34978571106c383563e453af19</sys_ui_section>
-            <sys_updated_by>Lina</sys_updated_by>
-            <sys_updated_on>2023-09-04 15:40:45</sys_updated_on>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-09-07 18:46:52</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>ersteller</element>
+            <position>4</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-09-07 18:46:52</sys_created_on>
+            <sys_id>bc160247974db1106c383563e453aff4</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1112263_snuebung_hochschul_termine" sys_domain="global" view="Default view">eb1a4c34978571106c383563e453af19</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-09-07 18:46:52</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>zeitraum_bis</element>
+            <position>5</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-09-07 18:46:52</sys_created_on>
+            <sys_id>b0160247974db1106c383563e453aff5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1112263_snuebung_hochschul_termine" sys_domain="global" view="Default view">eb1a4c34978571106c383563e453af19</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-09-07 18:46:52</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>gebaeudeid</element>
+            <position>6</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-09-07 18:46:52</sys_created_on>
+            <sys_id>b4160247974db1106c383563e453aff5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1112263_snuebung_hochschul_termine" sys_domain="global" view="Default view">eb1a4c34978571106c383563e453af19</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-09-07 18:46:52</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
