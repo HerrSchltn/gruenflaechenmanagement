@@ -4,35 +4,35 @@
         <class_name/>
         <color>success</color>
         <css/>
-        <glyph>book</glyph>
+        <glyph>tree</glyph>
         <id/>
         <kb_article/>
         <kb_category/>
         <kb_topic/>
-        <order>1</order>
+        <order>2</order>
         <roles/>
         <sc_cat_item/>
         <sc_category/>
         <short_description/>
         <size>md</size>
-        <sp_column display_value="1">bf68eaa2479d71102e81249bd36d43cf</sp_column>
-        <sp_page/>
+        <sp_column display_value="2">5ceca6e6479d71102e81249bd36d4367</sp_column>
+        <sp_page display_value="pflegeobjekte_verwalten">8ac7595f9749f1106c383563e453af5f</sp_page>
         <sp_widget display_value="Icon Link">3caa67afcb13020000f8d856634c9c2e</sp_widget>
         <sys_class_name>sp_instance_link</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2023-09-18 18:16:45</sys_created_on>
-        <sys_id>47a8e2e2479d71102e81249bd36d4349</sys_id>
-        <sys_mod_count>4</sys_mod_count>
-        <sys_name>Arbeitstypen anzeigen</sys_name>
+        <sys_created_by>Cenk</sys_created_by>
+        <sys_created_on>2023-09-18 18:52:26</sys_created_on>
+        <sys_id>2dd0726e479d71102e81249bd36d43e2</sys_id>
+        <sys_mod_count>11</sys_mod_count>
+        <sys_name>Pflegeobjekt Hinzufügen</sys_name>
         <sys_package display_value="ServiceNow Übung" source="x_1112263_snuebung">ca8bf0a0978931106c383563e453afc1</sys_package>
         <sys_policy/>
         <sys_scope display_value="ServiceNow Übung">ca8bf0a0978931106c383563e453afc1</sys_scope>
-        <sys_update_name>sp_instance_link_47a8e2e2479d71102e81249bd36d4349</sys_update_name>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-09-18 18:27:39</sys_updated_on>
-        <title>Arbeitstypen anzeigen</title>
+        <sys_update_name>sp_instance_link_2dd0726e479d71102e81249bd36d43e2</sys_update_name>
+        <sys_updated_by>Cenk</sys_updated_by>
+        <sys_updated_on>2023-09-18 19:02:49</sys_updated_on>
+        <title>Pflegeobjekt Hinzufügen</title>
         <type>url</type>
-        <url>?id=arbeitstypen</url>
+        <url>https://dev148996.service-now.com/gruenflaechenmanagement?spa=1&amp;table=x_1112263_snuebung_flaechehatpflegeobjekt&amp;id=pflegeobjekte_verwalten</url>
         <widget_parameters><![CDATA[{
 	"link_template": {
 		"value": "Color Box",
@@ -40,5 +40,5 @@
 	}
 }]]></widget_parameters>
     </sp_instance_link>
-    <sys_translated_text action="delete_multiple" query="documentkey=47a8e2e2479d71102e81249bd36d4349"/>
+    <sys_translated_text action="delete_multiple" query="documentkey=2dd0726e479d71102e81249bd36d43e2"/>
 </record_update>

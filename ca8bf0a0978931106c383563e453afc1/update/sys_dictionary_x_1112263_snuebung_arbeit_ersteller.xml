@@ -13,7 +13,7 @@
         <choice/>
         <choice_field/>
         <choice_table/>
-        <column_label>Ersteller</column_label>
+        <column_label>Mitarbeiter</column_label>
         <comments/>
         <create_roles/>
         <default_value/>
@@ -33,7 +33,7 @@
         <function_definition/>
         <function_field>false</function_field>
         <internal_type display_value="Reference">reference</internal_type>
-        <mandatory>false</mandatory>
+        <mandatory>true</mandatory>
         <max_length>255</max_length>
         <name>x_1112263_snuebung_arbeit</name>
         <next_element/>
@@ -54,13 +54,13 @@
         <sys_class_name>sys_dictionary</sys_class_name>
         <sys_created_by>Raphael</sys_created_by>
         <sys_created_on>2023-08-31 09:16:32</sys_created_on>
-        <sys_name>Ersteller</sys_name>
+        <sys_name>Mitarbeiter</sys_name>
         <sys_package display_value="ServiceNow Übung" source="x_1112263_snuebung">ca8bf0a0978931106c383563e453afc1</sys_package>
         <sys_policy/>
         <sys_scope display_value="ServiceNow Übung">ca8bf0a0978931106c383563e453afc1</sys_scope>
         <sys_update_name>sys_dictionary_x_1112263_snuebung_arbeit_ersteller</sys_update_name>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-09-18 18:08:57</sys_updated_on>
+        <sys_updated_by>Cenk</sys_updated_by>
+        <sys_updated_on>2023-09-18 19:32:40</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

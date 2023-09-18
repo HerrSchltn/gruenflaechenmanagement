@@ -74,14 +74,14 @@ api.controller=function($scope) {
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-08-30 19:22:00</sys_created_on>
         <sys_id>97414528978931106c383563e453af21</sys_id>
-        <sys_mod_count>172</sys_mod_count>
+        <sys_mod_count>178</sys_mod_count>
         <sys_name>svg</sys_name>
         <sys_package display_value="ServiceNow Übung" source="x_1112263_snuebung">ca8bf0a0978931106c383563e453afc1</sys_package>
         <sys_policy/>
         <sys_scope display_value="ServiceNow Übung">ca8bf0a0978931106c383563e453afc1</sys_scope>
         <sys_update_name>sp_widget_97414528978931106c383563e453af21</sys_update_name>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-09-18 17:38:27</sys_updated_on>
+        <sys_updated_by>Cenk</sys_updated_by>
+        <sys_updated_on>2023-09-18 19:07:42</sys_updated_on>
         <template><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
 
 <svg width="100%" height="100%" version="1.1" viewBox="0 0 249 297" xmlns="http://www.w3.org/2000/svg">

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance_link">
+    <sp_instance_link action="DELETE">
+        <active>true</active>
+        <class_name/>
+        <color>success</color>
+        <css/>
+        <glyph>book</glyph>
+        <id/>
+        <kb_article/>
+        <kb_category/>
+        <kb_topic/>
+        <order>1</order>
+        <roles/>
+        <sc_cat_item/>
+        <sc_category/>
+        <short_description/>
+        <size>md</size>
+        <sp_column display_value="1">bf68eaa2479d71102e81249bd36d43cf</sp_column>
+        <sp_page/>
+        <sp_widget display_value="Icon Link">3caa67afcb13020000f8d856634c9c2e</sp_widget>
+        <sys_class_name>sp_instance_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-09-18 18:16:45</sys_created_on>
+        <sys_id>47a8e2e2479d71102e81249bd36d4349</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>Arbeitstypen anzeigen</sys_name>
+        <sys_package display_value="ServiceNow Übung" source="x_1112263_snuebung">ca8bf0a0978931106c383563e453afc1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="ServiceNow Übung">ca8bf0a0978931106c383563e453afc1</sys_scope>
+        <sys_update_name>sp_instance_link_47a8e2e2479d71102e81249bd36d4349</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-09-18 18:27:39</sys_updated_on>
+        <title>Arbeitstypen anzeigen</title>
+        <type>url</type>
+        <url>?id=arbeitstypen</url>
+        <widget_parameters><![CDATA[{
+	"link_template": {
+		"value": "Color Box",
+		"displayValue": "Color Box"
+	}
+}]]></widget_parameters>
+    </sp_instance_link>
+    <sys_translated_text action="DELETE" query="documentkey=47a8e2e2479d71102e81249bd36d4349"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="ServiceNow Übung">ca8bf0a0978931106c383563e453afc1</application>
+        <file_path/>
+        <instance_id>761693c5db096d183050ac44d4961965</instance_id>
+        <instance_name>dev148996</instance_name>
+        <name>sp_instance_link_47a8e2e2479d71102e81249bd36d4349</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_instance_link"&gt;&lt;sp_instance_link action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;class_name/&gt;&lt;color&gt;success&lt;/color&gt;&lt;css/&gt;&lt;glyph&gt;book&lt;/glyph&gt;&lt;id/&gt;&lt;kb_article/&gt;&lt;kb_category/&gt;&lt;kb_topic/&gt;&lt;order&gt;1&lt;/order&gt;&lt;roles/&gt;&lt;sc_cat_item/&gt;&lt;sc_category/&gt;&lt;short_description/&gt;&lt;size&gt;md&lt;/size&gt;&lt;sp_column display_value="1"&gt;bf68eaa2479d71102e81249bd36d43cf&lt;/sp_column&gt;&lt;sp_page/&gt;&lt;sp_widget display_value="Icon Link"&gt;3caa67afcb13020000f8d856634c9c2e&lt;/sp_widget&gt;&lt;sys_class_name&gt;sp_instance_link&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2023-09-18 18:16:45&lt;/sys_created_on&gt;&lt;sys_id&gt;47a8e2e2479d71102e81249bd36d4349&lt;/sys_id&gt;&lt;sys_mod_count&gt;4&lt;/sys_mod_count&gt;&lt;sys_name&gt;Arbeitstypen anzeigen&lt;/sys_name&gt;&lt;sys_package display_value="ServiceNow Übung" source="x_1112263_snuebung"&gt;ca8bf0a0978931106c383563e453afc1&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="ServiceNow Übung"&gt;ca8bf0a0978931106c383563e453afc1&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_instance_link_47a8e2e2479d71102e81249bd36d4349&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2023-09-18 18:27:39&lt;/sys_updated_on&gt;&lt;title&gt;Arbeitstypen anzeigen&lt;/title&gt;&lt;type&gt;url&lt;/type&gt;&lt;url&gt;?id=arbeitstypen&lt;/url&gt;&lt;widget_parameters&gt;&lt;![CDATA[{
+	"link_template": {
+		"value": "Color Box",
+		"displayValue": "Color Box"
+	}
+}]]&gt;&lt;/widget_parameters&gt;&lt;/sp_instance_link&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=47a8e2e2479d71102e81249bd36d4349"/&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-1858613858</payload_hash>
+        <record_name>Arbeitstypen anzeigen</record_name>
+        <reverted_from/>
+        <source>faea5e22475d71102e81249bd36d437e</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-09-18 18:27:39</sys_created_on>
+        <sys_id>a22be2a6479d71102e81249bd36d4323</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18aa98c4ec70000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-09-18 18:27:39</sys_updated_on>
+        <type>Instance with Link</type>
+        <update_guid>6a2be2a60f9d7110de14584a13bc7422</update_guid>
+        <update_guid_history>6a2be2a60f9d7110de14584a13bc7422:-1858613858,39e866e2b59d7110cf6976e7a58c5372:1017219444,2ed8a6e26d9d71100de05cd8497f5f52:-1850929424,6cd82ae21d9d7110421a2a2fca4f5b60:1017219444,0ba8e2e2399d7110d60ae5bcbbc6cf4a:-1507438660</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Arbeitstypen anzeigen">9160fa2e479d71102e81249bd36d43d5</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>Luis</sys_created_by>
+        <sys_created_on>2023-09-18 18:50:30</sys_created_on>
+        <sys_db_object display_value="" name="sp_instance_link">sp_instance_link</sys_db_object>
+        <sys_id>075663bb0cfa4a5093f48aca2baaea40</sys_id>
+        <sys_metadata>47a8e2e2479d71102e81249bd36d4349</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Arbeitstypen anzeigen</sys_name>
+        <sys_package display_value="ServiceNow Übung" source="x_1112263_snuebung">ca8bf0a0978931106c383563e453afc1</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="ServiceNow Übung">ca8bf0a0978931106c383563e453afc1</sys_scope>
+        <sys_scope_delete display_value="">11e92dddcda04499868bc53fdc08f399</sys_scope_delete>
+        <sys_update_name>sp_instance_link_47a8e2e2479d71102e81249bd36d4349</sys_update_name>
+        <sys_update_version display_value="sp_instance_link_47a8e2e2479d71102e81249bd36d4349">a22be2a6479d71102e81249bd36d4323</sys_update_version>
+        <sys_updated_by>Luis</sys_updated_by>
+        <sys_updated_on>2023-09-18 18:50:30</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

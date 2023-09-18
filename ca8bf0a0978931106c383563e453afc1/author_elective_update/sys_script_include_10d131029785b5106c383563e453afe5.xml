@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="DELETE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_1112263_snuebung.BuildingDataUtil</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <name>BuildingDataUtil</name>
+        <script><![CDATA[var BuildingDataUtil = Class.create();
+BuildingDataUtil.prototype = {
+    initialize: function () {},
+
+    getBuildingData: function (buildingId) {
+        var gr = new GlideRecord('Gebaeude[x_1112263_snuebung_gebaeude]');
+    gr.query();
+    
+    var buildingData = [];
+    while (gr.next()) {
+        buildingData.push({
+            name: gr.getValue('Position') // Annahme: 'name' ist das Feld, das du abrufen möchtest
+            // Weitere Informationen hinzufügen...
+        });
+    }
+
+    return buildingData;
+    },
+
+    type: 'BuildingDataUtil'
+};
+]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-09-04 14:52:45</sys_created_on>
+        <sys_id>10d131029785b5106c383563e453afe5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>BuildingDataUtil</sys_name>
+        <sys_package display_value="ServiceNow Übung" source="x_1112263_snuebung">ca8bf0a0978931106c383563e453afc1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="ServiceNow Übung">ca8bf0a0978931106c383563e453afc1</sys_scope>
+        <sys_update_name>sys_script_include_10d131029785b5106c383563e453afe5</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-09-04 14:52:45</sys_updated_on>
+    </sys_script_include>
+<sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="ServiceNow Übung">ca8bf0a0978931106c383563e453afc1</application>
+        <file_path/>
+        <instance_id>761693c5db096d183050ac44d4961965</instance_id>
+        <instance_name>dev148996</instance_name>
+        <name>sys_script_include_10d131029785b5106c383563e453afe5</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_script_include"&gt;
+    &lt;sys_script_include action="INSERT_OR_UPDATE"&gt;
+        &lt;access&gt;public&lt;/access&gt;
+        &lt;active&gt;true&lt;/active&gt;
+        &lt;api_name&gt;x_1112263_snuebung.BuildingDataUtil&lt;/api_name&gt;
+        &lt;caller_access/&gt;
+        &lt;client_callable&gt;true&lt;/client_callable&gt;
+        &lt;description/&gt;
+        &lt;name&gt;BuildingDataUtil&lt;/name&gt;
+        &lt;script&gt;&lt;![CDATA[var BuildingDataUtil = Class.create();
+BuildingDataUtil.prototype = {
+    initialize: function () {},
+
+    getBuildingData: function (buildingId) {
+        var gr = new GlideRecord('Gebaeude[x_1112263_snuebung_gebaeude]');
+    gr.query();
+    
+    var buildingData = [];
+    while (gr.next()) {
+        buildingData.push({
+            name: gr.getValue('Position') // Annahme: 'name' ist das Feld, das du abrufen möchtest
+            // Weitere Informationen hinzufügen...
+        });
+    }
+
+    return buildingData;
+    },
+
+    type: 'BuildingDataUtil'
+};
+]]&gt;&lt;/script&gt;
+        &lt;sys_class_name&gt;sys_script_include&lt;/sys_class_name&gt;
+        &lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2023-09-04 14:52:45&lt;/sys_created_on&gt;
+        &lt;sys_id&gt;10d131029785b5106c383563e453afe5&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;
+        &lt;sys_name&gt;BuildingDataUtil&lt;/sys_name&gt;
+        &lt;sys_package display_value="ServiceNow Übung" source="x_1112263_snuebung"&gt;ca8bf0a0978931106c383563e453afc1&lt;/sys_package&gt;
+        &lt;sys_policy/&gt;
+        &lt;sys_scope display_value="ServiceNow Übung"&gt;ca8bf0a0978931106c383563e453afc1&lt;/sys_scope&gt;
+        &lt;sys_update_name&gt;sys_script_include_10d131029785b5106c383563e453afe5&lt;/sys_update_name&gt;
+        &lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2023-09-04 14:52:45&lt;/sys_updated_on&gt;
+    &lt;/sys_script_include&gt;
+&lt;/record_update&gt;</payload>
+        <payload_hash>-2007876633</payload_hash>
+        <record_name>BuildingDataUtil</record_name>
+        <reverted_from/>
+        <source>30aa5a62475d71102e81249bd36d439e</source>
+        <source_table>sys_upgrade_history</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-09-18 17:15:59</sys_created_on>
+        <sys_id>fcca1aa2475d71102e81249bd36d43a2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18aa94ab30a0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-09-18 17:15:59</sys_updated_on>
+        <type>Script Include</type>
+        <update_guid>bcca1aa20d5d71102062a5b553ddb2a2</update_guid>
+        <update_guid_history>bcca1aa20d5d71102062a5b553ddb2a2:-2007876633</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>Luis</sys_created_by>
+        <sys_created_on>2023-09-18 19:10:34</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_include">sys_script_include</sys_db_object>
+        <sys_id>02919d60e6f04d98ba821ece9a7a72b1</sys_id>
+        <sys_metadata>10d131029785b5106c383563e453afe5</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>BuildingDataUtil</sys_name>
+        <sys_package display_value="ServiceNow Übung" source="x_1112263_snuebung">ca8bf0a0978931106c383563e453afc1</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="ServiceNow Übung">ca8bf0a0978931106c383563e453afc1</sys_scope>
+        <sys_scope_delete display_value="">11e92dddcda04499868bc53fdc08f399</sys_scope_delete>
+        <sys_update_name>sys_script_include_10d131029785b5106c383563e453afe5</sys_update_name>
+        <sys_update_version display_value="sys_script_include_10d131029785b5106c383563e453afe5">fcca1aa2475d71102e81249bd36d43a2</sys_update_version>
+        <sys_updated_by>Luis</sys_updated_by>
+        <sys_updated_on>2023-09-18 19:10:34</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

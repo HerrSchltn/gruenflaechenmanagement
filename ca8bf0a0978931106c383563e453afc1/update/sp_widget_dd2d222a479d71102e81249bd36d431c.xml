@@ -3,10 +3,27 @@
         <category>custom</category>
         <client_script><![CDATA[api.controller=function() {  /* widget controller */  var c = this;};]]></client_script>
         <controller_as>c</controller_as>
-        <css>.TextAndButton {
-		display: flex;
-  	flex-direction: column;
-}</css>
+        <css>/* Stil für das äußere Div-Element mit der Klasse "TextAndButton" */
+.TextAndButton {
+    display: flex; /* Verwenden Sie Flexbox für die Anordnung der inneren Elemente */
+    flex-direction: column; /* Stapeln Sie die inneren Elemente vertikal */
+   	margin-top: 200px;
+  	margin-bottom: 10px;
+}
+
+/* Stil für die Überschrift "Grünflächenarbeiten" */
+.Heading1 {
+    font-size: 24px; /* Ändern Sie die Schriftgröße nach Bedarf */
+    margin-bottom: 10px; /* Abstand zwischen der Überschrift und dem Text darunter */
+}
+
+/* Stil für die Überschrift "Hochschultermine" */
+.Heading2 {
+    font-size: 24px; /* Ändern Sie die Schriftgröße nach Bedarf */
+    margin-bottom: 10px; /* Abstand zwischen der Überschrift und dem Text darunter */
+  	margin-top: 10px;
+}
+</css>
         <data_table>sp_instance</data_table>
         <demo_data/>
         <description/>
@@ -26,29 +43,26 @@
         <sys_created_by>Cenk</sys_created_by>
         <sys_created_on>2023-09-18 18:36:18</sys_created_on>
         <sys_id>dd2d222a479d71102e81249bd36d431c</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>14</sys_mod_count>
         <sys_name>GM_Sidebar</sys_name>
         <sys_package display_value="ServiceNow Übung" source="x_1112263_snuebung">ca8bf0a0978931106c383563e453afc1</sys_package>
         <sys_policy/>
         <sys_scope display_value="ServiceNow Übung">ca8bf0a0978931106c383563e453afc1</sys_scope>
         <sys_update_name>sp_widget_dd2d222a479d71102e81249bd36d431c</sys_update_name>
         <sys_updated_by>Cenk</sys_updated_by>
-        <sys_updated_on>2023-09-18 18:44:26</sys_updated_on>
+        <sys_updated_on>2023-09-18 19:08:48</sys_updated_on>
         <template><![CDATA[<div class="TextAndButton">
 	<div>
     <div class="Heading1">Grünflächenarbeiten:</div>
     <p>
-      
+      Wenn du auf die grünen Bereiche des Bildes klickst, wirst du zu Informationen über unsere Grünflächenarbeiten weitergeleitet. Hier erfährst du mehr über unsere Landschaftsgestaltungsdienste und Gartenpflege.
     </p>
   </div>
   <div>
     <div class="Heading2">Hochschultermine:</div>
     <p>
-      
+      Klicke auf die schwarzen Bereiche des Bildes, um zu den aktuellen Hochschulterminen und Veranstaltungen zu gelangen. Hier findest du Informationen zu Vorlesungen, Seminaren und anderen Bildungsveranstaltungen.
     </p>
-  </div>
-  <div>
-    <button>Pflegeobjekte</button>
   </div>
 </div>]]></template>
     </sp_widget>
