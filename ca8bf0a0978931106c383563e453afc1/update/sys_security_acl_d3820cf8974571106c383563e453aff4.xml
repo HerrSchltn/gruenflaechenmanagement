@@ -5,21 +5,21 @@
         <advanced>false</advanced>
         <condition/>
         <description>Default access control on x_1112263_snuebung_hochschul_termine</description>
-        <name>x_1112263_snuebung_hochschul_termine.*</name>
+        <name>x_1112263_snuebung_hochschul_termine</name>
         <operation display_value="read">read</operation>
         <script/>
         <sys_class_name>sys_security_acl</sys_class_name>
         <sys_created_by>Cenk</sys_created_by>
         <sys_created_on>2023-08-31 09:25:54</sys_created_on>
         <sys_id>d3820cf8974571106c383563e453aff4</sys_id>
-        <sys_mod_count>1</sys_mod_count>
-        <sys_name>x_1112263_snuebung_hochschul_termine.*</sys_name>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>x_1112263_snuebung_hochschul_termine</sys_name>
         <sys_package display_value="ServiceNow Übung" source="x_1112263_snuebung">ca8bf0a0978931106c383563e453afc1</sys_package>
         <sys_policy/>
         <sys_scope display_value="ServiceNow Übung">ca8bf0a0978931106c383563e453afc1</sys_scope>
         <sys_update_name>sys_security_acl_d3820cf8974571106c383563e453aff4</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-09-08 08:30:05</sys_updated_on>
+        <sys_updated_on>2023-09-18 17:45:21</sys_updated_on>
         <type display_value="record">record</type>
     </sys_security_acl>
 </record_update>

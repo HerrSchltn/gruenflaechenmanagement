@@ -16,7 +16,7 @@
         <column_label>Zeitraum bis</column_label>
         <comments/>
         <create_roles/>
-        <default_value/>
+        <default_value>javascript:gs.nowDateTime()</default_value>
         <defaultsort/>
         <delete_roles/>
         <dependent/>
@@ -24,7 +24,7 @@
         <display>false</display>
         <dynamic_creation>false</dynamic_creation>
         <dynamic_creation_script/>
-        <dynamic_default_value/>
+        <dynamic_default_value display_value="Now (Date and Time)">79cb83a85f220100a9ad2572f2b4773c</dynamic_default_value>
         <dynamic_ref_qual/>
         <element>zeitraum_bis</element>
         <element_reference>false</element_reference>
@@ -57,13 +57,13 @@
         <sys_policy/>
         <sys_scope display_value="ServiceNow Übung">ca8bf0a0978931106c383563e453afc1</sys_scope>
         <sys_update_name>sys_dictionary_x_1112263_snuebung_hochschul_termine_zeitraum_bis</sys_update_name>
-        <sys_updated_by>Chris</sys_updated_by>
-        <sys_updated_on>2023-09-06 13:13:13</sys_updated_on>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-09-18 18:03:05</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
         <use_dependent_field>false</use_dependent_field>
-        <use_dynamic_default>false</use_dynamic_default>
+        <use_dynamic_default>true</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
         <virtual_type>script</virtual_type>

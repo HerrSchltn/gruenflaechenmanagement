@@ -12,7 +12,6 @@ api.controller=function($scope) {
     var building = document.getElementById(buildingId);
     if (building) {
 			building.style.fill = "red";
-			building.style.fontSize ="5px";
     }
   };
 
@@ -22,7 +21,6 @@ api.controller=function($scope) {
     if (building) {
       // Hier kannst du die Farbe auf die ursprüngliche Farbe zurücksetzen, z.B., "gray"
       building.style.fill = "white";
-			building.style.fontSize ="2.414px";
     }
   };
 	$scope.onMouseOutGreen = function (buildingId) {
@@ -30,7 +28,6 @@ api.controller=function($scope) {
     if (building) {
       // Hier kannst du die Farbe auf die ursprüngliche Farbe zurücksetzen, z.B., "gray"
       building.style.fill = "black";
-			building.style.fontSize ="3.175px";
     }
   };
 	$scope.clickedOnPlace = function(id) {
@@ -38,14 +35,14 @@ api.controller=function($scope) {
         // Senden Sie die Gebäudedaten an das Tabellen-Widget
         var myevent = new CustomEvent('buildingClicked', { detail: buildingId });
         document.dispatchEvent(myevent);
-			  location.href = "https://dev154491.service-now.com/gruenflaechenmanagement/?id=02&table=x_1112263_snuebung_hochschul_termine&filter=gebaeudeid=" + buildingId ;
+			  location.href = "https://dev148996.service-now.com/gruenflaechenmanagement/?id=02&table=x_1112263_snuebung_hochschul_termine&filter=gebaeudeid=" + buildingId ;
     };
 	$scope.clickedOnGreen = function(id) {
         var greenId = id;
         // Senden Sie die Gebäudedaten an das Tabellen-Widget
         var myevent = new CustomEvent('greenClicked', { detail: greenId });
         document.dispatchEvent(myevent);
-			 	location.href = "https://dev154491.service-now.com/gruenflaechenmanagement/?id=03&table=x_1112263_snuebung_arbeit&filter=flacheid=" + greenId;
+			 	location.href = "https://dev148996.service-now.com/gruenflaechenmanagement/?id=03&table=x_1112263_snuebung_arbeit&filter=flacheid=" + greenId;
     };
 }
 
@@ -77,18 +74,18 @@ api.controller=function($scope) {
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-08-30 19:22:00</sys_created_on>
         <sys_id>97414528978931106c383563e453af21</sys_id>
-        <sys_mod_count>169</sys_mod_count>
+        <sys_mod_count>172</sys_mod_count>
         <sys_name>svg</sys_name>
         <sys_package display_value="ServiceNow Übung" source="x_1112263_snuebung">ca8bf0a0978931106c383563e453afc1</sys_package>
         <sys_policy/>
         <sys_scope display_value="ServiceNow Übung">ca8bf0a0978931106c383563e453afc1</sys_scope>
         <sys_update_name>sp_widget_97414528978931106c383563e453af21</sys_update_name>
-        <sys_updated_by>Chris</sys_updated_by>
-        <sys_updated_on>2023-09-06 12:56:44</sys_updated_on>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-09-18 17:38:27</sys_updated_on>
         <template><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
 
 <svg width="100%" height="100%" version="1.1" viewBox="0 0 249 297" xmlns="http://www.w3.org/2000/svg">
- <g ng-mouseOver="onMouseOverBuilding('4e75010697c1b5106c383563e453af6b')" ng-mouseOut="onMouseOutBuilding('4e75010697c1b5106c383563e453af6b')" stroke-width=".20116">
+ <g ng-mouseOver="onMouseOverBuilding('4e75010697c1b5106c383563e453af6b')" ng-mouseOut="onMouseOutBuilding('4e75010697c1b5106c383563e453af6b')" ng-click="clickedOnPlace('4e75010697c1b5106c383563e453af6b')" stroke-width=".20116">
   <rect x=".70404" y="76.008" width="29.805" height="11.516" fill="#666"/>
   <rect  x="18.965" y="75.795" width="10.285" height="53.103"/>
   <rect x="16.236" y="92.003" width="3.7781" height="22.393"/>

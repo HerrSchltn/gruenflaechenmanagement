@@ -20,8 +20,8 @@
                 <element inactive_on_update="false" label="Vorlesung" value="vorlesung"/>
             </choice>
         </element>
-        <element label="Zeitraum bis" mandatory="true" max_length="40" name="zeitraum_bis" type="glide_date_time"/>
-        <element label="Zeitraum von" mandatory="true" max_length="40" name="zeitraum_von" type="glide_date_time"/>
+        <element default="javascript:gs.nowDateTime()" dynamic_default_value="79cb83a85f220100a9ad2572f2b4773c" label="Zeitraum bis" mandatory="true" max_length="40" name="zeitraum_bis" type="glide_date_time" use_dynamic_default="true"/>
+        <element default="javascript:gs.nowDateTime()" dynamic_default_value="79cb83a85f220100a9ad2572f2b4773c" label="Zeitraum von" mandatory="true" max_length="40" name="zeitraum_von" type="glide_date_time" use_dynamic_default="true"/>
         <index name="index">
             <element name="ersteller"/>
         </index>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element db_object_id="e4cf37e4974571106c383563e453af9e" label="Arbeit" max_length="40" name="x_1112263_snuebung_arbeit" type="collection">
-        <element default="javascript:gs.getUserID();" dynamic_default_value="2fd8e97bef3221002841f7f775c0fbc1" label="Ersteller" max_length="255" name="ersteller" read_only="true" reference="sys_user" type="reference" use_dynamic_default="true"/>
+        <element label="Ersteller" max_length="255" name="ersteller" reference="sys_user" reference_qual="roles=x_1112263_snuebung.Gruenflaechenarbeiter^EQ" reference_qual_condition="roles=x_1112263_snuebung.Gruenflaechenarbeiter^EQ" type="reference"/>
         <element label="FlächeID" max_length="32" name="flacheid" read_only="true" reference="x_1112263_snuebung_flaeche" type="reference"/>
         <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
         <element choice="3" default="1" label="Priorität" mandatory="true" max_length="40" name="prioritat" type="choice">
@@ -20,9 +20,12 @@
                 <element inactive_on_update="false" label="Unkraut" value="Unkraut"/>
             </choice>
         </element>
-        <element label="Zeitraum bis" mandatory="true" max_length="40" name="zeitraum_bis" type="glide_date_time"/>
-        <element label="Zeitraum von" mandatory="true" max_length="40" name="zeitraum_von" type="glide_date_time"/>
+        <element default="javascript:gs.nowDateTime()" dynamic_default_value="79cb83a85f220100a9ad2572f2b4773c" label="Zeitraum bis" mandatory="true" max_length="40" name="zeitraum_bis" type="glide_date_time" use_dynamic_default="true"/>
+        <element default="javascript:gs.nowDateTime()" dynamic_default_value="79cb83a85f220100a9ad2572f2b4773c" label="Zeitraum von" mandatory="true" max_length="40" name="zeitraum_von" type="glide_date_time" use_dynamic_default="true"/>
         <index name="index">
+            <element name="ersteller"/>
+        </index>
+        <index name="index2">
             <element name="flacheid"/>
         </index>
     </element>
