@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_action_view">
+    <sys_ui_action_view action="DELETE">
+        <sys_class_name>sys_ui_action_view</sys_class_name>
+        <sys_created_by>Cenk</sys_created_by>
+        <sys_created_on>2023-09-19 17:45:46</sys_created_on>
+        <sys_id>3a2b6bfa471131102e81249bd36d43d4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Cancel.Cancel Dialog Form View</sys_name>
+        <sys_package display_value="ServiceNow Übung" source="x_1112263_snuebung">ca8bf0a0978931106c383563e453afc1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="ServiceNow Übung">ca8bf0a0978931106c383563e453afc1</sys_scope>
+        <sys_ui_action display_value="Cancel">ac17a7f6471131102e81249bd36d43ec</sys_ui_action>
+        <sys_ui_view display_value="Cancel Dialog Form View" name="cancel_dialog_form_view">3d9acb6f87f823000e3dd61e36cb0b48</sys_ui_view>
+        <sys_update_name>sys_ui_action_view_3a2b6bfa471131102e81249bd36d43d4</sys_update_name>
+        <sys_updated_by>Cenk</sys_updated_by>
+        <sys_updated_on>2023-09-19 17:45:46</sys_updated_on>
+        <visibility>include</visibility>
+    </sys_ui_action_view>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="ServiceNow Übung">ca8bf0a0978931106c383563e453afc1</application>
+        <file_path/>
+        <instance_id>761693c5db096d183050ac44d4961965</instance_id>
+        <instance_name>dev148996</instance_name>
+        <name>sys_ui_action_view_3a2b6bfa471131102e81249bd36d43d4</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_action_view"><sys_ui_action_view action="INSERT_OR_UPDATE"><sys_class_name>sys_ui_action_view</sys_class_name><sys_created_by>Cenk</sys_created_by><sys_created_on>2023-09-19 17:45:46</sys_created_on><sys_id>3a2b6bfa471131102e81249bd36d43d4</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Cancel.Cancel Dialog Form View</sys_name><sys_package display_value="ServiceNow Übung" source="x_1112263_snuebung">ca8bf0a0978931106c383563e453afc1</sys_package><sys_policy/><sys_scope display_value="ServiceNow Übung">ca8bf0a0978931106c383563e453afc1</sys_scope><sys_ui_action display_value="Cancel">ac17a7f6471131102e81249bd36d43ec</sys_ui_action><sys_ui_view display_value="Cancel Dialog Form View" name="cancel_dialog_form_view">3d9acb6f87f823000e3dd61e36cb0b48</sys_ui_view><sys_update_name>sys_ui_action_view_3a2b6bfa471131102e81249bd36d43d4</sys_update_name><sys_updated_by>Cenk</sys_updated_by><sys_updated_on>2023-09-19 17:45:46</sys_updated_on><visibility>include</visibility></sys_ui_action_view></record_update>]]></payload>
+        <payload_hash>-570402424</payload_hash>
+        <record_name>include</record_name>
+        <reverted_from/>
+        <source>2d7cba2e47dd71102e81249bd36d439c</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>Cenk</sys_created_by>
+        <sys_created_on>2023-09-19 17:45:46</sys_created_on>
+        <sys_id>ba2b673e471131102e81249bd36d43d7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18aae8c52c80000001</sys_recorded_at>
+        <sys_updated_by>Cenk</sys_updated_by>
+        <sys_updated_on>2023-09-19 17:45:46</sys_updated_on>
+        <type>UI View Action</type>
+        <update_guid>fe2b673e6d11311059ead99068982bd6</update_guid>
+        <update_guid_history>fe2b673e6d11311059ead99068982bd6:-570402424</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>Cenk</sys_created_by>
+        <sys_created_on>2023-09-19 17:46:10</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_action_view">sys_ui_action_view</sys_db_object>
+        <sys_id>291c61008c1740279bbad64d4d0b5499</sys_id>
+        <sys_metadata>3a2b6bfa471131102e81249bd36d43d4</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Cancel.Cancel Dialog Form View</sys_name>
+        <sys_package display_value="ServiceNow Übung" source="x_1112263_snuebung">ca8bf0a0978931106c383563e453afc1</sys_package>
+        <sys_parent display_value="Cancel">ac17a7f6471131102e81249bd36d43ec</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="ServiceNow Übung">ca8bf0a0978931106c383563e453afc1</sys_scope>
+        <sys_scope_delete display_value="">11e92dddcda04499868bc53fdc08f399</sys_scope_delete>
+        <sys_update_name>sys_ui_action_view_3a2b6bfa471131102e81249bd36d43d4</sys_update_name>
+        <sys_update_version display_value="sys_ui_action_view_3a2b6bfa471131102e81249bd36d43d4">ba2b673e471131102e81249bd36d43d7</sys_update_version>
+        <sys_updated_by>Cenk</sys_updated_by>
+        <sys_updated_on>2023-09-19 17:46:10</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

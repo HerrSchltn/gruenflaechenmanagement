@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_policy">
+    <sys_ui_policy action="DELETE">
+        <active>true</active>
+        <conditions table="x_1112263_snuebung_flaechehatpflegeobjekt">anzahl&gt;0^EQ<item endquery="false" field="anzahl" goto="false" newquery="false" operator="&gt;" or="false" value="0"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </conditions>
+        <description/>
+        <global>true</global>
+        <inherit>false</inherit>
+        <isolate_script>true</isolate_script>
+        <model_id/>
+        <model_table/>
+        <on_load>true</on_load>
+        <order>100</order>
+        <reverse_if_false>true</reverse_if_false>
+        <run_scripts>false</run_scripts>
+        <script_false><![CDATA[function onCondition() {
+
+}]]></script_false>
+        <script_true><![CDATA[function onCondition() {
+
+}]]></script_true>
+        <set_values/>
+        <short_description>Anzahl des Pflegeobjekt muss größer 0 sein</short_description>
+        <sys_class_name>sys_ui_policy</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-09-19 17:49:17</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>70dba37e471131102e81249bd36d4341</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Anzahl des Pflegeobjekt muss größer 0 sein</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="ServiceNow Übung" source="x_1112263_snuebung">ca8bf0a0978931106c383563e453afc1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="ServiceNow Übung">ca8bf0a0978931106c383563e453afc1</sys_scope>
+        <sys_update_name>sys_ui_policy_70dba37e471131102e81249bd36d4341</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-09-19 17:49:17</sys_updated_on>
+        <table>x_1112263_snuebung_flaechehatpflegeobjekt</table>
+        <ui_type>0</ui_type>
+        <view/>
+    </sys_ui_policy>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="ServiceNow Übung">ca8bf0a0978931106c383563e453afc1</application>
+        <file_path/>
+        <instance_id>761693c5db096d183050ac44d4961965</instance_id>
+        <instance_name>dev148996</instance_name>
+        <name>sys_ui_policy_70dba37e471131102e81249bd36d4341</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_ui_policy"&gt;&lt;sys_ui_policy action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;conditions table="x_1112263_snuebung_flaechehatpflegeobjekt"&gt;anzahl&amp;gt;0^EQ&lt;item endquery="false" field="anzahl" goto="false" newquery="false" operator="&amp;gt;" or="false" value="0"/&gt;&lt;item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/&gt;&lt;/conditions&gt;&lt;description/&gt;&lt;global&gt;true&lt;/global&gt;&lt;inherit&gt;false&lt;/inherit&gt;&lt;isolate_script&gt;true&lt;/isolate_script&gt;&lt;model_id/&gt;&lt;model_table/&gt;&lt;on_load&gt;true&lt;/on_load&gt;&lt;order&gt;100&lt;/order&gt;&lt;reverse_if_false&gt;true&lt;/reverse_if_false&gt;&lt;run_scripts&gt;false&lt;/run_scripts&gt;&lt;script_false&gt;&lt;![CDATA[function onCondition() {
+
+}]]&gt;&lt;/script_false&gt;&lt;script_true&gt;&lt;![CDATA[function onCondition() {
+
+}]]&gt;&lt;/script_true&gt;&lt;set_values/&gt;&lt;short_description&gt;Anzahl des Pflegeobjekt muss größer 0 sein&lt;/short_description&gt;&lt;sys_class_name&gt;sys_ui_policy&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2023-09-19 17:49:17&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;70dba37e471131102e81249bd36d4341&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;Anzahl des Pflegeobjekt muss größer 0 sein&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="ServiceNow Übung" source="x_1112263_snuebung"&gt;ca8bf0a0978931106c383563e453afc1&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="ServiceNow Übung"&gt;ca8bf0a0978931106c383563e453afc1&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_policy_70dba37e471131102e81249bd36d4341&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2023-09-19 17:49:17&lt;/sys_updated_on&gt;&lt;table&gt;x_1112263_snuebung_flaechehatpflegeobjekt&lt;/table&gt;&lt;ui_type&gt;0&lt;/ui_type&gt;&lt;view/&gt;&lt;/sys_ui_policy&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-422484834</payload_hash>
+        <record_name>Anzahl des Pflegeobjekt muss größer 0 sein</record_name>
+        <reverted_from/>
+        <source>faea5e22475d71102e81249bd36d437e</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-09-19 17:49:18</sys_created_on>
+        <sys_id>a2fb277e471131102e81249bd36d4376</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18aae8f8d550000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-09-19 17:49:18</sys_updated_on>
+        <type>UI Policy</type>
+        <update_guid>e6fb277ea7113110501f2d38cbd1f875</update_guid>
+        <update_guid_history>e6fb277ea7113110501f2d38cbd1f875:-422484834</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-09-19 17:54:43</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_policy">sys_ui_policy</sys_db_object>
+        <sys_id>5123815a46dd449ebb683ad2739eacc4</sys_id>
+        <sys_metadata>70dba37e471131102e81249bd36d4341</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Anzahl des Pflegeobjekt muss größer 0 sein</sys_name>
+        <sys_package display_value="ServiceNow Übung" source="x_1112263_snuebung">ca8bf0a0978931106c383563e453afc1</sys_package>
+        <sys_parent display_value="FlaecheHatPflegeobjekt">51e08838974571106c383563e453aff6</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="ServiceNow Übung">ca8bf0a0978931106c383563e453afc1</sys_scope>
+        <sys_scope_delete display_value="">11e92dddcda04499868bc53fdc08f399</sys_scope_delete>
+        <sys_update_name>sys_ui_policy_70dba37e471131102e81249bd36d4341</sys_update_name>
+        <sys_update_version display_value="sys_ui_policy_70dba37e471131102e81249bd36d4341">a2fb277e471131102e81249bd36d4376</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-09-19 17:54:43</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
