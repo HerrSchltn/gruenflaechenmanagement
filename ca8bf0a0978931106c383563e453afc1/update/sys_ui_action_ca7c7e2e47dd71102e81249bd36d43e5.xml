@@ -27,7 +27,7 @@
         <list_save_with_form_button>false</list_save_with_form_button>
         <list_style/>
         <messages/>
-        <name>Pflegeobjekt_Hinzufügen</name>
+        <name>Pflegeobjekt Hinzufügen</name>
         <onclick/>
         <order>100</order>
         <script/>
@@ -41,15 +41,15 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>ca7c7e2e47dd71102e81249bd36d43e5</sys_id>
-        <sys_mod_count>16</sys_mod_count>
-        <sys_name>Pflegeobjekt_Hinzufügen</sys_name>
+        <sys_mod_count>17</sys_mod_count>
+        <sys_name>Pflegeobjekt Hinzufügen</sys_name>
         <sys_overrides display_value="Save">47fd7f4dc0a8000600a552278b5232ab</sys_overrides>
         <sys_package display_value="ServiceNow Übung" source="x_1112263_snuebung">ca8bf0a0978931106c383563e453afc1</sys_package>
         <sys_policy/>
         <sys_scope display_value="ServiceNow Übung">ca8bf0a0978931106c383563e453afc1</sys_scope>
         <sys_update_name>sys_ui_action_ca7c7e2e47dd71102e81249bd36d43e5</sys_update_name>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-09-19 17:24:39</sys_updated_on>
+        <sys_updated_by>Cenk</sys_updated_by>
+        <sys_updated_on>2023-09-19 18:22:11</sys_updated_on>
         <table>x_1112263_snuebung_flaechehatpflegeobjekt</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>false</ui16_compatible>
