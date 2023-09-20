@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element db_object_id="e4cf37e4974571106c383563e453af9e" label="Arbeit" max_length="40" name="x_1112263_snuebung_arbeit" type="collection">
-        <element label="Mitarbeiter" mandatory="true" max_length="255" name="ersteller" reference="sys_user" reference_qual="roles=x_1112263_snuebung.Gruenflaechenarbeiter^EQ" reference_qual_condition="roles=x_1112263_snuebung.Gruenflaechenarbeiter^EQ" type="reference"/>
+        <element display="true" label="Mitarbeiter" mandatory="true" max_length="255" name="ersteller" reference="sys_user" reference_qual="roles=x_1112263_snuebung.Gruenflaechenarbeiter^EQ" reference_qual_condition="roles=x_1112263_snuebung.Gruenflaechenarbeiter^EQ" type="reference"/>
         <element label="FlächeID" max_length="32" name="flacheid" read_only="true" reference="x_1112263_snuebung_flaeche" type="reference"/>
         <element label="Konflikt" max_length="40" name="konflikt" type="boolean"/>
         <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
