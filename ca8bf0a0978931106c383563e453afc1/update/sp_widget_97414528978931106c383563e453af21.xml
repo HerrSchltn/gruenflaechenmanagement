@@ -74,14 +74,14 @@ api.controller=function($scope) {
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2023-08-30 19:22:00</sys_created_on>
         <sys_id>97414528978931106c383563e453af21</sys_id>
-        <sys_mod_count>188</sys_mod_count>
+        <sys_mod_count>189</sys_mod_count>
         <sys_name>svg</sys_name>
         <sys_package display_value="ServiceNow Übung" source="x_1112263_snuebung">ca8bf0a0978931106c383563e453afc1</sys_package>
         <sys_policy/>
         <sys_scope display_value="ServiceNow Übung">ca8bf0a0978931106c383563e453afc1</sys_scope>
         <sys_update_name>sp_widget_97414528978931106c383563e453af21</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2023-09-20 14:25:25</sys_updated_on>
+        <sys_updated_on>2023-09-20 17:43:30</sys_updated_on>
         <template><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
 
 <svg width="85%" height="85%" version="1.1" viewBox="0 0 249 297" xmlns="http://www.w3.org/2000/svg">
@@ -159,10 +159,10 @@ api.controller=function($scope) {
   <rect x="204.64" y="149.91" width="38.722" height="37.781" fill="#00cf00"/>
   <text x="222.83963" y="168.31421" fill="#000000" font-size="3.175px" xml:space="preserve"><tspan id="ae813a43475131102e81249bd36d43df" x="222.83963" y="168.31421" fill="#000000" stroke-width=".26458">1</tspan></text>
  </g>
- <g ng-mouseOver="onMouseOverBuilding('ae813a43475131102e81249bd36d43df')" ng-mouseOut="onMouseOutGreen('ae813a43475131102e81249bd36d43df')" ng-click="clickedOnGreen('ae813a43475131102e81249bd36d43df')" stroke-width=".26458">
+ <g ng-mouseOver="onMouseOverBuilding('b1917203475131102e81249bd36d4305')" ng-mouseOut="onMouseOutGreen('b1917203475131102e81249bd36d4305')" ng-click="clickedOnGreen('b1917203475131102e81249bd36d4305')" stroke-width=".26458">
   <path d="m175.06 129.77 3.065-2.6721h22.272l0.15313 3.4571z" fill="#00cf00"/>
   <rect x="175.06" y="129.75" width="25.466" height="60.324" fill="#00cf00"/>
-  <text x="187.7321" y="156.43047" fill="#000000" font-size="3.175px" xml:space="preserve"><tspan id ="ae813a43475131102e81249bd36d43df" x="187.7321" y="156.43047" stroke-width=".26458">2</tspan></text>
+  <text x="187.7321" y="156.43047" fill="#000000" font-size="3.175px" xml:space="preserve"><tspan id ="b1917203475131102e81249bd36d4305" x="187.7321" y="156.43047" stroke-width=".26458">2</tspan></text>
  </g>
  <g ng-mouseOver="onMouseOverBuilding('c7917e03475131102e81249bd36d43f8')" ng-mouseOut="onMouseOutGreen('c7917e03475131102e81249bd36d43f8')" ng-click="clickedOnGreen('c7917e03475131102e81249bd36d43f8')" >
   <path d="m143.5 231.79-0.0634-80.591-7.9964-2.3614-9.8296-0.093-11.17 1.4958-10.276 2.1829-9.7178 4.3659-10.053 5.6756 0.2234 23.903-36.025 0.10476-0.20166 45.257z" fill="#00cf00" stroke-width=".26364"/>

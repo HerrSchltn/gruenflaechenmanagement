@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element db_object_id="51e08838974571106c383563e453aff6" label="FlaecheHatPflegeobjekt" max_length="40" name="x_1112263_snuebung_flaechehatpflegeobjekt" type="collection">
         <element default="-1" label="Anzahl" mandatory="true" max_length="40" name="anzahl" type="integer"/>
-        <element display="true" label="FlaecheID" max_length="32" name="flaecheid" read_only="true" reference="x_1112263_snuebung_flaeche" type="reference"/>
+        <element display="true" label="FlaecheID" max_length="32" name="flaecheid" reference="x_1112263_snuebung_flaeche" type="reference"/>
         <element choice="3" default="5" label="PflegeobjektTyp" max_length="40" name="pflegeobjekttyp" type="choice">
             <choice>
                 <element inactive_on_update="false" label="Baum" value="1"/>
